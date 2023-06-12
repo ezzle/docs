@@ -1,0 +1,10 @@
+---
+frametype: "class"
+name: "CUST_JOURNEY_PHASE_TO_EMOTION_RELATION"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["CUSTOMER_JOURNEY_RELATION"]
+template_slot: ["cust_journey_phase_to_emotion_from_cust_journey_phase", "cust_journey_phase_to_emotion_to_emotion"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Defines a relationship between a Customer Jourmey and an Emotion"}, ]}]
+---

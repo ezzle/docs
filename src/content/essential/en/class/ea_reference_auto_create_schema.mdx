@@ -1,0 +1,10 @@
+---
+frametype: "class"
+name: "EA_Reference_Auto_Create_Schema"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["EA_System_Data_Management"]
+template_slot: ["system_ea_reference_path_segment_separator", "system_ea_reference_prefix_path", "system_ea_reference_suffix", "ea_reference_auto_create_schema_for_class", "system_ea_reference_auto_create_enabled", "system_ea_reference_suffix_path", "system_ea_reference_counter", "system_ea_reference_counter_path", "system_ea_reference_padding", "system_ea_reference_prefix", "system_ea_reference_auto_create_current_status_message", "name"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Represents the rules to be applied when auto-populating the ea_reference slot of instances of a specific meta-class"}, ]}]
+---

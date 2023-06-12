@@ -1,0 +1,10 @@
+---
+frametype: "class"
+name: "EA_Content_Classification_Group"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["EA_Security"]
+template_slot: ["contains_content_classifications"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Defines classification groups in which individual security classifications can be managed and sequenced. Allows users to define their own security classification schemes."}, ]}]
+---

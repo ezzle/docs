@@ -1,0 +1,32 @@
+---
+frametype: "simple_instance"
+name: "sandbox_Class78771"
+type: "Synonym"
+supertype: ["Utilities", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "synonym_language", value: [{value_type: "simple_instance", value_content: "essential_baseline_v3.0.4_Class10004"}, ]}, 
+{slot_reference: "system_content_visibility", value: [{value_type: "simple_instance", value_content: "KB_229567_Class68"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "paiements recus et flux de secal mainframe vers secal php"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Échange de données (2 directions) entre TP-Alim Belconet (GCOS) et Web-alim PHP: 90% des flux mettent à jour le côté Php; 10% des flux mettent à jour le côté mainframe. 
+Flux des paiements :
+étape 1.Les fichiers Coda avec paiements recus lus par le côté mainframe
+étape 2. Le php sécal extrait ces paiements de mainframe Secal pour visualiser les données entières du côté php 
+étape 3. Attribution des paiements reçus au dossier dans le régistre d'attente php (mise à jour de la comptabilité des paiements Secal attribués  du côté php sans interaction avec le mainframe). 
+Affectation automatique si
+a) paiement avec une communication structurée correcte et 
+b) s’il y a un match entre virement structuré du paiement avec le numéro du dossier existant et
+c) si le status du dossier est que le paiement peut être reçu. 
+Les paiements qui ne peuvent pas être attribués automatiquement ou pas semi-automatiquement resteront dans le régistre d'attente PhP, le «parking». Ceux-ci sont alloués manuellement au bon dossier après des recherches manuelles dans les dossiers de la base de données mysql du côté php. 
+Etape 4.Secal php envoie ses données chaque jour au mainframe sécal en préparation des chaînes mainframe: la compatibilité (régistre d’attente des paiements alloués) est envoyée du côté php vers le mainframe où se déroule le recalcul de la dette. Parfois juste une mise à jour de certains indexes (par exemple index de santé) est transmis de Php vers le mainframe.
+Flux vers le composant PhP secal: 
+-le côté php extrait ce que le mainframe Secal envoie pour visualiser l’entièreté des données du côté php vers le gestionnaire de dossiers:
+a) flux des masterdata du mainframe (dossiers créés manuellement via TP) envoyé quotidiennement vers le composant php Secal où ces dossiers sont stockés dans une db mysql pour pouvoir faire des recherches au côté php dans les dossiers (pas d'options de recherche dans la db mainframe).
+b) lire les paiements reçus du mainframe sécal, voir paiements pt. 2 
+c) Chaque nuit un lot mainframe avec le résultat final du chaîne mainframe de soir et du mois va via un flux via FTP à partir du composant mainframe Secal vers le composant php secal. 
+-le côté Php lance le matin un nombre de lots pour mettre à jour les données du côté Php et puis les présenter à l'utilisateur (webalim): le côté Php side alloue automatiquement les paiements reçus au dossier Secal correct dans la db mysql (concerne les paiements reçus par le côté php du composant mainframe dans lequel les fichiers coda ont été importés précédemment): voir flux paiements pt 3. Certains paiements sont alloués manuellement après une recherche manuelle du dossier Secal correct dans la db mysql.
+ Ce que le côté php recoit depuis le mainframe, est donc déjà stocké sur la db du mainframe (paiements / données du dossier / position de la dette), à l'exception des données suivantes (source authentique côté php): 
+ lien de paiement  dossier secal: est envoyé vers le mainframe 
+ champ 180b: uniquement du côté php  notes rcd: uniquement du côté php  bureau autorisé pour le recouvrement: uniquement du côté php; veuillez noter que le bureau de demande est stocké sur le mainframe, va ensemble avec la création de dossiers sur le mainframe."}, ]}, 
+{slot_reference: "system_content_lifecycle_status", value: [{value_type: "simple_instance", value_content: "KB_229567_Class67"}, ]}, 
+{slot_reference: "external_repository_instance_reference", value: [{value_type: "simple_instance", value_content: "sandbox_Class78772"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

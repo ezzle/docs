@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "External_Instance_Reference"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["External_Integration"]
+template_slot: ["referenced_instance", "external_update_date", "external_repository_reference", "external_instance_reference"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Class to hold the details for an external instance reference from an external repository. This is attached to an Essential instance to capture mapping of instances between repositories"}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "External_Instance_Reference"}, ]}]
+---

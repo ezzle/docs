@@ -1,0 +1,10 @@
+---
+frametype: "class"
+name: "APP_PRO_TO_INFOREP_TO_DATAREP_RELATION"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["APP_TO_INFO_RELATION"]
+template_slot: ["app_pro_deletes_data_rep", "app_datarep_inforep_source", "app_pro_use_of_data_rep", "app_pro_creates_data_rep", "app_pro_data_acquisition_method", "apppro_to_inforep_to_datarep_to_datarep", "app_pro_updates_data_rep", "app_pro_reads_data_rep", "apppro_to_inforep_to_datarep_from_appro_to_inforep"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Describes a specific Data Representation that is used by an Application Provider in the context of an Information Representation"}, ]}]
+---

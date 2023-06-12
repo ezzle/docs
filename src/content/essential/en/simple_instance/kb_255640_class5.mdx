@@ -1,0 +1,32 @@
+---
+frametype: "simple_instance"
+name: "KB_255640_Class5"
+type: "APP_PRO_TO_INFOREP_RELATION"
+supertype: ["APP_TO_INFO_RELATION", "Application_Relationship", "EA_Relation", ":SYSTEM-CLASS", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "app_pro_to_inforep_to_inforep", value: [{value_type: "simple_instance", value_content: "KB_255640_Class6"}, ]}, 
+{slot_reference: "app_pro_persists_info_rep", value: [{value_type: "boolean", value_content: "false"}, ]}, 
+{slot_reference: "used_in_app_dependencies", value: [{value_type: "simple_instance", value_content: "KB_321067_Class88"}, ]}, 
+{slot_reference: "app_pro_to_inforep_from_app", value: [{value_type: "simple_instance", value_content: "KB_958736_Class1022"}, ]}, 
+{slot_reference: "app_pro_reads_info_rep", value: [{value_type: "string", value_content: "Yes"}, ]}, 
+{slot_reference: "app_pro_creates_info_rep", value: [{value_type: "string", value_content: "Unknown"}, ]}, 
+{slot_reference: "app_pro_deletes_info_rep", value: [{value_type: "string", value_content: "Unknown"}, ]}, 
+{slot_reference: "app_pro_updates_info_rep", value: [{value_type: "string", value_content: "Unknown"}, ]}, 
+{slot_reference: "relation_description", value: [{value_type: "string", value_content: "Uitgaande flows uit de PM mainframe toepassing naar
+
+-ICPC en 180B: maandelijks bestand voor terugbetalingsproces: bestand met uit te voeren terugbetalingen RV gaat naar ICPC (AA I&amp;I) en dan gaat output van ICPC naar AA Thesaurie. Als maand geen terugbetaling, dan verwittigt AA Fisc het team van ICPC van AA I&amp;I die dan een nul-bestand aanmaken.
+AA Thesaurie betaalt op rekening van de bank  madataris en deze bank betaalt dat door aan zijn klant – begunstigde.
+
+-Drukkerij: gewoon flat file printbestand naar Fedopress om de “beslissingen 439D” op papier te zenden naar de begunstigden en kopie naar “Centrum Brussel Buitenland”
+(geen flow naar Filenet)
+
+-naar AA Thesaurie: verzamelstaat
+
+-naar 13 banken: maandelijkse CSV  files met indeling som per begunstigde
+= verzamelstaat per bank met uitsplitsing van terug te betalen bedrag per begunstigde: obv query Alfons de Gols
+(deze mainframe query is het enige consultatiemiddel om globale overzichten van de beslissingen teruggaves PM te genereren)
+Momenteel dus alleen ter beschikking gesteld van de 13 banken die het spontaan vroegen (controlemechanisme).
+
+-Eenmaal jaarlijkse opslag alle beslissingen in groot excel bestand."}, ]}, 
+{slot_reference: "relation_name", value: [{value_type: "string", value_content: "Maandelijks bestand met uit te voeren terugbetalingen RV op flow van PM (Précompte Mobilier) naar ICPC managed by PM_Prod  Rembours Précompte Mobilier / Roerende Voorheffing"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

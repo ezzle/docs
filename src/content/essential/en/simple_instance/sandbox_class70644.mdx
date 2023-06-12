@@ -1,0 +1,30 @@
+---
+frametype: "simple_instance"
+name: "sandbox_Class70644"
+type: "Synonym"
+supertype: ["Utilities", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "synonym_language", value: [{value_type: "simple_instance", value_content: "essential_baseline_v3.0.4_Class10004"}, ]}, 
+{slot_reference: "system_content_visibility", value: [{value_type: "simple_instance", value_content: "KB_229567_Class68"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "Flux de E-Registration vers Der via DAV / ASA et via l'ESB (flux entrant d'une application externe non-SPF Finances E-registration) avec des actes (toujours avec une annexe et un bordereau facultatif)"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Des actes, toujours avec un annexe et facultativement avec un bordereau sur le flux de E-Registration vers Der via DAV / ASA et via ESB (flux entrant d’une application externe non SPF Finances). L’acte est lié à l’interface E-Registration  DER. L’acte entre par l’interface CRT et après quelques actions manuelles, l’acte reçoit la signification certificat d' hérédité. Dans DER, il y a différents types d’actes, le type d’acte n’est pas indiqué dans DER. DER fonctionne comme un intermédiair: le notaire envoie le certificat d' hérédité vers l’AG Documentation Patrimoniale et on envoie manuellement par DER le certificat d' hérédité vers Esucc (interface humaine). Celui est traité dans Esucc, mais de ce traitement il n’y a rien qui revient dans Der (dans DER rien n’est fait pour l’hérédité).
+Problème: dé-synchronisation entre DER et e-Registration = application au notariat avec lequel DER est connecté via webservice: risque pour manque de sécurité juridique.
+Nom interface: SP25 DER-notaires-certificats;
+Description: envoie d'un certificat patriomonial traité vers les notaires;
+Protocol: webservice (SOAP) 
+DER recoit de E-registration
+ dossier à traiter
+ acte authentique
+ annexe associé avec l’acte (facultativement)
+ bordereau associé avec l’acte (facultativement)
+ des metadonnées
+ demande certificat patrimonial: à développer
+DER envoi vers E-Registration:
+ des réponses pour le dossier (pour enrégistrement : peut aussi être généré à partir de Comfor)
+ acte ou acte + annexe ou bordereau ou certificat de radiation
+ relation de l'enrégistrement associé avec l'acte ou annexe;
+ ou relation hypothécair associé avec l'acte ou bordereau ou certificat de radiation ou acte + annexe
+ certificat patrimonial: à développer."}, ]}, 
+{slot_reference: "system_content_lifecycle_status", value: [{value_type: "simple_instance", value_content: "KB_229567_Class67"}, ]}, 
+{slot_reference: "external_repository_instance_reference", value: [{value_type: "simple_instance", value_content: "sandbox_Class80414"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

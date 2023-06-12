@@ -1,0 +1,22 @@
+---
+frametype: "simple_instance"
+name: "KB_255156_Class16"
+type: "Business_Task"
+supertype: ["Business_Process_Type", "Business_Logical", "Business_Layer", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "business_process_performed_by_business_role", value: [{value_type: "simple_instance", value_content: "KB_048024_Class16"}, ]}, 
+{slot_reference: "business_process_id", value: [{value_type: "string", value_content: "P011.AB01.03.7"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "P011.AB01.03.7 Beheren van de provisie voor kosten / Gérer provision pour frais"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Deze taak wordt enkel uitgevoerd wanneer er een provisie gestort wordt. Indien er geen provisie is, maar er wordt een machtiging verkregen om de kosten te maken, worden de facturen doorgestuurd naar de opdrachtgever.
+
+
+
+De provisie voor kosten wordt tijdens het verdere verloop van het proces als een goede huisvader beheerd. De kosten worden op de provisie aangerekend en aangetekend op de rekening van de opdrachtgever zodat later rekenschap kan worden afgelegd aan de opdrachtgever (zie taak 3.5.2.4 “Afrekenen van de provisie voor kosten”). De provisie kan dossier 
+
+
+
+per dossier beheerd worden of eventueel door middel van een doorlopende rekening die na een bepaalde afgesproken periode wordt afgerekend met de opdrachtgever. 
+
+ / Cette tâche est exécutée seulement si une provision est versée. S’il n’y a pas de provision mais que l’autorisation a été obtenue d’engager des frais, les factures sont transmises au donneur d’ordre.
+Pendant la suite du processus, la provision pour frais est gérée en bon père de famille. Les frais sont imputés sur la provision et inscrits au compte du donneur d’ordre afin de pouvoir par la suite en répondre envers celui-ci (voir la tâche 3.5.2.4 ‘Liquider provision pour frais’). La provision peut être gérée dossier par dossier ou éventuellement à l’aide d’un compte de régularisation qui est soldé avec le donneur d’ordre après un délai à convenir."}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

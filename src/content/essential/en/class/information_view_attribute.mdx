@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Information_View_Attribute"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Information_View_Type"]
+template_slot: ["data_derivation_definition", "represented_by_attribute", "derived_from_data_attributes"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "A particular attribute or item of information that is used or shared in the definition of Information Views"}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Information_View_Attribute"}, ]}]
+---

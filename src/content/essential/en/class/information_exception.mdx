@@ -1,0 +1,13 @@
+---
+frametype: "class"
+name: "Information_Exception"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Exception"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Class to manage exceptions for elements from the Information Layer of the architecture."}, ]}]
+template_facet_value: [{slot_reference: "exception_to_policy", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Info_Data_Management_Policy"}, ]}, 
+{slot_reference: "exception_to_standard", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Info_Data_Standards_Management"}, ]}, 
+{slot_reference: "exception_for_elements", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Information_Relationship"}, {value_type: "class", value_content: "Information_Layer"}, {value_type: "class", value_content: ":Information_Relationship"}, ]}, 
+{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "EA_Support"}, ]}]
+---

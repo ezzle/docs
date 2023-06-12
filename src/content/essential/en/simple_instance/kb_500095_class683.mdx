@@ -1,0 +1,12 @@
+---
+frametype: "simple_instance"
+name: "KB_500095_Class683"
+type: "Synonym"
+supertype: ["Utilities", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "synonym_language", value: [{value_type: "simple_instance", value_content: "essential_baseline_v3.0.4_Class10004"}, ]}, 
+{slot_reference: "system_content_visibility", value: [{value_type: "simple_instance", value_content: "KB_229567_Class68"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "info hebdomadaire des jugements de faillite SPF Justice vers bureaux d'enregistration de l'AG DocPat"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Jugements de faillite : chaque semaine, les jugements de SPF Justice arrivent aux bureaux d'enrégistrement et ceux-ci sont recherchés manuellement pour les faillites ; ils y vérifient quels jugements de faillite doivent être enregistrés. Les bureaux d'enrégistrement (AG DOCPAT RZSJ) ne doivent enrégistrer que les jugements de faillite pour lesquels un droit de propriété ou un droit de condamnation doit être payé, dans Comfor. Il est exceptionnel que dans les jugements de faillite, il y ait encore quelque chose à propos des biens immobiliers, puisque généralement le syndic est toujours impliqué. Si des biens immobiliers sont impliqués dans une faillite, le syndic en disposera au moment de l'acte notarié et non au moment du jugement de faillite. Il est possible de charger les jugements de faillite via l'intégration de Regsolv de SPF Justice avec le Sp10b de l'AG Trésorie. Actuellement, certaines données des jugements de faillites sont déjà disponibles à Sitran via BCE et viennent ensuite à AG DocPat ; dès que les données de faillites sont disponibles à Sitran, elles peuvent venir à Stipad via un accès direct de Stipad à Sitran via le webservice Sitran. C'est la raison pour laquelle Stipad contient ce  Persidf : une clé permettant de récupérer la bonne société de Sitran via un webservice (la situation juridique peut inclure la faillite). Tous les jugements et arrêts sont également vérifiés auprès des services d'AG DocPat pour voir s'il n'y a pas de confiscations ou de saisies de biens à vendre pour l'État : cela se fait via les recouvrements non fiscales."}, ]}, 
+{slot_reference: "system_content_lifecycle_status", value: [{value_type: "simple_instance", value_content: "KB_229567_Class67"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

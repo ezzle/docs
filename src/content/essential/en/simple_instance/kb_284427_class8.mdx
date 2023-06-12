@@ -1,0 +1,19 @@
+---
+frametype: "simple_instance"
+name: "KB_284427_Class8"
+type: "APP_PRO_TO_INFOREP_TO_DATAREP_RELATION"
+supertype: ["APP_TO_INFO_RELATION", "Application_Relationship", "EA_Relation", ":SYSTEM-CLASS", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "app_pro_deletes_data_rep", value: [{value_type: "string", value_content: "Unknown"}, ]}, 
+{slot_reference: "app_pro_use_of_data_rep", value: [{value_type: "simple_instance", value_content: "KB_213773_Class300"}, ]}, 
+{slot_reference: "app_pro_creates_data_rep", value: [{value_type: "string", value_content: "Unknown"}, ]}, 
+{slot_reference: "app_pro_data_acquisition_method", value: [{value_type: "simple_instance", value_content: "KB_718980_Class46"}, ]}, 
+{slot_reference: "apppro_to_inforep_to_datarep_to_datarep", value: [{value_type: "simple_instance", value_content: "KB_213773_Class302"}, ]}, 
+{slot_reference: "app_pro_updates_data_rep", value: [{value_type: "string", value_content: "Unknown"}, ]}, 
+{slot_reference: "app_pro_reads_data_rep", value: [{value_type: "string", value_content: "Yes"}, ]}, 
+{slot_reference: "apppro_to_inforep_to_datarep_from_appro_to_inforep", value: [{value_type: "simple_instance", value_content: "KB_242703_Class81"}, ]}, 
+{slot_reference: "relation_description", value: [{value_type: "string", value_content: "Financiële transactie van BTM naar RESPO
+Bron: validatiesessie 'TR Respo':  interface met FTP server die een bestand ter beschikking stelt van de access applicatie encoding payments en dat zendt naar BTM, die het naar mainframe IBM stuurt en van IBM mainframe terug naar BTM en dan wordt het van BTM naar de Financiële Post verzonden. On passe par mainframe ibm.
+Op FTP-server worden verzonden: zowel ordonnantie als 2 bestanden voor Bpost. Na activering door SD B&amp;B wordt bestand geconverteerd naar XML bestand want XML nodig om naar de Fin post te verzenden = te moderniseren betalingsstroom: proces toe te voegen als tekening gezien gemoderniseerd moet worden, overkoepelend met andere AA's  Bestand creëren om terugbetalingen te doen : er wordt ordonnantie gemaakt op einde   Per centrum gewestelijk directeur : samengevoegd in 1 ordonnantie: bevestigd door centrum directie Brussel   Via FTP server wordt bestand ter beschikking gesteld van AA Thesaurie en van AA B&amp;B (AA Bijzondere Belastingsinspectie)  en na  activatie door AA B&amp;B =&gt; naar BTM : via access toepassing encoding payments   in BTM wordt dit bestand getekend door centraliserende rekenplichtige Applicatie encoding payments dus ook gebruikt door AA B&amp;B = access toepassing CDVU voor terugbetaling lonen en wedden, ook bij DCK en AA B&amp;B gebruikt: verschillende Access interfaces met 1 centrale db =&gt; optimalisatie mogelijkheid van deze betalingsstroom  Access applicatie encoding payments maakt flat file die geconverteerd moet worden naar een XML bestand dat naar de Fin. Post verzonden kan worden: men doet dit als volgt:    door access extractie naar IBM mainframe te sturen ,   Op de IBM mainframe draait een batch die via een Cobol bibliotheek de pc applicatie xml tunder start dat het xml bestand aanmaakt (obv conversie flat file uit encoding payments) en doorstuurt naar BTM: mogelijk te koppelen aan andere toepassingen voor betalingsstromen, denk aan AA Thesaurie, AA B&amp;b, SD P&amp;o (Cdvu) =&gt; BIJKOMENDE GAP zetten op aanmaken betalingsbestanden : optimalisatie betalingsstroom verder te onderzoeken"}, ]}, 
+{slot_reference: "relation_name", value: [{value_type: "string", value_content: "GDPR FINANCIELE GEGEVENS / DONNEES FINANCIERES contained withinFinanciële transactie op flow van BTM naar RESPO managed by BTM_PROD"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

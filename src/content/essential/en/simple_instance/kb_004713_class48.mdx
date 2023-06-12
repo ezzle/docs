@@ -1,0 +1,29 @@
+---
+frametype: "simple_instance"
+name: "KB_004713_Class48"
+type: "Synonym"
+supertype: ["Utilities", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "synonym_language", value: [{value_type: "simple_instance", value_content: "KB_848683_Class0"}, ]}, 
+{slot_reference: "system_content_visibility", value: [{value_type: "simple_instance", value_content: "KB_229567_Class68"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "ontvangen betalingen in flow van secal mainframe naar secal php"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Gegevensuitwisseling (2 richtingen) tussen TP-Alim Belconet (GCOS) en Web-alim PHP: 90% stromen actualiseren de Php zijde; 10% stromen actualiseren de mainframe zijde.
+Flow betalingen: 
+stap1.Coda-bestanden ontvangen betalingen ingelezen op mainframezijde 
+stap2.Secal php trekt deze betalingen binnen van Secal mainframe om geheel gegevens te visualiseren aan php kant 
+stap3.Toerekening ontvangen betalingen aan dossier in php wachtregister (actualisatie comptabiliteit toegerekende Secal betalingen aan php zijde zonder interactie met mainframe). Toerekening automatisch als
+a)betaling voorzien van juiste gestructureerde mededeling en 
+b)als match tussen OGM van betaling met bestaand dossiernr. en 
+c)als dossier status heeft dat betaling kan ontvangen worden. 
+Betalingen die niet automatisch of niet semi automatisch toegewezen kunnen worden, blijven staan in het PhP-wachtregister, de “parking”. Deze worden manueel toegerekend aan juiste dossier na manuele opzoekingen in de dossiers in de mysql db aan php zijde. 
+stap4.Secal php stuurt elke dag zijn gegevens door naar de Secal mainframe ter voorbereiding van de mainframe-kettingen: comptabiliteit (wachtregister toegerekende betalingen) wordt van de php-zijde naar de mainframe gestuurd waar de herberekening van de schuld gebeurt. Soms gewoon ook mise à jour van sommige indexen (bv. gezondheidsindex) doorgestuurd van Php naar de mainframe. 
+Flows naar Secal PhP component: 
+-php zijde trekt binnen wat Secal mainframe doorstuurt om geheel gegevens te visualiseren aan php kant naar dossierbeheerder toe: a)flow masterdata mainframe (manueel via TP gecreëerde dossiers) dagelijks doorgestuurd naar Secal php component waar deze dossiers opgeslagen worden in mysql-db om opzoekingen te kunnen doen aan php zijde in de dossiers (geen opzoekmogelijkheden in db mainframe = immers indexsequentiele bestanden zonder echte Dbms). 
+b)inlezen ontvangen betalingen afkomstig van Secal mainframe, zie hoger flows betalingen pt. 2 
+c)‘S nachts gaat de mainframe batch van eind-resultaat avond en maand mainframeketting via flow via FTP van mainframe component Secal naar php component secal.  
+-Php kant lanceert ‘s morgens aantal batches om gegevens te actualiseren aan Php zijde en die dan te presenteren naar gebruiker toe (webalim): Php zijde rekent o.a. ontvangen betalingen automatisch toe aan juiste Secal dossier in mysql db (betreft betalingen die php zijde ontving van de mainframe component waarin eerder coda bestanden ingelezen): zie hoger flows betalingen pt 3. Sommige betalingen manueel toegerekend na manuele opzoeking juiste Secal dossier in mysql db. 
+-Wat php binnentrekt van de mainframe, is dus al gestockeerd op de mainframe db (betalingen / dossiergegevens / stand van de schuld), behalve volgende gegevens (php zijde authentieke bron): 
+ link betaling  Secal dossier: gaat wel terug naar de mainframe 
+ veld 180b : alleen op php zijde  notities rcd notas: alleen op php zijde  bevoegd kantoor voor invordering: alleen op php zijde; let wel aanvraagkantoor wel op mainframe opgeslagen, gaat samen met dossiercreatie op mainframe."}, ]}, 
+{slot_reference: "system_content_lifecycle_status", value: [{value_type: "simple_instance", value_content: "KB_229567_Class67"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

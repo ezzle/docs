@@ -1,0 +1,10 @@
+---
+frametype: "class"
+name: "JOB_TO_SKILL_RELATION"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["SKILL_RELATION"]
+template_slot: ["from_job_skill_relation", "job_to_skill_focus_level", "to_skill_job_relation"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Relationship to capture the qualities of a Skill instance that is required by a Job Position"}, ]}]
+---

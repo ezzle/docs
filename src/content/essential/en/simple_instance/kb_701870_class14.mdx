@@ -1,0 +1,25 @@
+---
+frametype: "simple_instance"
+name: "KB_701870_Class14"
+type: "Information_Representation"
+supertype: ["Information_Representation_Type", "Information_Logical", "Information_Layer", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "inforep_used_by_app_pro", value: [{value_type: "simple_instance", value_content: "KB_701870_Class29"}, ]}, 
+{slot_reference: "inforep_category", value: [{value_type: "simple_instance", value_content: "sandbox_Class40006"}, ]}, 
+{slot_reference: "infodata_rep_lifecycle_status", value: [{value_type: "simple_instance", value_content: "KB_659448_Class0"}, ]}, 
+{slot_reference: "representation_label", value: [{value_type: "string", value_content: "db VAC (VA) = 56c2"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "db VAC (VA) = 56c2"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "db VAC (VA) = db VA56c2:
+ is andere database dan de databank DB VA
+ wachtregister voor VA (te vergelijken met 56C2 van ICPC) voor ontvangen bedragen die niet onmiddellijk kunnen toegewezen worden aan een natuurlijke persoon of een rechtspersoon: bevat o.a. betalingen van nieuwe vennootschappen. Dit zijn verworpen betalingen, komen eerst in db VAC.
+ VAC bevat 2 areas: 1 voor betalingen, 1 voor boekhouding (geen signaletiekgegevens voorafbetaler in db VAC, wel in db VA)
+ db VA-56C2 = synoniem voor db VAC
+ om bestemming van deze niet toegewezen betalingen te vinden, worden de nodige signaletiekgegevens (o.a. adres) uit Sitran gehaald
+Db VAC (= db VA56c2) is wachtregister voor VA (te vergelijken met 56C2 van ICPC) voor ontvangen voorafbetalingen die niet meteen toegewezen kunnen worden aan een in VA gekende natuurlijke persoon of rechtspersoon. Voor deze nog niet toegewezen betalingen in db VAC worden signaletiekgegevens (o.a. adres “klant” voorafbetaler) opgezocht in Sitran o.b.v. RR-nr. of KBO-nr. in vrije mededeling van de betaling in VAC. Dan worden nieuwe VA-klanten gecreëerd in db VA of signaletiekgegevens bestaande VA-klanten bijgewerkt.
+ Een batch op Gcos8 maakt periodiek een lijst van verworpen ontvangen (vooraf)betalingen ingeschreven in de db VAC. Deze lijst wordt door inningsteam VA naar SITRAN team gestuurd die namen en adressen opzoeken in SITRAN en hiervan een txt bestand aanmaken. SITRAN team stuurt meestal de dag zelf ‘s avonds dit txt-bestand terug naar AA I&amp;I. AA I&amp;I converteert dit txt bestand naar het juiste formaat voor gebruik op de Gcos8. Via het programma VABIFBIS worden adressen in de db VA bijgewerkt, niet in db VAC.
+
+Flow naar db VA van kohierartikels VA m.b.t. vennootschapsbelasting
+I.v.m. kohierartikels verschuldigde voorafbetalingen Venb werd een aanpassing uitgevoerd, zodat nu geen volledige manuele encodage meer nodig. Vroeger 2 jaar geleden encodeerde men in db “VAdbART”, waarna een batch wijzigingen uitvoerde om ontvangen bedrag te verplaatsen naar db VAC.
+Nu neemt een batch het bedrag van een record uit de db VA en wordt alleen statuut van dat record automatisch gewijzigd in db VA zelf, dus nu zonder manuele encodage."}, ]}, 
+{slot_reference: "synonyms", value: [{value_type: "simple_instance", value_content: "sandbox_Class72935"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

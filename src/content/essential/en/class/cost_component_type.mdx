@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Cost_Component_Type"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Enumeration"]
+template_slot: ["cct_for_classes", "bus_env_factor_correlations"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "The type of a cost component"}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Enumeration"}, ]}]
+---

@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Cost"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Cost_Management"]
+template_slot: ["cost_components", "cost_for_elements", "cost_category", "cost_code", "cost_currency", "cost_responsible_group"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: []}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Cost_Management"}, ]}]
+---

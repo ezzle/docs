@@ -1,0 +1,20 @@
+---
+frametype: "simple_instance"
+name: "sandbox_Class77654"
+type: "Synonym"
+supertype: ["Utilities", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "synonym_language", value: [{value_type: "simple_instance", value_content: "essential_baseline_v3.0.4_Class10004"}, ]}, 
+{slot_reference: "system_content_visibility", value: [{value_type: "simple_instance", value_content: "KB_229567_Class68"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "enrôlements IPP sur le flux de Calcul IPP vers ICPC"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "flux d'enrôlements des impôts des personnes physiques de Calcul IPP vers ICPC. AG Fisc établit l'impôt et répercute le montant net de la réclamation ou du remboursement vers ICPC.
+1. Calculatrix calcule et stocke les données dans Taxi 
+2. Au cours du processus d'enrôlement, Calculipp établit les rôles et demande à ICPC les numéros d'article et de rôle nécessaires. Ces informations sont stockées dans TaxiDb. 
+3. Sur la base des numéros d'article et de rôle reçus par ICPC, Calculipp crée l'avertissement-extrait de rôle final (fichier Fedopress) et les fichiers pour ICPC avec des articles et des rôles. 
+4. Icpc Feedback: l'AG Fisc service Calcul Ipp envoie via Taxi le rôle à l'AGPR (Icpc) avec en rôle tous les résultats du calcul, éventuellement le montant à rembourser, qui a droit à quel remboursement avec quel numéro d'article de rôle, date d'exécutoire.
+5. différentes applications d'ICPC au sein d'AGPR utilisent ces informations pour effectuer un rappel ou exécuter le remboursement, etc. 
+6. Création d'un dossier de remboursement sur le mainframe 
+7. Le paiement du remboursement est effectué par l'AG Trésorie."}, ]}, 
+{slot_reference: "system_content_lifecycle_status", value: [{value_type: "simple_instance", value_content: "KB_229567_Class67"}, ]}, 
+{slot_reference: "external_repository_instance_reference", value: [{value_type: "simple_instance", value_content: "sandbox_Class77655"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

@@ -1,0 +1,21 @@
+---
+frametype: "simple_instance"
+name: "KB_470293_Class19"
+type: "APP_PRO_TO_INFOREP_RELATION"
+supertype: ["APP_TO_INFO_RELATION", "Application_Relationship", "EA_Relation", ":SYSTEM-CLASS", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "app_pro_to_inforep_to_inforep", value: [{value_type: "simple_instance", value_content: "KB_470293_Class20"}, ]}, 
+{slot_reference: "app_pro_persists_info_rep", value: [{value_type: "boolean", value_content: "false"}, ]}, 
+{slot_reference: "app_pro_to_inforep_from_app", value: [{value_type: "simple_instance", value_content: "KB_701763_Class425"}, ]}, 
+{slot_reference: "app_pro_reads_info_rep", value: [{value_type: "string", value_content: "Yes"}, ]}, 
+{slot_reference: "app_pro_creates_info_rep", value: [{value_type: "string", value_content: "Unknown"}, ]}, 
+{slot_reference: "app_pro_deletes_info_rep", value: [{value_type: "string", value_content: "Unknown"}, ]}, 
+{slot_reference: "app_pro_updates_info_rep", value: [{value_type: "string", value_content: "Unknown"}, ]}, 
+{slot_reference: "relation_description", value: [{value_type: "string", value_content: "SITRAN  is het systeem waarmee de informatie over bedrijfscontacten kan worden opgehaald.
+Samen met SITRAN controleert GestTab de registratie van de Economische operator als onderneming (BTW-nummer). Alleen synchronisatie voor bedrijfsgegevens, niet voor contactpersonen.
+Uit Sitran: naam en KBO-nummer Economische operator uit Sitran for usage in the Cognos reporting system
+The data from Sitran are refreshed 
+-when the data are needed on a form sent to the EO(eg. PV)
+-when the automatic reports are executed in Cognos."}, ]}, 
+{slot_reference: "relation_name", value: [{value_type: "string", value_content: "Bedrijfsgegevens van Economische operator op Flow van Gesttab naar Sitran managed by Gesttab_PROD"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

@@ -1,0 +1,10 @@
+---
+frametype: "class"
+name: "ACTOR_TO_SKILL_RELATION"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["SKILL_RELATION"]
+template_slot: ["to_skill_actor_relation", "actor_to_skill_is_aspiration", "from_actor_skill_relation", "actor_to_skill_focus_level"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Relationship class to capture qualities about the skills that an Actor instance possesses."}, ]}]
+---

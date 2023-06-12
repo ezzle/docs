@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Application_Provider"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Application_Provider_Type"]
+template_slot: ["application_provider_purpose", "lifecycle_status_application_provider", "ap_IT_owner", "deployments_of_application_provider", "provides_application_services", "ap_max_number_of_users", "ap_disposition_lifecycle_status", "ap_supplier", "type_of_application", "ap_codebase_status", "known_app_issue", "ap_interfaces", "ap_site_access", "ap_delivery_model", "implemented_with_technology", "has_software_architecture", "ap_IT_contact", "ap_static_architecture", "operates_on_information_representation", "required_technology_capabilities", "parent_application_provider", "provides_application_service", "provides_application_function_implementations", "distribute_costs", "app_pro_supports_phys_proc", "ap_business_owner", "required_expertise", "ap_data_object_requirements"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "An Application Provider provides one or more Application Services. To provide a service, the Application Provider should provide  through its Application Function Implementations  all of the Application Functions of the Application Service that this Application Provider provides. e.g. a specific implementation of SAP R/3  the ERP System, the Finance System, Cast Iron Expenses project."}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Application_Provider"}, ]}]
+---

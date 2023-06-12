@@ -1,0 +1,32 @@
+---
+frametype: "simple_instance"
+name: "KB_116671_Class45"
+type: "APP_PRO_TO_INFOREP_RELATION"
+supertype: ["APP_TO_INFO_RELATION", "Application_Relationship", "EA_Relation", ":SYSTEM-CLASS", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "app_pro_to_inforep_to_inforep", value: [{value_type: "simple_instance", value_content: "KB_116671_Class44"}, ]}, 
+{slot_reference: "app_pro_persists_info_rep", value: [{value_type: "boolean", value_content: "true"}, ]}, 
+{slot_reference: "app_pro_to_inforep_from_app", value: [{value_type: "simple_instance", value_content: "KB_958736_Class1076"}, ]}, 
+{slot_reference: "app_pro_reads_info_rep", value: [{value_type: "string", value_content: "Yes"}, ]}, 
+{slot_reference: "app_pro_creates_info_rep", value: [{value_type: "string", value_content: "Yes"}, ]}, 
+{slot_reference: "app_pro_deletes_info_rep", value: [{value_type: "string", value_content: "Yes"}, ]}, 
+{slot_reference: "app_pro_updates_info_rep", value: [{value_type: "string", value_content: "Yes"}, ]}, 
+{slot_reference: "relation_description", value: [{value_type: "string", value_content: "Module recovery
+-	In de opdrachtenbrief aan de gerechtsdeurwaarder wordt voor de schuldenaar Rijksregisternr., bisnr. of ev. KBO-nr. vermeld 
+-	Ook in dwangbevel wordt RR-nr., bisnr. of KBO-nr. opgenomen
+-	Afbetalingsplan: AA Inning voegt een Rijksregisternr. of bisnr. toe (of ev. KBO nr.) bij invoer van een afbetalingsplan in de comptabiliteit waarin de schuld opgenomen is (ICPC, First…) ?  Als men in First een afbetalingsplan inbrengt, betekent dat dat de originele schuld is ingebracht en dit kon niet zonder RR-nr., KBO-nr. of bisnr. 
+-	Identificatienummer (vonnissen) penale boeten Fod Justitie bestaat uit “jaar waarin vonnis geveld werd” en het betichtenummer: deze combinatie is een sleutel, maar geen unieke sleutel (alleen uniek per rechtbank).
+
+
+4 Module “invordering”  “Recouvrement”: db-schema RE: gegevens eigen aan invorderingsacties
+-	afbetalingsplan : AA Inning voegt een Rijksregisternr. of bisnr. toe (of ev. KBO nr.) bij invoer van een afbetalingsplan in de comptabiliteit waarin de schuld opgenomen is (ICPC, First…) ?  Als men in First een afbetalingsplan inbrengt, betekent dat dat de originele schuld is ingebracht en dit kon niet zonder RR-nr., KBO-nr. of bisnr.
+-	in de opdrachtenbrief aan de gerechtsdeurwaarder staat bij de gegevens i.v.m. de schuldenaar reeds Rijksregisternr., bisnr. of ev. KBO nr. 
+-	Dwangbevel : ook gebruik van RR-nr., KBO-nr.
+-	diverse opdracht
+-	aanvraag “staat 204 penale boeten”: geeft totaal bedrag weer van onderdelen van de boete of politieboete die in aanmerking komen; vonnissen waarvoor de staat 204 wordt verstuurd, worden beschouwd als oninvorderbaar
+-	beheer verjaringen 
+-	kosten inbrengen: link met solvabiliteitsfiche
+-	registratie akten en kosten 
+-	registratie van kosten op schulden."}, ]}, 
+{slot_reference: "relation_name", value: [{value_type: "string", value_content: "db First schema RE Recovery managed by First-Recovery_PROD"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Portal_Panel"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Portal_Configuration"]
+template_slot: ["reports_for_portal_panel", "portal_panel_label", "portal_panel_sections", "portal_panel_sequence", "panel_for_portal"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Describes a sidebar panel which can contain a mix of report links, static text and external hyperlinks"}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Essential_Viewer"}, ]}]
+---

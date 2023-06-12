@@ -1,0 +1,13 @@
+---
+frametype: "class"
+name: "Technology_Product_Build_Role"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Technology_Provider_Role"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Represents the definition of a specific Technology Product Build's ability to fulfill a given role as a Technology Composite. A Technology Product Build could be used to provide the realisation of more than one Technology Composite, so the strategic lifecycle status is used to define the current strategic policy on using this build as the specified Composite"}, ]}]
+template_facet_value: [{slot_reference: "implementing_technology_component", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Technology_Composite"}, ]}, 
+{slot_reference: "role_for_technology_provider", facet_reference: ":DOCUMENTATION-IN-FRAME", value: [{value_type: "string", value_content: "The Technology Product Build for which this role is defined"}, ]}, 
+{slot_reference: "role_for_technology_provider", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Technology_Product_Build"}, ]}, 
+{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Technology_Product_Build_Role"}, ]}]
+---

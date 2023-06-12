@@ -1,0 +1,30 @@
+---
+frametype: "simple_instance"
+name: "KB_192856_Class35"
+type: "APP_PRO_TO_INFOREP_RELATION"
+supertype: ["APP_TO_INFO_RELATION", "Application_Relationship", "EA_Relation", ":SYSTEM-CLASS", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "app_pro_to_inforep_to_inforep", value: [{value_type: "simple_instance", value_content: "KB_192856_Class36"}, ]}, 
+{slot_reference: "app_pro_persists_info_rep", value: [{value_type: "boolean", value_content: "false"}, ]}, 
+{slot_reference: "used_in_app_dependencies", value: [{value_type: "simple_instance", value_content: "KB_550030_Class94"}, ]}, 
+{slot_reference: "app_pro_to_inforep_from_app", value: [{value_type: "simple_instance", value_content: "KB_958736_Class1282"}, ]}, 
+{slot_reference: "app_pro_reads_info_rep", value: [{value_type: "string", value_content: "Yes"}, ]}, 
+{slot_reference: "app_pro_creates_info_rep", value: [{value_type: "string", value_content: "Unknown"}, ]}, 
+{slot_reference: "app_pro_deletes_info_rep", value: [{value_type: "string", value_content: "Unknown"}, ]}, 
+{slot_reference: "app_pro_updates_info_rep", value: [{value_type: "string", value_content: "Unknown"}, ]}, 
+{slot_reference: "relation_description", value: [{value_type: "string", value_content: "Intranetlijsten gevoed via flatfiles vanuit STIRON2-TR (en andere modules van STIRON Lot2) naar toepassing BTW lijsten intranet.
+
+ voor btw lijsten AA I&amp;I: flat files vanuit Stiron 2 TR / Stiron INV
+ voor btw lijsten AA Fisc: datastage ETL vanuit Stiron 2 TR / Stiron INV
+
+Methode invoer datastage ETL (David Deleux, Erwin Winne):
+-ETL = Extract Transform Load
+-gebeurt in 1 uitvoering, 1 run: dagelijks of wekelijks ontvangt men via mail een bestand van Stiron module Inv, dat op de FTP server (= IIS server, Internet Information server) gezet wordt (geen webdav, maar volledig applicatief) om vandaar ingelezen te worden in applicatie BTW-lijsten (volautomatisch): batch jobs geschreven in PhP gaan checken in de FTP home directories of er een nieuw bestand klaar staat.
+-Er wordt in de datastage een bestand op een FTP gezet, behalve voor de jaarlijkse BTW lijst van de aan BTW onderworpenen zonder franchise (elk jaar ander formaat).
+
+invoer naar AA I&amp;I Lijst 697:
+-flat files schulden van Stiron M3 naar applicatie Btw-lijsten: 1 bestand met BTW schulden en 2 bestand met mapping RR en BTW-nr. (conversietabel)
+ invoer rechtstreeks uit mainframe: 2 inkomende fluxen terugbetalingen van ICPC naar applicatie Btw-lijsten:
+specifiek L697: 1 flux terugbetalingen Directe Belastingen en 2 flux terugbetalingen AA D&amp;A en AA Padoc Registratie."}, ]}, 
+{slot_reference: "relation_name", value: [{value_type: "string", value_content: "BTW gegevens AA I&amp;I in flat files / BTW gegevens AA Fisc in datastage ETL op flow van Stiron TR naar BTW lijsten intranet managed by Stiron Lot 2"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

@@ -1,0 +1,23 @@
+---
+frametype: "simple_instance"
+name: "KB_039423_Class15"
+type: ":APU-TO-APU-STATIC-RELATION"
+supertype: [":APA-STATIC-RELATION", ":Application_Relationship", ":EA_Graph_Relation", ":DIRECTED-BINARY-RELATION", ":RELATION", ":SYSTEM-CLASS", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "apu_to_apu_relation_inforep_acquisition_method", value: [{value_type: "simple_instance", value_content: "KB_718980_Class46"}, ]}, 
+{slot_reference: "apu_to_apu_relation_inforeps", value: [{value_type: "simple_instance", value_content: "KB_039423_Class16"}, ]}, 
+{slot_reference: "contained_in_static_application_provider_architecture", value: [{value_type: "simple_instance", value_content: "KB_568992_Class0"}, ]}, 
+{slot_reference: ":relation_name", value: [{value_type: "string", value_content: "Static Architecture of::TARBEL_PROD: Relation from plda in tarbel: Relation from TARBEL in TARBEL"}, ]}, 
+{slot_reference: ":relation_description", value: [{value_type: "string", value_content: "Plda gebruikt tariefgegevens om tariefcodes te valideren
+Tarbel gebruikt door PLDA voor validatie aangifte
+Pldtb rdc db = replica in PLDA van de TARBEL2 brondb : deze replica bevat alleen Tarbel gegevens (tariefgegevens). Ook de pldtb bevat net als de tarbel brondb 2 sets tabellen. Pldtb ontvangt dagelijks gegevens van de Oracle db en deze worden dan gebruikt door PLDA om tariefcodes echt te valideren.
+PLDA bevraagt dus niet rechtstreeks de tarbel oracle brondb.
+Plda bevraagt de Pldtb replica overdag en de brondb oracle db tarbel wordt gevoed door Europa en ‘s nachts is er dus een replica van de oracle db tarbel naar de pldtb db. De Europese db TARIC voedt de oracle db tarbel1 of tarbel 2 db (db2), vanwaar de info gaat naar tarbel web =&gt; pldtb =&gt; plda om aangiftes te valideren.
+
+Alle controlemodules en berekening gebeuren nu in Plda, maar op termijn gebruiken we webservices van European Dynamics: in de toekomst worden de simulaties op het Tarbel portaal ter beschikking gesteld van de firma's. Ook worden statistieken berekend o.b.v. Tarbel en opgeslagen in PLDA.
+
+Plda leest in Pldtb in de huidige Tarbel1 structuur maar open vraag of dat nog in de toekomst zo zal blijven : te vragen aan Bart Cieters maar wellicht wel want anders te zwaar voor Plda zelf."}, ]}, 
+{slot_reference: ":relation_label", value: [{value_type: "string", value_content: "depends on"}, ]}, 
+{slot_reference: ":FROM", value: [{value_type: "simple_instance", value_content: "KB_039423_Class14"}, ]}, 
+{slot_reference: ":TO", value: [{value_type: "simple_instance", value_content: "KB_568992_Class1"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

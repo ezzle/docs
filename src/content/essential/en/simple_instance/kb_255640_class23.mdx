@@ -1,0 +1,34 @@
+---
+frametype: "simple_instance"
+name: "KB_255640_Class23"
+type: ":APU-TO-APU-STATIC-RELATION"
+supertype: [":APA-STATIC-RELATION", ":Application_Relationship", ":EA_Graph_Relation", ":DIRECTED-BINARY-RELATION", ":RELATION", ":SYSTEM-CLASS", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "apu_to_apu_relation_inforep_acquisition_method", value: [{value_type: "simple_instance", value_content: "KB_692363_Class52"}, ]}, 
+{slot_reference: "apu_to_apu_relation_inforeps", value: [{value_type: "simple_instance", value_content: "KB_255640_Class24"}, ]}, 
+{slot_reference: "contained_in_static_application_provider_architecture", value: [{value_type: "simple_instance", value_content: "KB_255640_Class20"}, ]}, 
+{slot_reference: ":relation_name", value: [{value_type: "string", value_content: "Static Architecture of::E-forms-internationale invordering_Prod: Relation from stirint int inv in eforms: Relation from e forms in e forms"}, ]}, 
+{slot_reference: ":relation_description", value: [{value_type: "string", value_content: "Informatie over lopende gedingen kan worden meegedeeld, indien relevant voor behandeling van het dossier.
+Bestand op flow van E Forms naar Stirint int inv.
+
+E-Forms =&gt; Stirint Int-INV. Ter voorbereiding van een nieuw uitgaand internationaal bijstandsverzoek kopieert de dienst CLO manueel gegevens van het XML-bericht met het nieuw verzoek (gemaakt in E-Forms en verzonden via bijlage in mail van het lokaal invorderingskantoor naar de dienst CLO) naar STIRint (database “dossier” en database “personen”). Onder andere het nationaal nummer, naam en voornaam van de schuldenaar, het BTW-nummer, de naam van de rechtspersoon en de ISO-code van het aangezochte land, maar ook andere informatie uit verschillende bronapplicaties
+
+Al deze gegevens kunnen gecommuniceerd worden, maar worden niet steeds alle opgenomen, hangt dus af van dossier welke de meest aangewezen methode is om buitenlandse belastingplichtige te identificeren.
+
+Info die manueel ingevuld wordt in E forms formulieren bestemd voor het buitenland, wordt manueel bijeengezocht uit volgende applicaties:
+ Icpc
+ Debiteurenbeheer
+ 180B AUT en
+ 180B RNFI voor niet fiscale schulden
+ Stiron lot 2 Inv
+ Stiron Btw RC
+ Vatrifund
+ Taxi
+ Sitran om zien naar welk land belastingplichtige is verhuisd
+ Toepassing AA D&amp;A : Professionele diesel om te weten  welke Belgische firma’s terugbetaling vragen uit buitenland van BTW professionele diesel
+
+Deze flow van e-forms naar stirint wordt in toekomst vervangen, wanneer nieuwe Europese website de E forms applicatie vervangt. Nieuwe Europese site zal eigen user mgt hebben en toegang via CCN."}, ]}, 
+{slot_reference: ":relation_label", value: [{value_type: "string", value_content: "depends on"}, ]}, 
+{slot_reference: ":FROM", value: [{value_type: "simple_instance", value_content: "KB_255640_Class22"}, ]}, 
+{slot_reference: ":TO", value: [{value_type: "simple_instance", value_content: "KB_255640_Class21"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

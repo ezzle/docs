@@ -1,0 +1,27 @@
+---
+frametype: "simple_instance"
+name: "KB_990529_Class43"
+type: "Issue"
+supertype: ["Strategic_Requirement", "Strategy_Management", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "related_business_elements", value: [{value_type: "simple_instance", value_content: "KB_788134_Class56"}, {value_type: "simple_instance", value_content: "KB_857622_Class0"}, ]}, 
+{slot_reference: "issue_impact", value: [{value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class90054"}, {value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class90065"}, {value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class90070"}, {value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class90055"}, ]}, 
+{slot_reference: "issue_priority", value: [{value_type: "string", value_content: "Low"}, ]}, 
+{slot_reference: "related_application_elements", value: [{value_type: "simple_instance", value_content: "KB_958736_Class933"}, ]}, 
+{slot_reference: "related_information_elements", value: [{value_type: "simple_instance", value_content: "KB_499342_Class5"}, {value_type: "simple_instance", value_content: "KB_990529_Class44"}, {value_type: "simple_instance", value_content: "KB_990529_Class45"}, {value_type: "simple_instance", value_content: "KB_193714_Class38"}, {value_type: "simple_instance", value_content: "KB_193714_Class56"}, ]}, 
+{slot_reference: "issue_source", value: [{value_type: "simple_instance", value_content: "KB_889833_Class3"}, ]}, 
+{slot_reference: "issue_categories", value: [{value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class20014"}, {value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class20010"}, {value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class20012"}, ]}, 
+{slot_reference: "requirement_status", value: [{value_type: "simple_instance", value_content: "sandbox_Class40005"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "Niet Geautomatiseerde Verkeersbelasting  Manuele flow Niet Geaut VB"}, ]}, 
+{slot_reference: "element_classified_by", value: [{value_type: "simple_instance", value_content: "KB_889850_Class0"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Manuele uitgaande flow van Niet Geaut VB naar dienst Marc Praet (cel Assistance Informatique, Bernard Van Craeynest) om in te kohieren Niet Geaut VB in Icpc op te nemen (manueel).
+M. Praet stelt kohier op dat geladen wordt in Icpc en dan worden kohierartikelnrs. van ingekohierde aanslagen in een bestandje terug overgemaakt door ICPC aan de Niet Geaut VB.
+
+Indien iemand na betaaluitnodiging de Niet Geaut VB niet betaalt, wordt deze ingekohierd via Icpc:
+1) ingaande flow in Niet Geaut VB (manueel) selectie in te kohieren Niet Geaut VB
+2) uitgaande flow van Niet Geaut VB naar dienst Marc Praet (Cel Assistance Informatique, Bernard Van Craeynest) om in te kohieren Niet Geaut VB manueel in Icpc op te nemen en dan 
+3) Ingaande flow terug van ICPC naar Niet Geaut VB: 
+klein bestandje ontvangen van dienst Marc Praet met ca. 5-tal kohierartikels wordt opgeladen in de db Niet Geaut VB door Eric Sandra a.d.h.v. een programmatje. Betreft dus kohierartikels van reeds ingekohierde schulden “Niet Geaut VB” of na schuldvgl. gecompenseerde schulden “Niet Geaut VB” (flux “tcvbart, programma 14”):
+= semi-manuele invoer in db Niet Geaut VB (opladen na manuele trigger)
+= beperkt aantal kohierartikelnrs.: wel aangeven en niet betalen komt zeer weinig voor."}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

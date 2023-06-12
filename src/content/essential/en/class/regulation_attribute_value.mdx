@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Regulation_Attribute_Value"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Attribute_Value"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Class for capturing instances of the value of an attribute of a regulation, so that the set of attributes can be modelled as instances themselves. The regulation attribute value associates an attribute instance with its value."}, ]}]
+template_facet_value: [{slot_reference: "attribute_value_of", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Regulation_Attribute"}, ]}, 
+{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Attribute_Value"}, ]}]
+---

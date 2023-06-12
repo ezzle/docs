@@ -1,0 +1,13 @@
+---
+frametype: "simple_instance"
+name: "sandbox_Class71454"
+type: "Synonym"
+supertype: ["Utilities", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "synonym_language", value: [{value_type: "simple_instance", value_content: "essential_baseline_v3.0.4_Class10004"}, ]}, 
+{slot_reference: "system_content_visibility", value: [{value_type: "simple_instance", value_content: "KB_229567_Class68"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "fichier avec les paiements de TVA à effectuer sur le flux de Moss vers Pay it"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Moss valide les déclarations et également les paiements TVA (la déclaration indique si la TVA doit être payée ou remboursée). Le flux des déclarations sortants de MOSS est lié aux flux sortants de MOSS des paiements TVA à exécuter. Moss utilise le module Pay-IT et envoie des fichiers à Pay-IT qui vont ensuite de Pay-IT à BTM et ensuite de Btm à la Poste Financière. Les paiements TVA ordinaires sont exécutés globalement une fois par mois par État membre (destination du paiement). Il s'agit d'un flux de paiement parallèle au flux de déclaration : flux d'un paiement global à exécuter et d'un message détaillé détaillant ce paiement global et contenant tous les paiements de cette déclaration avec la référence de la déclaration (message d'informations sur les paiements = PIM = payment information message). Remboursement des paiements TVA concernant les déclarations Moss est un flux séparé par sujet, qui passe également en partie par Vatrefund, sauf si le remboursement est déclaré par note de crédit; alors la correction est effectuée sur la déclaration dans Moss et est remboursée directement au sujet sans détour par Vatrefund. Pour info : autre flux : dans le sens inverse, Moss reçoit des fichiers coda de Pay-IT (flux de Pay-IT à moss)."}, ]}, 
+{slot_reference: "system_content_lifecycle_status", value: [{value_type: "simple_instance", value_content: "KB_229567_Class67"}, ]}, 
+{slot_reference: "external_repository_instance_reference", value: [{value_type: "simple_instance", value_content: "sandbox_Class80911"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

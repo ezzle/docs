@@ -1,0 +1,9 @@
+---
+frametype: "slot"
+name: "operates_on_information_views"
+type: ":ESSENTIAL-SLOT"
+supertype: [":STANDARD-SLOT", ":SLOT", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+own_slot_value: [{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "The Information Views that are processed by this Application Service"}, ]}, 
+{slot_reference: ":SLOT-INVERSE", value: [{value_type: "slot", value_content: "app_svc_to_infoview_from_appsvc"}, ]}, 
+{slot_reference: ":SLOT-VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "APP_SVC_TO_INFOVIEW_RELATION"}, ]}]
+---

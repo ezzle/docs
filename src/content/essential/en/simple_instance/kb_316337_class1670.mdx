@@ -1,0 +1,23 @@
+---
+frametype: "simple_instance"
+name: "KB_316337_Class1670"
+type: "Synonym"
+supertype: ["Utilities", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "synonym_language", value: [{value_type: "simple_instance", value_content: "essential_baseline_v3.0.4_Class10004"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "BTW E604 service"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "L'application E604 traite les demandes de début / modification / arrêt d'une activité aux fins de la TVA (formulaire 604 A).
+E604 est une application web développée par le Département ICT du SPF Finances  Secteur TVA. 
+Cette application permet de rentrer une demande d'identification à la TVA (formulaire 604A), une déclaration d’arrêt d'activité (formulaire 604C) ou une déclaration de changement (formulaire 604B).
+L'application utilise le user management du site portail Fédéral: l'utilisateur peut se connecter avec sa carte d'identité électronique ou avec son token Fédéral. 
+Actuellement, l'autorisation ne peut être obtenue que par les employés des guichets d'entreprise.
+Cas d'utilisation: 
+-UC_02-201-201-01 Traitement d'une demande E604A. Ce cas d'utilisation est au cœur du système et représente une fonction métier essentielle. Ce cas d'utilisation décrit le traitement d'un formulaire E604A (déclaration de début des travaux pour TVA). Il y a aussi une interface avec le CCFF TaskManager. Ce cas d'utilisation est appelé à partir d'un TODO E604A.
+
+L'utilisateur peut utiliser ce cas d'utilisation pour:
+ activer la qualification TVA: UC 02-124 L'activation de la qualification TVA est appelée pour créer la qualification TVA. Ce cas d'utilisation implique une interface avec les applications “Entité Spécifique”, Sitran et “Compte Courant”.
+ refuser d'accorder la qualification de TVA
+ transférer le E604A à un autre bureau
+ annuler le E604A
+ fermer le formulaire E604A sans autre action."}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

@@ -1,0 +1,18 @@
+---
+frametype: "simple_instance"
+name: "sandbox_Class78703"
+type: "Synonym"
+supertype: ["Utilities", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "synonym_language", value: [{value_type: "simple_instance", value_content: "essential_baseline_v3.0.4_Class10004"}, ]}, 
+{slot_reference: "system_content_visibility", value: [{value_type: "simple_instance", value_content: "KB_229567_Class68"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "numéro de rôle et numéro d'article de rôle sélectionné pour recouvrement de dettes non fiscales ouvertes par fichier plat hebdomadaire sur le flux de First NFi vers Gestion Des Debiteurs"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Numéro de rôle et numéro de l'article de rôle sélectionné pour le recouvrement des créances ouverts First-NFI par fichier plat quotidien sur le flux de First-NFI vers Gestion des débiteurs. Fichier avec des dettes ouvertes First-NFI est envoyé à Gestion des débiteurs (flux hebdomadaire).
+Flux sortants et entrants autour de First-NFI et Gestion des débiteurs (=GDD) : GDD effectue les enrôlements des intérêts de retard First-NFI, car pas dans d'autres applications : GDD crée les taux, calcule les montants et les envoie à l'application source:
+1  entrant : GDD reçoit les créances en cours First NFI, no. rôle et no. article de rôle sélectionné via fichier plat quotidien de First NFI
+2  traitement: GDD rassemble ces données dans un document: info complétée dans GDD, mais la sélection des articles provient du First Nfi (numéros de rôle et numéros d'article de rôle)
+3  sortant: GDD envoie ce document: les rôles sont imprimés localement dans les équipes centrales sur PC: pdf imprimé et signé et envoyé à l'huissier ('rôle' est verrouillé, enregistré au moment de la signature, cela permet à l'huissier de partir)
+4  feedback: puis retour vers First NFI: rôles et rappels: via fichier plat quotidien (parfois fichier plat vide, car le rôle de la dette NFI n'est pas créé quotidienne, mais hebdomadaire dans GDD)."}, ]}, 
+{slot_reference: "system_content_lifecycle_status", value: [{value_type: "simple_instance", value_content: "KB_229567_Class67"}, ]}, 
+{slot_reference: "external_repository_instance_reference", value: [{value_type: "simple_instance", value_content: "sandbox_Class78704"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

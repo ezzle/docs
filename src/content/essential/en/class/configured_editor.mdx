@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Configured_Editor"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Editor"]
+template_slot: ["ce_configuration_path", "ce_editor_js_path", "ce_editor_components", "ce_configuration_id", "ce_configuration_config"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "A  Editor that has been configured from a collection of Editor Components"}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Report"}, ]}]
+---

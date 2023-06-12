@@ -1,0 +1,12 @@
+---
+frametype: "class"
+name: "Technology_Node"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Technology_Physical"]
+template_slot: ["technology_deployment_located_at", "used_in_technology_build", "technology_node_attributes", "deployment_of", "tn_business_criticality", "contained_technology_instances", "inverse_of_contained_technology_nodes", "technology_node_platform_stack", "tn_supplier", "contained_technology_nodes"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "A locate-able Node in the infrastructure on which other Nodes and Technology Instances are deployed."}, ]}]
+template_facet_value: [{slot_reference: "name", facet_reference: ":DEFAULTS", value: [{value_type: "string", value_content: "&lt;technology node name&gt;"}, ]}, 
+{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Technology_Node"}, ]}]
+---

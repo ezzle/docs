@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Roadmap_Model"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Strategy_Management"]
+template_slot: ["contained_roadmap_relations", "contained_roadmap_model_elements", "roadmap_model_subject", "rm_roadmap"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "A Roadmap Model defines the roadmap for change in the organisation. This is not a project plan or a programme plan but captures the transitions between different configurations of the organisation via Milestones, which capture a particular configuration. These milestones can range in granularity from very high views of the entire organisation down to specific architectures for a particular aspect of the organisation."}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Roadmap_Model"}, ]}]
+---

@@ -1,0 +1,10 @@
+---
+frametype: "class"
+name: "Retention_Period"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Enumeration"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Enumeration to manage the set of retention periods used in Records Management retention schedules. Each value is a logical symbol representing the classification of records that describe the time frame for which a record must be retained."}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Enumeration"}, ]}]
+---

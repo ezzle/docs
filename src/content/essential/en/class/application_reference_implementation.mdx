@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Application_Reference_Implementation"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Application_Reference_Modelling"]
+template_slot: ["ari_realises_app_reference_architectures", "application_reference_implementation_elements", "application_reference_implementation_dependencies"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "A logical Application Architecture blueprint describing an 'implementation' design of Applications that together provide the functionality defined in one or more Application Reference Architectures"}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "EA_Support"}, ]}]
+---

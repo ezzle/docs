@@ -1,0 +1,12 @@
+---
+frametype: "class"
+name: "Idea_Option"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Innovation_Management"]
+template_slot: ["idea_lifecycle_status", "idea_for_strategic_reqs", "idea_proposed_changes", "idea_geo_scope"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Represents a potential set of changes that could be made to address one or more Idea Requirements"}, ]}]
+template_facet_value: [{slot_reference: "system_content_lifecycle_status", facet_reference: ":DEFAULTS", value: [{value_type: "simple_instance", value_content: "KB_229567_Class72"}, ]}, 
+{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "EA_Support"}, ]}]
+---

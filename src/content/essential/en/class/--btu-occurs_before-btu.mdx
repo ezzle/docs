@@ -1,0 +1,15 @@
+---
+frametype: "class"
+name: ":BTU-OCCURS_BEFORE-BTU"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: [":BA-DIAGRAM-RELATION"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Flow Relationship between Business Tasks (Usages) in an Activity Diagram. The FROM node, is the preceeding Task and the TO node is the next Task that occurs in the activity."}, ]}]
+template_facet_value: [{slot_reference: ":FROM", facet_reference: ":DOCUMENTATION-IN-FRAME", value: [{value_type: "string", value_content: "A preceeding task in an activity flow."}, ]}, 
+{slot_reference: ":FROM", facet_reference: ":MINIMUM-CARDINALITY", value: [{value_type: "integer", value_content: "1"}, ]}, 
+{slot_reference: ":FROM", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Business_Activity_Flow_Type"}, ]}, 
+{slot_reference: ":TO", facet_reference: ":DOCUMENTATION-IN-FRAME", value: [{value_type: "string", value_content: "The next task in the flow that follows from the preceeding task that is defined by the FROM slot of this relation"}, ]}, 
+{slot_reference: ":TO", facet_reference: ":MINIMUM-CARDINALITY", value: [{value_type: "integer", value_content: "1"}, ]}, 
+{slot_reference: ":TO", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Business_Activity_Flow_Type"}, ]}]
+---

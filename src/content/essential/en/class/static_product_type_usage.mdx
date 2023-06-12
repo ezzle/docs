@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Static_Product_Type_Usage"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Static_Product_Type_Architecture_Type"]
+template_slot: ["static_usage_of_product_type"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "The usage of a Product Type in a Static Product Type Architecture"}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Static_Product_Type_Usage"}, ]}]
+---

@@ -1,0 +1,10 @@
+---
+frametype: "class"
+name: "APP_SVC_TO_INFOVIEW_RELATION"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["APP_TO_INFO_RELATION"]
+template_slot: ["app_svc_to_infoview_to_infoview", "app_svc_to_infoview_from_appsvc", "app_svc_deletes_info_view", "app_svc_reads_info_view", "app_svc_creates_info_view", "app_svc_updates_info_view"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Defines a relationship between an Application Service and an Information View upon which it operates"}, ]}]
+---

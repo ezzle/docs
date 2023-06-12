@@ -1,0 +1,9 @@
+---
+frametype: "slot"
+name: "business_reference_architecture_dependencies"
+type: ":ESSENTIAL-SLOT"
+supertype: [":STANDARD-SLOT", ":SLOT", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+own_slot_value: [{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "The dependencies that exist between the business processes that comprise the Business Reference Architecture"}, ]}, 
+{slot_reference: ":SLOT-INVERSE", value: [{value_type: "slot", value_content: "brm_relation_in_business_reference_architecture_model"}, ]}, 
+{slot_reference: ":SLOT-VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: ":Business-Ref-Arch-Model-Relation"}, ]}]
+---

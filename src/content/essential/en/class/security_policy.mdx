@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Security_Policy"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Policy"]
+template_slot: ["sp_action", "sp_resources", "sp_realises_principles", "sp_implements_security_capability", "sp_actor"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Models how the enterprise will protect one or more resources. Security Policies define how security SHOULD be applied to the specified resources."}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "EA_Support"}, ]}]
+---

@@ -1,0 +1,17 @@
+---
+frametype: "simple_instance"
+name: "KB_440909_Class1279"
+type: "Synonym"
+supertype: ["Utilities", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "synonym_language", value: [{value_type: "simple_instance", value_content: "KB_848683_Class0"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "PropertiesOnWeb service"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Nieuwe webapplicatie voor AGFisc voor beperkt kadastraal overleg.
+Opzoeken van een eigendomstoestand. De applicatie ‘Properties-on-Web’ vervangt integraal de applicatie ‘Cadnet Web SP04’ voor de raadpleging van kadastrale gegevens.  Via de applicatie CadnetWeb SP04 werden de onroerende gegevens uit het mainframe CADNET opgehaald en geconsulteerd. Vanaf 1 mei 2015 (end-of-life mainframe) werden deze gegevens niet meer geactualiseerd, waardoor de consulterende diensten niet meer over actuele gegevens beschikten. Properties on Web komt hieraan tegemoet. De getoonde gegevens zijn voortaan afkomstig uit de database PATRIS, bijgewerkt via de applicatie STIPAD. Via POW wordt aan de gebruikers actuele en recente patrimoniale informatie ter beschikking gesteld.  Via webservice consultimmo kunnen onroerende goederen van een persoon ter beschikking gesteld worden van andere administraties binnen Fod Financien, zoals AA Fiscaliteit, BBI...
+POW gebruikt Consultimmo webservice (webinterface op Consultimmo), maar POW is wel degelijk een aparte applicatie met een apart doelpubliek. POW slaat geen persoonsgegevens op, maar verwerkt wel persoonsgegevens, dus wel GDPR relevant.
+Consultimmo properties en consultimmo transactions maken beide o.a. gebruik van een deel van de reportlayer van Stipad.
+Ivm artikelnrs. is Aapd PRI de applicatie om volgende transformatie te doen:
+Patris Stipad =&gt; artikel =&gt; pseudo artikel voor Pow =&gt; view Consultimmo =&gt; AA FISC.
+Stipad kent geen arikelnrs. meer; nu worden pseudo-artikels gemaakt. Concept artikel Cadnet nog gebruikt bij AA Fisc.
+Pow = versimpelde consultatie kadastrale gegevens"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

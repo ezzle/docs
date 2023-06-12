@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Project"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Change_Activity"]
+template_slot: ["project_lifecycle_status", "contained_in_programme", "project_activities", "project_manager", "status", "project_end_date", "project_start_date", "project_strategic_plans_supported", "project_goal_state", "project_business_priority", "project_start_state", "project_technology_requirements", "project_technology_architecture"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Meta class for a change project"}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Project"}, ]}]
+---

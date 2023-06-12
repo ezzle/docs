@@ -1,0 +1,26 @@
+---
+frametype: "simple_instance"
+name: "sandbox_Class51931"
+type: "Synonym"
+supertype: ["Utilities", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "synonym_language", value: [{value_type: "simple_instance", value_content: "essential_baseline_v3.0.4_Class10004"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "Mini One Stop Shop Back Office_prod (MOSS) (système spécifique de TVA)"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "MOSS applique un système spécifique de TVA, accessible à partir du 1er janvier 2015 aux assujettis au TVA non établis dans un ou plusieurs États membres de l'UE qui fournissent des services de télécommunications, de radiodiffusion et de télévision ou des services électroniques à des personnes non soumises à la TVA dans ces États membres. Concrètement, cette application a pour objet de permettre aux assujettis à la TVA concernés d'accomplir les tâches suivantes:
+ s'inscrire au guichet compétent d'un État membre d'identification et
+ soumettre, dans l'État membre d'identification par voie électronique, une seule déclaration de TVA (spécifique à ces activités) pour toutes les activités exercées dans les États membres d'utilisation concernés et
+ payer à l'État membre d'identification la TVA perçue (aux taux appliqués par l'État membre d'utilisation).
+
+L'État membre d'identification est responsable de la transmission de toutes les informations relatives à l'enregistrement, à la déclaration et aux paiements aux États membres concernés et d'assurer la distribution et le paiement de la TVA reçue au nom des États membres d'utilisation. L'État membre d'utilisation ou d'établissement est responsable de la réception, de la gestion et du traitement de ces informations. Ce nouveau guichet unique (MOSS) devrait reprendre l'application actuelle VOES1 (TVA sur les services électroniques) et l'inclure (VOES1 est destinée aux prestataires de services établis en dehors de l'UE).
+
+Le projet prévoit également la mise en œuvre de dispositions Européennes sur l'accès aux bases de données et l'échange automatique d'informations permettant aux États membres de contrôler ce système particulier. Moss a une partie back-office et une partie front office.
+
+Moss valide les déclarations et organise également les paiements (les déclarations montrent que les paiements ou les remboursements doivent être effectués).
+Moss utilise le module Pay It et envoie des fichiers à Pay it qui passent ensuite de Pay it à BTM, puis de Btm à la Banque de la Poste.
+Dans le sens inverse, Moss reçoit les fichiers Coda de Pay it (flux de Pay it à moss).
+
+Moss n'est pas un module Stirint, mais une application TVA.
+
+Moss sera bientôt Oss : One Stop Shop: la taxe sera prélevée dans le pays de consommation pour tous les services. Le scope sera très étendu : à long terme, nous conserverons beaucoup d'informations sur les assujetti non Belges: pour chaque assujetti, quel que soit le pays, nous recevrons les données d'enregistrement et les stockerons dans db Moss et pour le moment dans db Voes, mais à l'avenir plus dans db Voes (VOES retired). Tous les assujettis à la TVA qui sont encore actifs, sont enregistrés dans Moss.
+Moss contient toutes les informations sur les assujettis Belges et étrangers qui sont enregistrés en Belgique et fournissent des services dans d'autres États membres et ces informations sont transmises conformément à la législation Européenne."}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

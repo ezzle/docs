@@ -1,0 +1,10 @@
+---
+frametype: "class"
+name: "JOB_TO_ROLEATLEVEL_RELATION"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["RESOURCE_OPT_RELATION"]
+template_slot: ["job_to_role_at_level_from_job", "job_to_role_at_level_to_role_at_level"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Defines the Roles that a Job Position is expected to perform"}, ]}]
+---

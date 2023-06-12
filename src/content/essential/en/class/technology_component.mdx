@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Technology_Component"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Technology_Logical"]
+template_slot: ["technology_component_functions_offered", "technology_component_lifecycle_status", "realisation_of_technology_capability", "realised_by_technology_products"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Class to capture logical types  or classes  of Technology that are used to provide Technology Capabilities. e.g. Application Server, Message Oriented Middleware, Operating System. These should be real types of technology that are available today (or are state of the art) but not actual products."}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Technology_Component"}, ]}]
+---

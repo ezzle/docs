@@ -1,0 +1,35 @@
+---
+frametype: "simple_instance"
+name: "KB_855962_Class58"
+type: "Issue"
+supertype: ["Strategic_Requirement", "Strategy_Management", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "related_business_elements", value: [{value_type: "simple_instance", value_content: "KB_883624_Class141"}, ]}, 
+{slot_reference: "issue_impact", value: [{value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class90055"}, ]}, 
+{slot_reference: "issue_priority", value: [{value_type: "string", value_content: "Medium"}, ]}, 
+{slot_reference: "related_application_elements", value: [{value_type: "simple_instance", value_content: "KB_958736_Class1140"}, {value_type: "simple_instance", value_content: "KB_958736_Class1517"}, ]}, 
+{slot_reference: "related_information_elements", value: [{value_type: "simple_instance", value_content: "KB_855962_Class43"}, {value_type: "simple_instance", value_content: "KB_855962_Class47"}, {value_type: "simple_instance", value_content: "KB_855962_Class51"}, {value_type: "simple_instance", value_content: "KB_855962_Class37"}, ]}, 
+{slot_reference: "issue_source", value: [{value_type: "simple_instance", value_content: "KB_689670_Class1868"}, ]}, 
+{slot_reference: "issue_categories", value: [{value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class20009"}, ]}, 
+{slot_reference: "requirement_status", value: [{value_type: "simple_instance", value_content: "sandbox_Class40005"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "secal  Beperkte loggings secal mainframe en php"}, ]}, 
+{slot_reference: "element_classified_by", value: [{value_type: "simple_instance", value_content: "KB_889850_Class0"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Logging beperkt
+
+Loggings mainframekant Secal:
+ geen loggings wie wat wanneer aanpaste in dossier, noch van laatste actie
+ alleen stamnummer dossierbeheerder gelogd op dossierniveau
+ CDDB code gelogd van aanvraagkantoor waar dossier zich nu bevindt (dus aangepast bij verhuis naar ander aanvraagkantoor, maar cddb code vorig aanvraagkantoor wordt gewist). Cddb code wordt automatisch toegewezen aan gecreëerd dossier obv crestra code van de agent die dossier creëert.
+
+Loggings Php kant Secal:
+Voor de extra in PHP-component aanwezige velden die niet in mainframe zitten, wordt uitvoerder en tijdstip laatste wijziging gelogd, maar niet historiek, alleen  laatste actie. Aan mainframe-zijde wordt dit niet gedaan.
+Alleen voor de PhP velden 'invorderingskantoor', '180b' en 'rcd notas' worden dus uitvoerder en tijdstip laatste schrijfactie gelogd, wat ook logisch is gezien  op deze 3 velden na  alle php data ook op mainframe gestockeerd zijn en aan php zijde louter geconsulteerd worden.
+
+Toelichting bij de enkele aan php-zijde bijgehouden velden die niet in mainframe db gestockeerd zijn : alleen voor volgende php-velden wordt dus uitvoerder en moment laatste actie  wel gelogd:
+ veld RNFI invorderingskantoor waar dossier zich nu bevindt
+ veld Rcd-nota's: notities in webalim php
+ veld 180 B = ja nee veld
+= of er nog kosten terug te vorderen zijn die in toepassing 180 B Rnfi zitten 
+= deel van Davo schuld die we niet in huidige (secal) mainframe toepassing kunnen beheren: wordt wel beheerd door 180b Rnfi
+= meer bepaald Secal-invorderingskosten die vroeger volledig manueel beheerd werden; let wel: voor veld 180b sinds kort geen loggings schrijfacties meer bijgehouden."}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

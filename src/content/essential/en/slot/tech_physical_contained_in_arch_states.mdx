@@ -1,0 +1,9 @@
+---
+frametype: "slot"
+name: "tech_physical_contained_in_arch_states"
+type: ":ESSENTIAL-SLOT"
+supertype: [":STANDARD-SLOT", ":SLOT", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+own_slot_value: [{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "The architecture states that contain this physical technology element"}, ]}, 
+{slot_reference: ":SLOT-INVERSE", value: [{value_type: "slot", value_content: "arch_state_technology_physical"}, ]}, 
+{slot_reference: ":SLOT-VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Architecture_State"}, ]}]
+---

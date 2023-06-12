@@ -1,0 +1,10 @@
+---
+frametype: "class"
+name: "ACTOR_TO_OBJECTIVE_RELATION"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Business_Relationship"]
+template_slot: ["act_to_obj_objective", "act_to_obj_target_value", "act_to_obj_actor"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Defines a relationship between an Actor and an Objective, including capturing the target for the Actor to achieve"}, ]}]
+---

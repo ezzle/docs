@@ -1,0 +1,15 @@
+---
+frametype: "class"
+name: ":TPU-TO-TPFU-RELATION"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: [":TPA-RELATION"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Relation that models the usage of a Technology Function by a Technology Provider. That is, the Technology Provider calling the Technology Function."}, ]}]
+template_facet_value: [{slot_reference: ":relation_label", facet_reference: ":DEFAULTS", value: [{value_type: "string", value_content: "calls"}, ]}, 
+{slot_reference: ":FROM", facet_reference: ":DOCUMENTATION-IN-FRAME", value: [{value_type: "string", value_content: "The Technology Product Usage that is calling or invoking the Technology Function Usage."}, ]}, 
+{slot_reference: ":FROM", facet_reference: ":MINIMUM-CARDINALITY", value: [{value_type: "integer", value_content: "1"}, ]}, 
+{slot_reference: ":FROM", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Technology_Provider_Usage"}, ]}, 
+{slot_reference: ":TO", facet_reference: ":DOCUMENTATION-IN-FRAME", value: [{value_type: "string", value_content: "Models the TO end of the relation  the Technology Product Function Usage that is being called or invoked by a Technology Product Usage."}, ]}, 
+{slot_reference: ":TO", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Technology_Provider_Function_Usage"}, ]}]
+---

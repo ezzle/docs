@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Information_Strategic_Plan"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Strategic_Plan"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "A Strategic plan for elements in the Information Layer of the architecture"}, ]}]
+template_facet_value: [{slot_reference: "strategic_plan_for_element", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Information_Layer"}, {value_type: "class", value_content: "Information_Relationship"}, ]}, 
+{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Information_Strategic_Plan"}, ]}]
+---

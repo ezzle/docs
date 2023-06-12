@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Technology_Build_Architecture"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Logical_Technology_Model"]
+template_slot: ["contained_provider_architecture_relations", "describes_technology_provider", "contained_architecture_components"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Architecture to describe the make-up of a Technology Product Build, in terms of the Technology Products and the relationships between them that make up the build."}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Technology_Build_Architecture"}, ]}]
+---

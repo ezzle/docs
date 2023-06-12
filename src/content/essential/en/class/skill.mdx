@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Skill"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Resource_Optimisation"]
+template_slot: ["skill_required_by_roles", "skills_required_for_job_position", "is_type_of_skill", "skills_of_actor", "skill_label", "skill_for_elements", "skill_has_certification"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Class to capture instances of a recognised skill that a Business Role requires (in order to be performed) or an Actor has."}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "EA_Support"}, ]}]
+---

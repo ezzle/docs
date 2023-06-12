@@ -1,0 +1,14 @@
+---
+frametype: "simple_instance"
+name: "sandbox_Class50861"
+type: "Synonym"
+supertype: ["Utilities", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "synonym_language", value: [{value_type: "simple_instance", value_content: "essential_baseline_v3.0.4_Class10004"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "CCN gateway 1 (gateway avec la Commission Européenne)"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "CCN / CSI est l'abréviation de Common Communication Network  Common System Interface. Gateway avec la Commission Européenne pour les applications AG Douane et Accises, mais aussi l'AG Fiscalité. Il y a 2 gateways CCN : CCN gateway 1 écrit en C+ et le CCN Gateway 2 plus récent en JAVA. Chez l'AG Douane et Accises, le gateway 1 du CCN est encore principalement utilisée. Avec l'AG Fiscalité il y a l'application Stirint MDR qui communique déjà avec CCN Gateway 2. Nous voyons des flux interapplicatifs des applications douanières telles que EMCS, PLDA, Tarbel, NCTS, AEO, EORI, MCC et ICS vers CCN Gateway 1. Nous voyons également un flux interapplicatif de Stirint MDR vers le gateway CCN 2.
+le gateway CCN est située sur les serveurs du datacenter, mais appartient à la Commission Européenne et est maintenue par Atos.
+Dans chaque application communiquant séparément avec la Commission Européenne via CCN, un adaptateur CCN est intégré (standard Java CCFF).  Cela permet de communiquer avec le gateway CCN qui à son tour communique avec les applications Européennes.
+Différentes applications communiquent avec l'Europe : Emcs, Plda, Ncts, MCC, Tarbel, mais aussi par exemple Stirint MDR de l'AG Fiscalité.
+Par exemple pour l'échange de messages EAD avec l'Europe: ces messages indiquent qui les envoie, qui les reçoit, qui transporte les produits mentionnés dans la déclaration à l'AG Douane et Accises. Via le gateway CCN, des messages concernant l'assistance administrative sont également échangés entre les Etats membres; si un autre Etat membre de l'UE a des questions, cet Etat membre peut envoyer une demande d'assistance administrative aux services douaniers Belges."}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

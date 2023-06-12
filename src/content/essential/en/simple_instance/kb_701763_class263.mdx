@@ -1,0 +1,34 @@
+---
+frametype: "simple_instance"
+name: "KB_701763_Class263"
+type: "Application_Provider"
+supertype: ["Application_Provider_Type", "Application_Logical", "Application_Layer", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "lifecycle_status_application_provider", value: [{value_type: "simple_instance", value_content: "EAS_Meta_Model_v1.3_Instance_191"}, ]}, 
+{slot_reference: "provides_application_services", value: [{value_type: "simple_instance", value_content: "KB_255297_Class51"}, {value_type: "simple_instance", value_content: "KB_887055_Class7"}, {value_type: "simple_instance", value_content: "KB_846084_Class200"}, {value_type: "simple_instance", value_content: "KB_580263_Class20"}, {value_type: "simple_instance", value_content: "KB_580263_Class21"}, {value_type: "simple_instance", value_content: "KB_580263_Class22"}, {value_type: "simple_instance", value_content: "KB_580263_Class23"}, ]}, 
+{slot_reference: "type_of_application", value: [{value_type: "simple_instance", value_content: "KB_130995_Class8"}, {value_type: "simple_instance", value_content: "KB_824915_Class51"}, ]}, 
+{slot_reference: "known_app_issue", value: [{value_type: "simple_instance", value_content: "KB_976778_Class1"}, {value_type: "simple_instance", value_content: "KB_294257_Class0"}, ]}, 
+{slot_reference: "ap_site_access", value: [{value_type: "simple_instance", value_content: "KB_749917_Class456"}, ]}, 
+{slot_reference: "ap_delivery_model", value: [{value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class20005"}, ]}, 
+{slot_reference: "ap_static_architecture", value: [{value_type: "simple_instance", value_content: "KB_909166_Class68"}, ]}, 
+{slot_reference: "provides_application_function_implementations", value: [{value_type: "simple_instance", value_content: "KB_110044_Class41"}, ]}, 
+{slot_reference: "uses_information_representation", value: [{value_type: "simple_instance", value_content: "KB_909166_Class72"}, {value_type: "simple_instance", value_content: "KB_909166_Class76"}, {value_type: "simple_instance", value_content: "KB_909166_Class80"}, {value_type: "simple_instance", value_content: "KB_909166_Class98"}, {value_type: "simple_instance", value_content: "KB_909166_Class184"}, {value_type: "simple_instance", value_content: "KB_909166_Class186"}, {value_type: "simple_instance", value_content: "KB_461338_Class25"}, {value_type: "simple_instance", value_content: "KB_366793_Class88"}, {value_type: "simple_instance", value_content: "KB_568992_Class4"}, {value_type: "simple_instance", value_content: "KB_748986_Class2"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "CCN gateway 1"}, ]}, 
+{slot_reference: "element_classified_by", value: [{value_type: "simple_instance", value_content: "KB_889850_Class1"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Gateway met de Europese Commissie voor applicaties AA D&amp;A, maar ook AA Fisc.
+
+Er zijn 2 CCN gateways: CCN gateway 1 in C+ geschreven en de meer recente CCN Gateway 2 in JAVA. Bij AA D&amp;A wordt nog hoofdzakelijk CCN gateway 1 gebruikt. Bij AA Fisc is er wel de applicatie Stirint MDR die reeds met CCN Gateway 2 communiceert. We zien interapplicatieve flows van Douane applicaties zoals EMCS, PLDA, Tarbel, NCTS, AEO, EORI, MCC en ICS naar CCN Gateway 1. We zien ook een interapplicatieve flow van Stirint MDR naar CCN gateway 2.
+
+De CCN gateway staat op servers in het datacenter, maar is eigendom van de Europese Commissie en wordt onderhouden door Atos.
+In iedere applicatie afzonderlijk die communiceert met de Europese Commissie via CCN, is een CCN  adapter ingebouwd (Java CCFF standaard). Deze laat toe te communiceren met de CCN Gateway die op haar beurt communiceert met de Europese applicaties.
+
+Verschillende applicaties communiceren met Europa: Emcs, Plda, Ncts, MCC, maar ook bv. Stirint MDR van AA Fisc.
+Bv. voor uitwisseling van EAD berichten met Europa: in deze berichten staat wie verzender is, wie ontvanger, wie transporteur is van de producten vermeld in de aangifte bij AA D&amp;A.
+Via de CCN gateway worden ook berichten i.v.m. administratieve bijstand uitgewisseld tss. lidstaten; als een andere EU-lidstaat vragen heeft, dan kan deze lidstaat een verzoek om administratieve bijstand richten aan de Belgische Douanediensten.
+
+CCN / CSI is de afkorting van de Common Communication Network  Common System Interface.
+
+Via de CCN gateway worden gegevens rechtspersonen verzonden, maar het is in theorie niet uitgesloten dat ook gegevens natuurlijke personen verzonden worden via de CCN gateway: het is theoretisch mogelijk om PLDA aangiften voor particulieren op te maken (dient in feite nog nagegaan te worden)."}, ]}, 
+{slot_reference: "stakeholders", value: [{value_type: "simple_instance", value_content: "KB_676681_Class1"}, {value_type: "simple_instance", value_content: "KB_522925_Class79"}, {value_type: "simple_instance", value_content: "KB_471077_Class93"}, ]}, 
+{slot_reference: "synonyms", value: [{value_type: "simple_instance", value_content: "sandbox_Class50860"}, {value_type: "simple_instance", value_content: "sandbox_Class50861"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

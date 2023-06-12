@@ -1,0 +1,14 @@
+---
+frametype: "class"
+name: ":EA_Graph_Relation"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: [":DIRECTED-BINARY-RELATION", "EA_Graph_Management"]
+template_slot: ["system_content_quality_reviews", "system_content_quality_last_reviewer_id", "system_security_read_classification", "impacting_change_activities", "impacting_decisions", ":relation_name", "system_last_modified_author_id", "system_author_id", "ea_requirements", "budgets_for_element", "system_last_modified_datetime_iso8601", ":relation_description", "system_content_quality_last_reviewed_datetime_iso8601", "system_content_quality_status", "system_security_edit_classification", "ea_scope", "system_creation_datetime_iso8601", "system_content_lifecycle_status", "external_repository_instance_reference", "lifecycle_model_for_element", "ea_notes", ":relation_commentary", ":relation_label", "ea_reference", "system_ea_reference_instance_counter", "target_performance_measures"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Abstract"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Abstract super class for EA Relationships used on graphical forms. Every :EA_Graph_Relation class has a FROM and a TO slot to relate instances of the meta classes. Every :EA_Graph_Relation has a NAME"}, ]}]
+template_facet_value: [{slot_reference: ":FROM", facet_reference: ":DOCUMENTATION-IN-FRAME", value: [{value_type: "string", value_content: "Slot to hold the FROM side of the relationship. Always an instance of an EAS_Class"}, ]}, 
+{slot_reference: ":FROM", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "EA_Class"}, ]}, 
+{slot_reference: ":TO", facet_reference: ":DOCUMENTATION-IN-FRAME", value: [{value_type: "string", value_content: "Slot to hold the TO side of the relationship. Always an instance of an EAS_Class."}, ]}, 
+{slot_reference: ":TO", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "EA_Class"}, ]}]
+---

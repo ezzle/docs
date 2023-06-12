@@ -1,0 +1,21 @@
+---
+frametype: "simple_instance"
+name: "KB_316337_Class2344"
+type: "Synonym"
+supertype: ["Utilities", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "synonym_language", value: [{value_type: "simple_instance", value_content: "essential_baseline_v3.0.4_Class10004"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "Service Vignettes 705"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Application de livraison des vignettes 705: identification du véhicule au sens de la réglementation douanière. 
+Application utilisée pour immatriculer et délivrer les vignettes 705, principalement dans le cadre de l'importation ou de l'acquisition intracommunautaire de véhicules. 
+Il s'agit de vignettes destinées aux véhicules achetés à l'étranger, mais immatriculés en Belgique. Avant que la DIV puisse créer une plaque d'immatriculation, ces véhicules doivent être déclarés au SPF Finances.
+L'application DIV est contactée toutes les 10 minutes. Ainsi, l'importateur d'un véhicule, dès que sa vignette 705 a été créée, peut demander sa plaque d'immatriculation en ligne à la DIV.
+
+Sur le formulaire E705 reçu après inspection de véhicule est indiqué si la TVA a été payée ou non.
+Une fois l'application E705 mise en service, les fonctionnalités de cette application deviendront redondantes. Cette application sera donc bientôt transformée en application de reporting.
+3 types de permis vignettes 705
+Technologie : Php + php runner avec maria db (futur db2)
+L’ancienne application Vignettes 705 fonctionne avec un Mysql db, mais la nouvelle application Vignettes 705 fonctionnera avec la base de données db2. L'ancienne application sera read only pour créer des duplicata.
+En plus de l’ application Vignettes 705, il y a une application E705, qui est une application de gestion qui permet au componant central du Team “permis” d'intervenir dans l’application Vignettes 705 si nécessaire pour faire des changements ou des recherches avec plus d'options que le bureau.
+Vignettes 705 = application d'input, dans laquelle est chargé le document xml qui revient au componant central. Le componant central du Team “permis” charge le xml sur les titulaires de permis “vignettes 705” qui obtiennent la procédure simplifiée et a réservée une série de vignettes pour ceux qui les peuvent utiliser à tout moment. XML est créé à partir de pdf."}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

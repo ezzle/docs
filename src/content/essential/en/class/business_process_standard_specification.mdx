@@ -1,0 +1,12 @@
+---
+frametype: "class"
+name: "Business_Process_Standard_Specification"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Business_Standards_Management"]
+template_slot: ["bps_standardised_business_capability", "bps_standard_business_process"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Specifies a standard business process that should be adopted to deliver a given business capability"}, ]}]
+template_facet_value: [{slot_reference: "name", facet_reference: ":DEFAULTS", value: [{value_type: "string", value_content: "&lt;ORG/GEO SCOPE&gt;:&lt;BUSINESS CAPABILITY NAME&gt; Standard  &lt;BUSINESS PROCESS NAME&gt;"}, ]}, 
+{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "EA_Support"}, ]}]
+---

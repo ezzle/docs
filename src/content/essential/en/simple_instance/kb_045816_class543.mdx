@@ -1,0 +1,29 @@
+---
+frametype: "simple_instance"
+name: "KB_045816_Class543"
+type: "Application_Service"
+supertype: ["Application_Logical", "Application_Layer", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "provided_by_application_provider_roles", value: [{value_type: "simple_instance", value_content: "KB_106591_Class58"}, ]}, 
+{slot_reference: "realises_application_capabilities", value: [{value_type: "simple_instance", value_content: "KB_450573_Class1"}, ]}, 
+{slot_reference: "application_service_status", value: [{value_type: "string", value_content: "Online"}, ]}, 
+{slot_reference: "provided_by_application_provider", value: [{value_type: "simple_instance", value_content: "KB_958736_Class910"}, ]}, 
+{slot_reference: "supports_business_process_appsvc", value: [{value_type: "simple_instance", value_content: "KB_397520_Class95"}, {value_type: "simple_instance", value_content: "KB_397520_Class96"}, {value_type: "simple_instance", value_content: "KB_437720_Class1"}, {value_type: "simple_instance", value_content: "KB_437720_Class2"}, {value_type: "simple_instance", value_content: "KB_437720_Class4"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "Movables service"}, ]}, 
+{slot_reference: "element_classified_by", value: [{value_type: "simple_instance", value_content: "KB_024608_Class2"}, {value_type: "simple_instance", value_content: "KB_889850_Class4"}, {value_type: "simple_instance", value_content: "KB_889850_Class7"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Applicatie die een webservice aanbiedt voor consultatie van registratierechten op roerende goederen, onroerende goederen in het buitenland, huwelijkscontracten en giften.
+
+Vervanger van TP380 en TP385 op BS2000 mainframe.
+
+Webservice voor VLABEL published op ESB(FodFin) als webservice movables met als doel transacties van roerende goederen uit Stipad te halen.
+Service Web VLABEL visant à capturer les transactions de biens mobiliers de Stipad.   This project is a webservice for VLABEL. The goal is to retrieve movable transactions from stipad (patris). The request intern is a persidf , extern national number. 
+
+Via Movable worden metagegevens over authentieke akten doorgestuurd.
+
+In Stipad there are 2 kind of “dossiers” : the old (asis) and new dossiers. A new dossier is a dossier that can be created now in stipad (in production). Old dossiers are migrated from cadnet and are stored in a separated table. Weddingtransactions (movable) is also a separated table. The main purpose is to return movableTransactions, old and new + weddingcontracts. Old and new are transparent in return, the same select clause. A lot of the new fields are not present in the old dossiers. This will be left empty.
+
+Meeste van Movables zit in Stipad / Consultimmo. Movables is een onderdeel van Consultimmo, maar in verandering.
+Movables webservice doet acties op de Patris db van Stipad."}, ]}, 
+{slot_reference: "stakeholders", value: [{value_type: "simple_instance", value_content: "KB_164007_Class1586"}, ]}, 
+{slot_reference: "synonyms", value: [{value_type: "simple_instance", value_content: "KB_316337_Class1891"}, {value_type: "simple_instance", value_content: "KB_440909_Class1189"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

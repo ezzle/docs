@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "SYS_CONTENT_QUALITY_REVIEW"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["SYS_CONTENT_QUALITY_MANAGEMENT"]
+template_slot: ["system_content_quality_review_assigned_to_actor", "system_content_quality_review_completion_datetime_iso8601", "system_content_quality_review_escalations", "system_content_quality_review_for_element", "system_content_quality_review_completed_by_actor", "system_content_quality_review_status"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Represents a content quality review being undertaken against an instance"}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "EA_Support"}, ]}]
+---

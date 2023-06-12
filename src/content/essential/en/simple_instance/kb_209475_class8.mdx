@@ -1,0 +1,39 @@
+---
+frametype: "simple_instance"
+name: "KB_209475_Class8"
+type: "Application_Service"
+supertype: ["Application_Logical", "Application_Layer", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "provided_by_application_provider_roles", value: [{value_type: "simple_instance", value_content: "KB_209475_Class7"}, {value_type: "simple_instance", value_content: "KB_106591_Class278"}, {value_type: "simple_instance", value_content: "KB_829179_Class11"}, ]}, 
+{slot_reference: "realises_application_capabilities", value: [{value_type: "simple_instance", value_content: "KB_293891_Class12"}, ]}, 
+{slot_reference: "application_service_status", value: [{value_type: "string", value_content: "Online"}, ]}, 
+{slot_reference: "provides_application_functions", value: [{value_type: "simple_instance", value_content: "KB_337228_Class7"}, {value_type: "simple_instance", value_content: "KB_489844_Class5"}, {value_type: "simple_instance", value_content: "KB_489844_Class6"}, {value_type: "simple_instance", value_content: "KB_489844_Class7"}, {value_type: "simple_instance", value_content: "KB_489844_Class8"}, {value_type: "simple_instance", value_content: "KB_552209_Class35"}, {value_type: "simple_instance", value_content: "KB_552209_Class36"}, {value_type: "simple_instance", value_content: "KB_552209_Class37"}, {value_type: "simple_instance", value_content: "KB_552209_Class38"}, ]}, 
+{slot_reference: "provided_by_application_provider", value: [{value_type: "simple_instance", value_content: "KB_958736_Class1567"}, {value_type: "simple_instance", value_content: "KB_301316_Class7"}, ]}, 
+{slot_reference: "supports_business_process_appsvc", value: [{value_type: "simple_instance", value_content: "KB_437720_Class76"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "Vignetten 705 service"}, ]}, 
+{slot_reference: "element_classified_by", value: [{value_type: "simple_instance", value_content: "KB_889850_Class1"}, {value_type: "simple_instance", value_content: "KB_889850_Class2"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Applicatie voor het afleveren van vignetten 705:
+identificatie van voertuig op vlak van de douanereglementering Paswoordbeveiligde applicaties.
+
+Een applicatie aangewend om, voornamelijk in het kader van de invoer of de intracommunautaire verwerving van voertuigen, vignetten 705 te registreren en af te leveren. 
+
+Dit zijn Vignetten die bestemd zijn voor voertuigen die in het buitenland worden aangekocht maar in België worden ingeschreven. Alvorens dat de DIV een nummerplaat kan aanmaken moeten deze voertuigen bij FOD Financiën aangegeven worden.
+Om de 10 minuten wordt er contact gemaakt met de applicatie van het DIV. Dit zorgt er dan ook voor dat de invoerder van een voertuig van zodra zijn vignet 705 aangemaakt is, online bij het DIV zijn nummerplaat kan aanvragen.
+
+Roos formulier na keuring met sticker e705 en daarop wordt gezet of Btw betaald al dan niet.
+
+Door de ontwikkeling en de IAM-integratie van de toepassing GI consult, wordt het huidig authenticatiemechanisme van deze toepassing (en 21 andere toepassingen) op korte termijn redundant. Bovendien wordt (de inhoud en de vorm van) de toepassing GI consult op middellange termijn grondig herzien. Na de ingebruikname van de toepassing E705, wordt de functionaliteit van deze toepassing redundant. Deze applicatie zal bijgevolg op korte termijn omgevormd worden tot een rapporteringsapplicatie.
+
+Applicatie-eigenaar: Johan Dejaeger
+
+Authenticatie gebruikers:paswoordbeveiligde applicatie. Met lokaal login en passwoord (geëncrypteerd) beheer, niet Iam compliant.
+3 soorten vergunningen vignetten 705
+Technologie: Php + php runner met maria db (toekomst db2)
+
+Oude toepassing vignetten 705 werkt met Mysql db maar nieuwe toepassing Vignetten 705 zal met db2 databank werken. Oude toepassing wordt read only om duplicaten te maken.
+Naast Vignetten 705 is er E705, wat een beheersapplicatie is waarmee de centrale component van Team vergunningen kan ingrijpen bij vignetten 705 als nodig om wijzigingen of opzoekingen te doen met meer opties dan kantoor kan.
+
+Vignetten 705 = echte input applicatie, waarin xml document opgeladen wordt dat toekomt op centrale component. Team vergunning centrale component laadt xml op over vergunninghouders vignetten 705 die vereenvoudigde procedure krijgen en hebben reeks vignetten gereserveerd voor hen en die ze ten allen tijde mogen gebruiken. XML wordt aangemaakt vanuit pdf."}, ]}, 
+{slot_reference: "stakeholders", value: [{value_type: "simple_instance", value_content: "KB_327144_Class20"}, {value_type: "simple_instance", value_content: "KB_327144_Class21"}, {value_type: "simple_instance", value_content: "KB_327144_Class22"}, {value_type: "simple_instance", value_content: "KB_327144_Class23"}, {value_type: "simple_instance", value_content: "KB_327144_Class24"}, {value_type: "simple_instance", value_content: "KB_327144_Class25"}, ]}, 
+{slot_reference: "synonyms", value: [{value_type: "simple_instance", value_content: "KB_316337_Class2344"}, {value_type: "simple_instance", value_content: "KB_440909_Class1645"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

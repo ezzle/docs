@@ -1,0 +1,12 @@
+---
+frametype: "class"
+name: "Business_Process_Family"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Business_Logical"]
+template_slot: ["bpf_contains_busproctypes", "bpf_contained_business_process_types", "bpf_business_criticality"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Used to group business processes, activities or tasks that are variants of each other into a  single 'family', allowing them to be distinct while at the same time ceonvetying that they are related.
+This provides a more powerful and flexible approach than using Enumerations or Taxonomies as it allows contextual information to be added, for example, Business Process X is a standard for the EMEA region within its Business Process family"}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Business_Logical"}, ]}]
+---

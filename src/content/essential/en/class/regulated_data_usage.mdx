@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Regulated_Data_Usage"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Obligation_Management"]
+template_slot: ["rdu_regulation", "rdu_legal_basis", "rdu_permitted_use", "rdu_usage_of_infodata", "rdu_consenting_business_processes", "rdu_consent_information_stores", "rdu_usage_geographic_scope", "rdu_consent_documentation_links"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Requirements with which the organisation is bound to comply, stemming from explicit consent given to use specific elements of a specific scope for a specific purpose"}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "EA_Support"}, ]}]
+---

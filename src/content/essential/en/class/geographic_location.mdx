@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Geographic_Location"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Geography"]
+template_slot: ["gl_identifier", "gl_geocode"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Class to manage specific point geographical locations. Unlike the Geographical Region, locations have a geocode to identify that location, e.g. cities, towns, streets."}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Utilities"}, ]}]
+---

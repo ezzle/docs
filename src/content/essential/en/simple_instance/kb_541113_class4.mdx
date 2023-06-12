@@ -1,0 +1,23 @@
+---
+frametype: "simple_instance"
+name: "KB_541113_Class4"
+type: "Information_View"
+supertype: ["Information_View_Type", "Information_Logical", "Information_Layer", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "refinement_of_information_concept", value: [{value_type: "simple_instance", value_content: "KB_288394_Class365"}, ]}, 
+{slot_reference: "has_information_representations", value: [{value_type: "simple_instance", value_content: "KB_288394_Class174"}, {value_type: "simple_instance", value_content: "KB_116671_Class42"}, {value_type: "simple_instance", value_content: "KB_288394_Class196"}, {value_type: "simple_instance", value_content: "KB_116671_Class84"}, ]}, 
+{slot_reference: "view_label", value: [{value_type: "string", value_content: "Transfer boekhouding ICPC  view Respo TR"}, ]}, 
+{slot_reference: "info_view_supporting_data_objects", value: [{value_type: "simple_instance", value_content: "KB_711743_Class16"}, {value_type: "simple_instance", value_content: "KB_711743_Class54"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "Transfer boekhouding ICPC  view Respo TR"}, ]}, 
+{slot_reference: "element_classified_by", value: [{value_type: "simple_instance", value_content: "KB_889850_Class7"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Transfer boekhouding ICPC  view Respo TR
+Flow van Respo naar ICPC
+Flow : Respo ontvangt bestand terug van Icpc: ICPC gaat na of er ergens anders (andere Administratie Fod Fin ?) teruggave beschikbaar is die we kunnen gebruiken : (ADM respo: icpc met bestand dat teruggestuurd wordt)
+In TR omgekeerd : bedrag teruggave naar ICPC en ze gebruiken dat verder in andere diensten om voor hen te gebruiken voor hun eigen invordering (ze gaan na of ze dat van AA Padoc ontvangen bedrag kunnen compenseren met eigen schuld)
+Alleen uitgaande stroom naar ICPC, geen bestand teruggestuurd door ICPC
+Icpc hier 1 richting, want flow gaat terug naare  RESPO / ESUCC of naar toepassingen bij andere Alg Administraties
+Voorbeeld: 
+Ev. wel als schuld doorgestuurd via TR, wel antwoord van respo of esucc, maar niet van TR.
+
+Data-element transfer boekhouding:  TR zal de teruggaven/restituties die het uitbetaalde doorsturen naar ICPC. ICPC zal ze ter beschikking stellen aan andere diensten voor hun eigen proces/doccier van invordering (ze gaan na of ze dat van AA Padoc ontvangen bedrag kunnen compenseren met eigen schuld) (data-object: boekhoudkundige transfer teruggave )  ICPC gaat na of er ergens anders (andere Administratie Fod Fin ?) teruggave beschikbaar is die binnen  Respo kan gebruikt worden. ICPC stuurt voor Respo-dossiers relevante boekhoudkundige transfers in een bestand naar Respo (data-object: lijst boekhoudkundige transfers teruggaven)  Fiscale en sociale schulden zijn voorbeelden van schulden die kunnen gecompenseerd worden met andere teruggaven die via ICPC verzameld worden, en, wat betreft AAPD, via TR kunnen toegekend worden ."}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

@@ -1,0 +1,10 @@
+---
+frametype: "slot"
+name: "system_security_read_classification"
+type: ":ESSENTIAL-SLOT"
+supertype: [":STANDARD-SLOT", ":SLOT", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+own_slot_value: [{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Defines the security classification that has been assigned to an element of the repository for READ access"}, ]}, 
+{slot_reference: ":SLOT-INVERSE", value: [{value_type: "slot", value_content: "system_secured_read_elements"}, ]}, 
+{slot_reference: ":ASSOCIATED-FACET", value: [{value_type: "facet", value_content: "snapshot_ear_sandbox_v20160311_1730_Class5"}, ]}, 
+{slot_reference: ":SLOT-VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "EA_Content_Classification"}, ]}]
+---

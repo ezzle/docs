@@ -1,0 +1,15 @@
+---
+frametype: "simple_instance"
+name: "sandbox_Class70078"
+type: "Synonym"
+supertype: ["Utilities", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "synonym_language", value: [{value_type: "simple_instance", value_content: "essential_baseline_v3.0.4_Class10004"}, ]}, 
+{slot_reference: "system_content_visibility", value: [{value_type: "simple_instance", value_content: "KB_229567_Class68"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "1 Certificats / 2 actes enrichis des numéros d'hypothèque / 3 numéros de formalité / 4 enregistrements / 5 mentions marginales sur le flux d'Hypo vers Der par ESB"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Flux de Hypo vers Der sur ESB pour envoyer des metadonnées et des documents pour la rédaction des dossiers en Stipad. 
+C'est un système interne utilisé par les bureaux d'hypothèque de l'AG documentation patrimoniale. Hypo génère des certificats qui peuvent être chargés par le système fichier de DER dans DER. Les tâches de Hypo seront repris après un certain temps par l'application STIPAD.
+Ca concerne des interfaces via webservice pour communiquer des inscriptions et des mentions marginales. Le numéro de formalité de Hypo (Régistre 70) est repris manuellement dans DER. Le numéro de formalité (du dossier de l'hypothèque) est créé dans Hypo, et est manuellement retapé dans DER, après quoi le dossier reçoit automatiquement un changement le status dans DER de à déposer vers en traitement dans HYPO/Stipad. Il s'agit des données d'annotation hypothécaires (image dans DER). Les numéros hypothécaires crées dans HYPO sont chargés dans le pdf de l'acte (image”). Ces numéros d'hypothèque sont ajoutés à l'image = le pdf qui était construit à partir de l'acte, comme un champ sur le document (couche en plus). Le pdf de l'acte enrichi de cette manière est envoyé de nouveau vers Der et y doit être mis dans le dossier."}, ]}, 
+{slot_reference: "system_content_lifecycle_status", value: [{value_type: "simple_instance", value_content: "KB_229567_Class67"}, ]}, 
+{slot_reference: "external_repository_instance_reference", value: [{value_type: "simple_instance", value_content: "sandbox_Class80049"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

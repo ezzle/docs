@@ -1,0 +1,20 @@
+---
+frametype: "simple_instance"
+name: "KB_321067_Class89"
+type: "Static_Application_Provider_Usage"
+supertype: ["Static_Application_Provider_Architecture_Type", "Logical_Application_Model", "Application_Logical", "Application_Layer", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "static_usage_of_app_provider", value: [{value_type: "simple_instance", value_content: "KB_958736_Class1022"}, ]}, 
+{slot_reference: "static_app_provider_arch_display_label", value: [{value_type: "string", value_content: "PM : in : PM"}, ]}, 
+{slot_reference: "used_in_static_app_provider_architecture", value: [{value_type: "simple_instance", value_content: "KB_321067_Class87"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "PM_Prod  Rembours Précompte Mobilier / Roerende Voorheffing::in::Static Architecture of::PM_Prod  Rembours Précompte Mobilier / Roerende Voorheffing"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "geen Inkomende gegevens in de PM mainframe toepassing:
+Geen inkomende bestanden: alle input gebeurt manueel.
+Via papieren document 276 DIV vraagt de niet inwoner om roerende voorheffing terug te betalen: wordt manueel op kantoor verwerkt en ingetikt in mainframe toepassing PM.
+Opslag aanvragen teruggaves in db “RV276REG”.
+
+
+Inkomende flows naar PM Light php
+-Manuele invoer aanvraagformulier 276: deze borderel heeft dubbele functie: om RV terug te betalen op vraag (via pm mainframe) en om RV vrij te stellen aan de bron o.b.v. intern recht (PM Light php toepassing): wordt manueel ingebracht in PM Light.
+-Flow van PM mainframe naar PM light PhP: er is geen automatische flow van de ene toepassing naar de andere, behalve één kopie: genieters worden gecreëerd in de PM mainframe: iedere dag worden extracten uit de db PM mainframe met signaletiekgegevens omtrent de genieters geladen in de php applicatie PM Light. De beide PM applicaties behandelen immers 2 verschillende procedures met deels dezelfde genieters die zo geen 2e maal moeten ingetikt worden in PM light."}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

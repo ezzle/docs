@@ -1,0 +1,9 @@
+---
+frametype: "slot"
+name: "gb_meetings"
+type: ":ESSENTIAL-SLOT"
+supertype: [":STANDARD-SLOT", ":SLOT", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+own_slot_value: [{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "The meetings that have been held, or will be held by the Governance Body"}, ]}, 
+{slot_reference: ":SLOT-INVERSE", value: [{value_type: "slot", value_content: "gm_meeting_of_body"}, ]}, 
+{slot_reference: ":SLOT-VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Governance_Meeting"}, ]}]
+---

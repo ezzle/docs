@@ -1,0 +1,24 @@
+---
+frametype: "simple_instance"
+name: "KB_626000_Class20"
+type: "Issue"
+supertype: ["Strategic_Requirement", "Strategy_Management", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "related_business_elements", value: [{value_type: "simple_instance", value_content: "KB_857622_Class4"}, ]}, 
+{slot_reference: "issue_impact", value: [{value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class90055"}, {value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class90066"}, ]}, 
+{slot_reference: "issue_priority", value: [{value_type: "string", value_content: "Medium"}, ]}, 
+{slot_reference: "related_application_elements", value: [{value_type: "simple_instance", value_content: "KB_958736_Class1296"}, {value_type: "simple_instance", value_content: "KB_958736_Class101"}, ]}, 
+{slot_reference: "related_information_elements", value: [{value_type: "simple_instance", value_content: "KB_823173_Class7"}, ]}, 
+{slot_reference: "issue_source", value: [{value_type: "simple_instance", value_content: "KB_511918_Class624"}, ]}, 
+{slot_reference: "issue_categories", value: [{value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class20009"}, ]}, 
+{slot_reference: "requirement_status", value: [{value_type: "simple_instance", value_content: "sandbox_Class40005"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "Stiron Inv  geen archivering schulden in Belconet archieven; alleen historisatie afgesloten schulden in Stiron Inv"}, ]}, 
+{slot_reference: "element_classified_by", value: [{value_type: "simple_instance", value_content: "KB_889850_Class0"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Bij Stiron INV ontbreekt een uitgaande flow van Stiron Inv naar Belconet archieven.
+Stiron Inv bevat alle momenteel nuttige en relevante Btw-schulden, maar er is geen archivering in Stiron, noch in Belconet archief; wel is er historisatie in Stiron van afgesloten schulden:
+records van afgesloten schulden in de db wijzigen niet, maar overbelasten het scherm van de agent ook niet (meer).
+ Vóór 2013 bestonden alleen de BS2000 schermen (= via TP’s, bv. TP150 = lijst van openstaande schulden en TP150A = oud archief van de oude BS2000).
+ Vanaf 2013 werd Stiron naar Java gemigreerd. Belangrijke schulden nuttig voor de business, werden gemigreerd naar Stiron en oude schulden moesten niet naar Stiron, maar bleven in de BS2000 (gecodeerd in archieven, niet meer consulteerbaar door agenten, alleen consulteerbaar door IT a.d.h.v. extracten van de db).
+
+In de voorbije 5 jaren waren er wel alleen maar 2 aanvragen m.b.t. gearchiveerde BTW-schulden."}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

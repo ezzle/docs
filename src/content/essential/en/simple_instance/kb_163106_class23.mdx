@@ -1,0 +1,23 @@
+---
+frametype: "simple_instance"
+name: "KB_163106_Class23"
+type: "APP_PRO_TO_INFOREP_RELATION"
+supertype: ["APP_TO_INFO_RELATION", "Application_Relationship", "EA_Relation", ":SYSTEM-CLASS", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "app_pro_to_inforep_to_inforep", value: [{value_type: "simple_instance", value_content: "KB_163106_Class24"}, ]}, 
+{slot_reference: "app_pro_persists_info_rep", value: [{value_type: "boolean", value_content: "false"}, ]}, 
+{slot_reference: "app_pro_to_inforep_from_app", value: [{value_type: "simple_instance", value_content: "KB_958736_Class299"}, ]}, 
+{slot_reference: "app_pro_reads_info_rep", value: [{value_type: "string", value_content: "Yes"}, ]}, 
+{slot_reference: "app_pro_creates_info_rep", value: [{value_type: "string", value_content: "No"}, ]}, 
+{slot_reference: "app_pro_deletes_info_rep", value: [{value_type: "string", value_content: "No"}, ]}, 
+{slot_reference: "app_pro_updates_info_rep", value: [{value_type: "string", value_content: "No"}, ]}, 
+{slot_reference: "relation_description", value: [{value_type: "string", value_content: "Flow Constructiecode / schattingsdocumentatie van Cadbuild (local) naar Stipad  (human)
+WS02 MEOW(1): zeer los gelinkt Bron: WS02 RZSJ(1): waarderingen van onroerende goederen worden in Cadbuild gedaan. Stipad ontvangt deze gegevens van cadbuild  
+Cadbuild viewer functies: o.b.v. divisie / rol e.a.
+Cadbuild levert rapport + XML op: deze XML wordt dan ingelezen in Stipad (op deze manier wordt de data ingelezen/ updated in stipad). Dit zal vervangen worden door een webservice. Het rapport is rapport cadbuild viewer. Dit bevat data croquis, info over de woning...
+Arcgis zit in interface Cadbuild =&gt; Stipad.
+
+Cadbuild produit un xml qu’on peut charger dans Stipad
+Als je een fiche d'expertise gemaakt hebt en je wilt ze in stipad steken, kan je een xml exporteren. Deze kan je in stipad importeren :  de xml wordt aangemaakt via een PHP-page (die je manueel aanroept). Deze maakt van een lokale FTP-server gebruik om naar de folders op de fileserver te gaan. Hij kan geen gebruik maken van de windows-ID van de gebruiker, en gebruikt daarom een system user."}, ]}, 
+{slot_reference: "relation_name", value: [{value_type: "string", value_content: "Rapport Cadbuild viewer in XML (info waarderingen van onroerende goederen, constructiecode, data Croquis, schattingsdocumentatie) op flow van Cadbuild (local) naar Stipad (human interface) managed by Cadbuild-Local_Prod"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

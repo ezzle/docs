@@ -1,0 +1,26 @@
+---
+frametype: "simple_instance"
+name: "KB_824915_Class2"
+type: "APP_PRO_TO_INFOREP_RELATION"
+supertype: ["APP_TO_INFO_RELATION", "Application_Relationship", "EA_Relation", ":SYSTEM-CLASS", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "app_pro_to_inforep_to_inforep", value: [{value_type: "simple_instance", value_content: "KB_824915_Class3"}, ]}, 
+{slot_reference: "app_pro_persists_info_rep", value: [{value_type: "boolean", value_content: "false"}, ]}, 
+{slot_reference: "app_pro_to_inforep_from_app", value: [{value_type: "simple_instance", value_content: "KB_958736_Class1294"}, ]}, 
+{slot_reference: "app_pro_reads_info_rep", value: [{value_type: "string", value_content: "Yes"}, ]}, 
+{slot_reference: "app_pro_creates_info_rep", value: [{value_type: "string", value_content: "Yes"}, ]}, 
+{slot_reference: "operated_data_reps", value: [{value_type: "simple_instance", value_content: "KB_824915_Class5"}, ]}, 
+{slot_reference: "app_pro_deletes_info_rep", value: [{value_type: "string", value_content: "Yes"}, ]}, 
+{slot_reference: "app_pro_updates_info_rep", value: [{value_type: "string", value_content: "Yes"}, ]}, 
+{slot_reference: "relation_description", value: [{value_type: "string", value_content: "Maandelijks draait er een proces “maandafsluiting” dat voor alle ondernemingen de fiscale balans onderzoekt.  Mocht er een overschot worden vastgesteld, dan zal onderzocht worden of dit eventueel kan terugbetaald worden aan de rechthebbende. Hiervoor zal er ondermeer rekening worden gehouden met andere bestaande schulden binnen de FOD.
+
+Indien onregelmatigheden worden vastgesteld (zoals onvoldoende betalingen ontvangen, geen aangifte ontvangen, stopzetting, …) wordt de R/C “op nul gesteld” en worden de gegevens van de R/C doorgegeven aan de BRCS.
+Bij maandelijkse afsluiting worden sommige ondernemingen op nul gezet. Voor deze ondernemingen wordt een bijzondere rekening (BR/CS) (M4) aangemaakt (flow van M2Rekening Courant naar M4 : batch afsluiting op nul).
+
+UC maandafsluiting CC / RC batch
+
+De UC maandafsluiting binnen de R/C (batchverwerking) 
+ is zeer belangrijk voor de gebruikers van het systeem, aangezien het hier over de basis functionaliteit van de R/C gaat.
+ bevat strenge technische vereisten, aangezien het gaat om zeer grote volumes die binnen een korte tijd moeten kunnen verwerkt worden (dit vertaalt zich in NFRs Prestaties, Consistentie van gegevens en beschikbaarheid)"}, ]}, 
+{slot_reference: "relation_name", value: [{value_type: "string", value_content: "Batch afsluiting op nul op flow van Stiron CC naar Stiron BR, maandelijkse flow managed by STIRON-Lot2-CC-batch_PROD"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

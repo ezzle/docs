@@ -1,0 +1,17 @@
+---
+frametype: "simple_instance"
+name: "sandbox_Class70536"
+type: "Synonym"
+supertype: ["Utilities", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "synonym_language", value: [{value_type: "simple_instance", value_content: "essential_baseline_v3.0.4_Class10004"}, ]}, 
+{slot_reference: "system_content_visibility", value: [{value_type: "simple_instance", value_content: "KB_229567_Class68"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "flux de Sitran vers Régistre 480 avec l'adresse du contrevenant"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Flux de Sitran vers le Régistre 480. L'AG D&amp;A a besoin de l'adresse du contrevenant au moment de la constatation de l'infraction. L'adresse est cherchée dans Sitran au moment de l'enrégistrement de l'infraction.
+C'est aussi possible de donner une adresse en plus. Des données concernant une constatation de non conformité dans l’application Php “Feedback lié à la déclaration” nourissent aussi le Régistre 480: c’est un flux, pourque les contrevenants soient connus.
+Des données de l’application php “Feedback lié à la déclaration” sont mis dans un maria db et le Régistre 480 va chercher ces données et ajouter des infos de Sitran et des infos d’autres webservices Eori et Aeo. 
+Dans le futur aussi des infos des webservices Tarbel et Tarweb seront ajoutés pour pouvoir lier les codes de marchandises de la constatation à la déscription (pas le webservice Européen Taric). 
+Sitran: quand le déclarant a un numéro Eori, nous connaissons le numéro TVA et de cette manière on peut chercher des données d’adresse, parce que c’est possible que les données d’adresse ne soient pas rempli correct dans PLDA."}, ]}, 
+{slot_reference: "system_content_lifecycle_status", value: [{value_type: "simple_instance", value_content: "KB_229567_Class67"}, ]}, 
+{slot_reference: "external_repository_instance_reference", value: [{value_type: "simple_instance", value_content: "sandbox_Class80347"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

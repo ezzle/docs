@@ -1,0 +1,15 @@
+---
+frametype: "simple_instance"
+name: "KB_316337_Class2671"
+type: "Synonym"
+supertype: ["Utilities", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "synonym_language", value: [{value_type: "simple_instance", value_content: "KB_848683_Class0"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "Scanfin (Irisscan) service"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Scanfin Irisscan: digitaliseren van papieren aangiften Personenbelasting. Software die voor scanning en aanverwante admin-taken wordt gebruikt. 
+Dit wordt gebruikt in de scancentra van Gent en Namen en in het kader van gedecentraliseerd scannen.
+Taxi Scanfin krijgt nu input van de scan output handler (scan output handler is geen component van taxi, maar scanfin is wel een component van taxi). 
+Alle documenten worden gescand en de scan output handler stuurt deze
+1 door naar de Digital MailRoom (afgekort DMR, welke gebouwd is op ACM om gescand document te dispatchen naar persoon die moet behandelen = digital mailroom applicatie = interne bode die document brengt naar juiste persoon);
+2 daarentegen zijn er een aantal documenten waarvoor we op voorhand weten waar deze naartoe verzonden moeten worden: die worden gescand, geïnterpreteerd en rechtstreeks naar Taxi gestuurd en deze passeren niet via de DMR applicatie. Deze batch wordt niet behandeld door digital mailroom, maar deze batch komt wel uit de scan output handler: de output handler bepaalt wel de bestemming van het document. Filenet stockeert het documentbeeld. Bij aangifte personenbelasting worden digitale beelden ook door Filenet geïnterpreteerd."}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

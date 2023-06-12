@@ -1,0 +1,17 @@
+---
+frametype: "simple_instance"
+name: "sandbox_Class76112"
+type: "Synonym"
+supertype: ["Utilities", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "synonym_language", value: [{value_type: "simple_instance", value_content: "essential_baseline_v3.0.4_Class10004"}, ]}, 
+{slot_reference: "system_content_visibility", value: [{value_type: "simple_instance", value_content: "KB_229567_Class68"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "données des Personnes physiques sur le flux manuel de Sitran vers VA"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Flux de Sitran vers VA : flux manuel de Sitran vers VA basé sur le fichier txt vers la mise à jour est effectuée après le rejet des paiements (anticipés) reçus.
+1) Création de records des nouvelles personnes physiques et des nouvelles sociétés en db VA 
+2) Mise à jour des données déjà en db VA des personnes physiques et des entreprises. Flux de Sitran vers VA (flux manuel basé sur le fichier txt) 
+Trigger: paiements rejetés reçus (à l'avance) 
+Création en db VA de nouvelles sociétés clients, mais aussi de nouvelles personnes physiques (indépendantes ou non). Mise à jour des données de signélatique des personnes physiques/entreprises clients déjà inclus dans db VA. Db VAC (= db VA56c2) est un régistre d'attente pour VA (comparable à 56C2 d'ICPC) pour les versements anticipés reçus qui ne peuvent pas être immédiatement attribués à une personne physique ou morale connue en VA. Pour ces paiements non attribués dans db ACC, les données de signélatique (p. ex. adresse client prépayeur) sont recherchées dans Sitran sous le numéro RN ou le numéro BCE en communication libre du paiement dans ACC. Ensuite, de nouveaux clients VA sont créés dans db VA ou les données d'identification des clients VA existants sont mises à jour.
+Un lot sur Gcos8 crée périodiquement une liste des paiements (anticipés) reçus rejetés enregistrés dans la db ACC. Cette liste est envoyée par l'équipe de perception VA à l'équipe Sitran qui recherche les noms et adresses dans Sitran et crée un fichier txt. L'équipe Sitran renvoie généralement ce fichier txt à AGPR dans la soirée. AGPR convertit ce fichier txt au bon format pour l'utiliser sur le Gcos8. Le programme VABIFBIS met à jour les adresses en db VA, et non en db ACC. Pour les nouvelles sociétés, le lot crée automatiquement les enrégistrements en db VA avec le numéro BCE pré-rempli. Pour les nouvelles personnes physiques, le numéro RN est encodé manuellement en db VA sur la base de la communication libre dans son First fichier de prépaiement en Coda. Pour les personnes physiques, la référence a été créée en VA : commencée par 1 puis augmentée de 1. est une petite partie en db qui fait le lien entre cette référence créée et le numéro de Régistre National de la personne physique (tableau de correspondance des fichiers séparé). Les nouvelles entreprises sont automatiquement ajoutées par lot en db VA  soit sur la base de NP, PM suite à la mise à jour trimestrielle  soit sur la base de Sitran suite aux rejets de paiements. En revanche, les nouvelles personnes physiques sont ajoutées manuellement en db UA :  uniquement sur la base de Sitran à la suite de rejets de paiements."}, ]}, 
+{slot_reference: "system_content_lifecycle_status", value: [{value_type: "simple_instance", value_content: "KB_229567_Class67"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

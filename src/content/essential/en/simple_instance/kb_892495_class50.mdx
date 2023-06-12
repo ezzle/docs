@@ -1,0 +1,20 @@
+---
+frametype: "simple_instance"
+name: "KB_892495_Class50"
+type: "Business_Task"
+supertype: ["Business_Process_Type", "Business_Logical", "Business_Layer", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "business_process_performed_by_business_role", value: [{value_type: "simple_instance", value_content: "KB_048024_Class16"}, ]}, 
+{slot_reference: "business_process_id", value: [{value_type: "string", value_content: "P011.AB02.04.5"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "P011.AB02.04.5 Ontvangen van de betaling opvolgen en kwijting nastreven / Recevoir paiement et délivrer quittance"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Wanneer de betaling van de prijs en kosten via de rekenplichtige (FEDCOM) ontvangen is, wordt een betalingsbevestiging gestuurd. De rekenplichtige (FEDCOM) verleent kwijting, desgevallend bij de verkoopakte of in een afzonderlijke akte op te stellen (zie proces P011.AB07.03 activiteit 4 ‘Opstellen van de ontwerpakte’).
+
+Dit betreft enkel de gevallen waar Patrimoniumdiensten de bevoegdheid hebben om de prijs en kosten te ontvangen en kwijting te verlenen. 
+
+In de andere gevallen zal de betaling direct aan de verkoper gebeuren en zal Patrimoniumdienst de betaling opvolgen en de kwijting nastreven. (= opstellen van de akte en laten ondertekenen).
+ / Lorsque le paiement du prix et des frais a été reçu via le comptable (FEDCOM), une confirmation de paiement est envoyée. Le comptable (FEDCOM) délivre quittance, le cas échéant avec lacte de vente ou dans un acte établi séparément (voir processus P011.AB07.03. activité 4 ‘Rédiger projet dacte’).
+
+Ceci ne concerne que les situations où les Services Patrimoniaux sont compétents pour recevoir le paiement du prix et des frais et pour délivrer quittance. 
+
+Dans les autres cas, le paiement se fera directement au vendeur, les Services Patrimoniaux suivront le paiement et feront le nécessaire pour obtenir la quittance (=rédaction de l’acte et faire signer)."}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

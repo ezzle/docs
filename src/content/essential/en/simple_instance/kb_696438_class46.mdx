@@ -1,0 +1,38 @@
+---
+frametype: "simple_instance"
+name: "KB_696438_Class46"
+type: "Issue"
+supertype: ["Strategic_Requirement", "Strategy_Management", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "related_business_elements", value: [{value_type: "simple_instance", value_content: "KB_857622_Class4"}, {value_type: "simple_instance", value_content: "KB_857622_Class0"}, ]}, 
+{slot_reference: "issue_impact", value: [{value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class90055"}, {value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class90070"}, ]}, 
+{slot_reference: "issue_priority", value: [{value_type: "string", value_content: "Medium"}, ]}, 
+{slot_reference: "related_application_elements", value: [{value_type: "simple_instance", value_content: "KB_958736_Class1268"}, {value_type: "simple_instance", value_content: "KB_958736_Class608"}, ]}, 
+{slot_reference: "related_information_elements", value: [{value_type: "simple_instance", value_content: "KB_092597_Class35"}, {value_type: "simple_instance", value_content: "KB_116671_Class10"}, {value_type: "simple_instance", value_content: "KB_116671_Class12"}, {value_type: "simple_instance", value_content: "KB_092597_Class63"}, {value_type: "simple_instance", value_content: "KB_092597_Class65"}, {value_type: "simple_instance", value_content: "KB_092597_Class106"}, {value_type: "simple_instance", value_content: "KB_116671_Class68"}, {value_type: "simple_instance", value_content: "KB_583295_Class9"}, {value_type: "simple_instance", value_content: "KB_116671_Class44"}, {value_type: "simple_instance", value_content: "KB_583295_Class11"}, {value_type: "simple_instance", value_content: "KB_116671_Class64"}, {value_type: "simple_instance", value_content: "KB_467819_Class3"}, ]}, 
+{slot_reference: "issue_source", value: [{value_type: "simple_instance", value_content: "KB_689670_Class1400"}, ]}, 
+{slot_reference: "issue_categories", value: [{value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class20014"}, {value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class20008"}, ]}, 
+{slot_reference: "requirement_status", value: [{value_type: "simple_instance", value_content: "sandbox_Class40005"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "E-Forms / Stirint Int Inv  xml-berichten zullen in de toekomst vanuit First opgesteld worden"}, ]}, 
+{slot_reference: "element_classified_by", value: [{value_type: "simple_instance", value_content: "KB_889850_Class0"}, {value_type: "simple_instance", value_content: "KB_889850_Class9"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Op dit ogenblik worden de XML berichten volledig manueel aangemaakt en ingevuld; op termijn kunnen deze XML-berichten vanuit First aangemaakt worden (geheel of gedeeltelijk) (is voorzien).
+
+-Voorziene evolutie binnen EU: E Forms is op dit ogenblik een Java-toepassing op PC, maar zal evolueren naar e-Forms centrale cloud toepassing, platform beheerd door de Europese Commissie
+(voorziene start nieuwe applicatie uiterlijk 1/1/2019).
+Workflow Follow up zou in de nieuwe E-Forms toepassing zitten. 
+Eind 2017 globale test en 2e helft 2018 dual run (nieuwe en oude E Forms toepassing zullen simultaan draaien).
+Tegen uiterlijk 1-1-2019 dienen alle lidstaten naar het nieuwe Cloud platform om te schakelen. Xml uitwisseling blijft voorlopig.
+
+In de nabije toekomst kan de lokale ontvanger de XML voor aanvraag van (invorderings)bijstand genereren via het Europese E-Forms Cloud platform en dan mailen naar dienst CLO die het overmaken aan het team dat de encodage doet in Stirint waarna het vanuit de Stirint module internationale invordering verzonden wordt naar buitenland via Europees CCN netwerk. 
+
+In een verdere toekomst hoeft de XML niet meer gegenereerd te worden vanuit de Eforms cloud toepassing, maar kan deze efficiënter vanuit First gegenereerd en vooringevuld worden. Indien men in First aanvinkt dat voor een specifieke schuld internationale bijstand nodig is, zal een specifieke module internationale bijstand binnen First de constructie van het (aanvraag) xml-bericht triggeren (zoveel mogelijk vooringevuld). Hiermee zou men een hogere efficiëntie realiseren (minder overtypwerk door voorinvulling aanvraag-XML) en is er minder risico op foutieve BTW nrs. en foutieve kohierartikelnummers.
+
+Gezien Dienst CLO ook bevoegd is voor communicatie met het buitenland van bijstandsaanvragen voor invordering gewestelijke belastingen kan de Stirint module Internationale Invordering als uitwisselingscomponent met buitenland niet verdwijnen.
+Voor de Federale schulden is het theoretisch denkbaar dat de XML vanuit First naar buitenland gecommuniceerd wordt zonder Stirint Int inv. Dan slaat de agent van het lokaal kantoor de vanuit First getriggerde en half automatisch gegenereerde xml voor aanvraag van internationale bijstand op, hij geeft signaal aan medewerker bevoegde autoriteit (dienst CLO) (ter vervanging van de mail) die de ontvangen aanvraag XML opent en valideert in First en na validatie naar het buitenland zendt vanuit First via het Europees CCN platform zonder Stirint Int Inv ertussen.
+Indien men Stirint in First zou integreren, moet First wel de financiële bankrekeningnummers van de verschillende lokale ontvangkantoren kennen. Dienst CLO stort immers het uit het buitenland ontvangen bedrag wel door op rekeningnummer van het lokaal ontvangkantoor en verwittigt de lokale ontvanger dat een uit het buitenland ontvangen som eraan komt: dit doorgestort bedrag wordt dan ingelezen in ICPC a.d.h.v. Coda bestand van specifiek lokaal kantoor in kwestie.
+
+Indien Stirint module Internationale Invordering niet kan verdwijnen, moeten de XML-berichten voor bijstandsaanvragen nog steeds gecommuniceerd worden (getriggered vanuit First) naar Stirint module Internationale Invordering. Dit kan zoals nu via Xml in attachment bij een mail naar de CLO dienst die de aanvraagXML manueel in Stirint invoert, maar kan ook interapplicatief vanuit First via een webservice over de ESB van Fod Financiën automatisch ingeladen worden in Stirint module Internationale Invordering waardoor foutenrisico kleiner wordt en waardoor vertrouwelijke gegevens niet meer via mail gecommuniceerd hoeven te worden. 
+
+Wanneer men een antwoord (xml) uit het buitenland ontvangt, gaat dit nu via mail terug naar de agent van het lokale ontvangkantoor die de inhoud van het antwoord manueel encodeert in de klassieke invorderingsapplicaties, maar in de toekomst kan dit antwoord via webservice geduwd worden naar First: de bevoegde autoriteit (Dienst CLO) zou zo ook alles kunnen binnenhalen in First.
+
+Zou dezelfde logica kunnen toegepast worden op Taxi Biztax ?"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

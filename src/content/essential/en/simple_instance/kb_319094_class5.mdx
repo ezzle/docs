@@ -1,0 +1,34 @@
+---
+frametype: "simple_instance"
+name: "KB_319094_Class5"
+type: "Issue"
+supertype: ["Strategic_Requirement", "Strategy_Management", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "related_business_elements", value: [{value_type: "simple_instance", value_content: "KB_788134_Class56"}, ]}, 
+{slot_reference: "issue_impact", value: [{value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class90065"}, {value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class90055"}, ]}, 
+{slot_reference: "issue_priority", value: [{value_type: "string", value_content: "High"}, ]}, 
+{slot_reference: "related_application_elements", value: [{value_type: "simple_instance", value_content: "KB_958736_Class933"}, ]}, 
+{slot_reference: "related_information_elements", value: [{value_type: "simple_instance", value_content: "KB_990529_Class44"}, {value_type: "simple_instance", value_content: "KB_990529_Class45"}, ]}, 
+{slot_reference: "issue_source", value: [{value_type: "simple_instance", value_content: "KB_889833_Class3"}, ]}, 
+{slot_reference: "issue_categories", value: [{value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class20015"}, {value_type: "simple_instance", value_content: "KB_255141_Class10"}, ]}, 
+{slot_reference: "requirement_status", value: [{value_type: "simple_instance", value_content: "sandbox_Class40005"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "Niet Geautomatiseerde Verkeersbelasting: zonder IAM integratie"}, ]}, 
+{slot_reference: "element_classified_by", value: [{value_type: "simple_instance", value_content: "KB_889850_Class0"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Authenticatie en autorisatie Niet Geaut VB is dus niet Iam compliant, ook niet windows gebonden.
+
+Authenticatie dus per PC;
+PC van de gebruiker volgt de rechten van het ontvangstbureau waaraan die PC toegewezen is. Uitgewerkt door de Cel assistance informatique.
+
+Autorisatieregels in de db zelf van de toepassing opgeslagen: 
+iedere geautoriseerde pc heeft een code en o.b.v. die code heb je al dan niet volledige toegang. Deze speciale code is in de db “Niet Geaut VB” zelf opgenomen.
+Autorisatiemethode zoals bestond ten tijde van de mainframe terminals 1999, toen er slechts 1 centrale pc was voor alle medewerkers per kantoor:
+destijds  vóór de regionalisering  toen er nog meerdere kantoren Verkeersbelasting waren, was men in vb. kantoor Schaarbeek alleen bevoegd voor voertuigen ingeschreven te Schaarbeek en niet voor voertuigen Etterbeek bv. Het programma werkt per geografische zone.
+
+Nu is dit vanzelf opgelost gezien er nog 1 ontvangstkantoor is: Brussel.
+
+Het bestandje met de coördinaten (technische gegevens) van de server is geëncrypteerd. Dit bestandje laat het programma “Niet Geaut VB” toe verbinding te leggen met de db Niet Geaut VB.
+
+Niet iedereen mag consulteren, vandaar de encryptie van de programma’s die toegang verlenen tot de server.
+Niet iedereen mag iets aan de barema’s van de berekeningsmodule wijzigen, vandaar de encryptie van de barema’s, overal waar ze opgeslagen zijn: zowel op de server als op de PC van AA Douane.
+Barema's worden alleen live in memory gedecrypteerd wanneer ze opgehaald worden. Barema’s worden ook geëncrypteerd tijdens verzending."}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

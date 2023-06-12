@@ -1,0 +1,38 @@
+---
+frametype: "simple_instance"
+name: "KB_110044_Class71"
+type: "REGULATED_COMPONENT_RELATION"
+supertype: ["OBLIGATION_MGT_RELATION", "EA_Support_Relationship", "EA_Relation", ":SYSTEM-CLASS", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "regulated_component_to_element", value: [{value_type: "simple_instance", value_content: "KB_958736_Class646"}, ]}, 
+{slot_reference: "regulated_component_regulation", value: [{value_type: "simple_instance", value_content: "KB_042099_Class5"}, ]}, 
+{slot_reference: "relation_description", value: [{value_type: "string", value_content: "In de applicatie EORI worden de marktdeelnemers geïdentificeerd door een EORI nr. EORI staat voor “Economic Operator’s registration and identification”. Het EORI-nummer wordt gebruikt om de marktdeelnemers (en andere personen) in hun betrekkingen met de Douaneautoriteiten te identificeren.
+Europese Eori nrs. worden opgeslagen in de EORI db. Hierin worden ook niet Europese deelnemers opgenomen die wel de Eori verplichtingen willen vervullen maar met een aanduiding dat het een niet Europese deelnemer betreft.
+EORI is relevant voor GDPR, gezien:
+ EORI marktdeelnemers zowel rechtspersonen als natuurlijke personen kunnen zijn. Een Eori economische operator kan een natuurlijke persoon zijn.
+ sommige marktdeelnemers vertegenwoordigd worden door een mandataris natuurlijke persoon.
+
+Op de TAXUD site van de Europese Commissie kunnen EORI nrs. gevalideerd worden. Dit geldt voor EORI nrs. binnen de EU waarvoor betrokken marktdeelnemer de toestemming gaf (consent) om deze te publiceren op de EU site Taxud. Binnen de Belgische EORI db wordt bij een EORI nr. een flag gezet, wanneer betrokken marktdeelnemer zijn toestemming gaf om dit EORI nr. te publiceren op Taxud incl. naam en adres.
+Zie ook :
+https://financien.belgium.be/nl/douane_accijnzen/ondernemingen/reglementering/taxud
+
+Economische operator kan een particulier zijn zonder rechtspersoonlijkheid.
+
+De Commissie mag de identificatie en registratiegegevens van de marktdeelnemers en van andere personen, samengesteld uit de in punten 1, 2 en 3 van de in Eori formulier A1 opgesomde gegevens, slechts op het Internet publiceren, indien de belanghebbende daartoe uitdrukkelijk, vrijwillig en met kennis van zaken zijn schriftelijke toestemming heeft gegeven (zie formulieren EORI A2, A3, A4).
+Er dient aan elke reeds bij de Douane gekende marktdeelnemer die geregistreerd is, door middel van de gegevens van de Dienst Gegevensbeheer gevraagd te worden of hij de publicatie van de in punten 1, 2 en 3 van formulier A1 opgesomde gegevens op de openbare EORI-website van TAXUD aanvaardt. Het model van het hiervoor te gebruiken formulier bevindt zich in Eori formulier A2. De EORI-Cel zal dit document ter aanvulling verzenden, met in bijlage de gegevens afkomstig van de gegevensbank. Het formulier dient, naar behoren ingevuld, teruggezonden te worden naar de EORI-Cel. Indien er geen enkel gevolg wordt gegeven aan de aanvraag, zal de publicatie in kwestie niet uitgevoerd worden. Voor een dergelijke verrichting is immers de uitdrukkelijke toestemming van de belanghebbende vereist.
+Deze toelating zal doorgaans TOELATING/EORI/A2 genoemd worden.
+
+In iedere lidstaat heeft de Douane-autoriteit van die lidstaat rechtstreekse toegang tot de in formulier A1 bedoelde gegevens. 
+Een replica van de EORI gegevensbank van de Unie is gecreëerd op nationaal niveau en is toegankelijk voor alle ambtenaren der Douane en Accijnzen. 
+Deze gegevensbank is toegankelijk op de intranet-site onder de rubriek EORI (behalve de nationale EORI-toepassing zijn ook deze omzendbrief en een handleiding beschikbaar). 
+De Commissie mag de identificatie en registratiegegevens van de marktdeelnemers en van andere personen, samengesteld uit de in punten 1, 2 en 3 van formulier A1 opgesomde gegevens, slechts op het Internet publiceren indien de belanghebbende daartoe uitdrukkelijk, vrijwillig en met kennis van zaken zijn schriftelijke toestemming heeft gegeven.
+
+Indien de marktdeelnemer zijn toestemming niet heeft gegeven, specificeert de EORI-website of het EORI-nummer al dan niet bestaat (op de wijze zoals voor het systeem VIES dat geldt inzake Btw). De geldigheid van een EORI-nummer kan nagegaan worden in de EORI gegevensbank van de Commissie, te raadplegen via de volgende link: http://ec.europa.eu/taxation_customs/dds2/eos/eori_validation.jsp?Lang=nl 8. 
+
+Om de EORI-gegevensbank van de Unie samen te stellen, heeft de Belgische douane geen nieuwe gegevensbank gecreëerd omdat bepaalde gegevens reeds beschikbaar waren om de verplichtingen inzake EORI na te komen: zodoende wordt de Kruispuntbank van Ondernemingen daarvoor gebruikt en, in voorkomend geval, het rijksregister. Voor het geval van een niet in de Unie gevestigde marktdeelnemer die de verplichtingen inzake EORI dient te vervullen, heeft de douane een nieuwe gegevensbank eigen aan de Douane gecreëerd.
+
+De EORI-gegevens zullen slechts worden gewijzigd als ook de oorspronkelijke gegevensbron wordt gewijzigd, te weten de KBO. Door deze werkwijze verkrijgen alle partijen dezelfde informatie. De douane heeft bijgevolg geen enkele initiële bevoegdheid bij de wijziging van de gegevens in de KBO .
+
+De eigen gegevensbron van de douane : In het geval dat een niet binnen het douanegebied van de Unie gevestigde marktdeelnemer de verplichting heeft om zich in België te laten registreren, moet deze marktdeelnemer zich bij de douane (bij de EORI-Cel) laten registreren en elke wijziging van de EORI-gegevens moet aan die cel worden meegedeeld. Deze mededeling dient op ongezegeld papier te geschieden en te worden ondertekend door een persoon die bevoegd is om de verantwoordelijkheid van de marktdeelnemer op zich te nemen. Het EORI-nummer vertoont in dat geval de volgende karakteristieken: Land van registratie (BE) + Land van vestiging van de marktdeelnemer uit een derde land (iso alfa 2) (zie in dit opzicht bijvoegsel 6.1. op de website van het Enig document) + 6 cijfers. Voorbeeld: een Canadese marktdeelnemer laat zich in België registreren en ontvangt het volgnummer 000015. Zijn EORI-nummer zal het volgende zijn: BECA000015 BE voor het land van registratie: België CA voor land van vestiging: Canada Het betreft de 15de registratie."}, ]}, 
+{slot_reference: "relation_name", value: [{value_type: "string", value_content: "GDPR General Data Protection Regulation::EORI_PROD"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

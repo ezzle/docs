@@ -1,4 +1,5 @@
 import { CollectionEntry, defineCollection, z } from 'astro:content';
+import {essential} from './essential-schema'
 
 export const baseSchema = z
 	.object({
@@ -131,4 +132,9 @@ const docs = defineCollection({
 	]),
 });
 
-export const collections = { docs };
+/**
+ * 
+ */
+
+
+export const collections = { docs, essential };

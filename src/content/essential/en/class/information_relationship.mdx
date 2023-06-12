@@ -1,0 +1,10 @@
+---
+frametype: "class"
+name: "Information_Relationship"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["EA_Relation"]
+template_slot: ["il_managed_by_services", "il_security_classifications", "info_relations_contained_in_arch_states"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Abstract"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Abstract base class of relationship / link classes related to elements in the Information Layer of the meta model."}, ]}]
+---

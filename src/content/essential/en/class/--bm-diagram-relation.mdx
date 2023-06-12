@@ -1,0 +1,15 @@
+---
+frametype: "class"
+name: ":BM-DIAGRAM-RELATION"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: [":Business_Relationship"]
+template_slot: [":relation_in_business_model_architecture"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Abstract"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Super class of relationships that are used in Business Model Architectures"}, ]}]
+template_facet_value: [{slot_reference: ":relation_label", facet_reference: ":DEFAULTS", value: [{value_type: "string", value_content: "depends on"}, ]}, 
+{slot_reference: ":FROM", facet_reference: ":DOCUMENTATION-IN-FRAME", value: [{value_type: "string", value_content: "Slot to hold the FROM side of the relationship. Always an instance of an EAS_Class"}, ]}, 
+{slot_reference: ":FROM", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "EA_Class"}, ]}, 
+{slot_reference: ":TO", facet_reference: ":DOCUMENTATION-IN-FRAME", value: [{value_type: "string", value_content: "Slot to hold the TO side of the relationship. Always an instance of an EAS_Class."}, ]}, 
+{slot_reference: ":TO", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "EA_Class"}, ]}]
+---

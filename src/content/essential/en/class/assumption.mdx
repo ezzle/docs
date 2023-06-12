@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Assumption"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Strategy_Management"]
+template_slot: ["technology_assumptions", "business_assumptions", "ea_support_assumptions", "information_assumptions", "application_assumptions"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Represents an assumption that exists across one or EA elements."}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Strategy_Management"}, ]}]
+---

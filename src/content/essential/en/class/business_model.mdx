@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Business_Model"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Business_Conceptual"]
+template_slot: ["bm_business_domain", "business_model_architecture", "business_model_directives", "bm_business_goals_objectives", "business_model_configurations"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "A conceptual view of a way of working that creates, delivers and captures business value for the enterprise"}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Business_Conceptual"}, ]}]
+---

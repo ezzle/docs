@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Supplier"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Utilities"]
+template_slot: ["supplier_relationship_status", "supplier_external_contacts", "supplier_contact_telephone", "supplier_url", "supplier_actor"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Class to represent an external supplier to the enteprise. e.g. a Supplier of Business Processes, Application Providers, Technology Products"}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Supplier"}, ]}]
+---

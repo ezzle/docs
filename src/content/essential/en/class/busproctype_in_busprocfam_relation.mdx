@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "BUSPROCTYPE_IN_BUSPROCFAM_RELATION"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Business_Relationship"]
+template_slot: ["busprocttype_to_busprocfam_is_standard", "busprocttype_to_busprocfam_standard_prodtype_scope", "busprocttype_to_busprocfam_busprocfam", "busprocttype_to_busprocfam_busproctype", "busprocttype_to_busprocfam_standard_geo_scope", "busprocttype_to_busprocfam_standard_org_scope"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "DEPRECATED: REPLACED BY DIRECT RELATIONSHIP. USE Business_Process_Standard_Specification TO DEFINE STANDARDS 
+Defines the relationship between a Business Process Type (business process, activity or task) and a Business Process Family"}, ]}]
+---

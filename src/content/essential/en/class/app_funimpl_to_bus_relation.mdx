@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "APP_FUNIMPL_TO_BUS_RELATION"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["APP_TO_BUS_RELATION"]
+template_slot: ["appfunimpl_to_physbus_to_busproc", "appfunimpl_to_physbus_from_appfunimpl"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "An Application Function Implementation supports a Business Process, Activity or Task, optionally requiring a Application Service Qualities."}, ]}]
+template_facet_value: [{slot_reference: "relation_name", facet_reference: ":DEFAULTS", value: [{value_type: "string", value_content: "&lt;app function impl&gt;::&lt;supports&gt;::&lt;business process type&gt;"}, ]}]
+---

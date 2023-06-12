@@ -1,0 +1,23 @@
+---
+frametype: "simple_instance"
+name: "KB_855962_Class5"
+type: "Issue"
+supertype: ["Strategic_Requirement", "Strategy_Management", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "related_business_elements", value: [{value_type: "simple_instance", value_content: "KB_883624_Class141"}, ]}, 
+{slot_reference: "issue_impact", value: [{value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class90055"}, ]}, 
+{slot_reference: "issue_priority", value: [{value_type: "string", value_content: "High"}, ]}, 
+{slot_reference: "related_application_elements", value: [{value_type: "simple_instance", value_content: "KB_958736_Class1022"}, ]}, 
+{slot_reference: "issue_source", value: [{value_type: "simple_instance", value_content: "KB_329961_Class6"}, ]}, 
+{slot_reference: "issue_categories", value: [{value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class20015"}, {value_type: "simple_instance", value_content: "KB_255141_Class12"}, ]}, 
+{slot_reference: "requirement_status", value: [{value_type: "simple_instance", value_content: "sandbox_Class40005"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "PM (Roerende Voorheffing)  niet Only Once compliant"}, ]}, 
+{slot_reference: "element_classified_by", value: [{value_type: "simple_instance", value_content: "KB_889850_Class0"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "PM (Roerende Voorheffing)  nog niet Only Once compliant:
+1) Bedoeling om de manueel geëncodeerde borderel-info specifiek omtrent uitgekeerde dividenden / intresten te vervangen door query op applicatie “RV on web” (bevat RV aangifte incl. bijlages): dit is  voor wat betreft uitgekeerde dividenden / intresten  in feite al 80% van de nodige info die nadien nog ‘ns meegedeeld wordt aan Fod Financiën via de borderel tot aanvraag tot terugbetaling RV. Dit is dus niet only once compliant inzoverre only once wetgeving ook voor niet inwoners / institutionelen geldt. De toekomstige PM toepassing zal maximaal gegevens RV aangifte recuperen. Overige 20% ontbrekende gegevens over uitgekeerde dividenden / intresten nog mee te delen door aanvrager terugbetaler RV aan Fod Financiën (betreft dit aantallen en bedragen per individuele uitgifte ?). 
+
+2) identificatie uitbetaler dividenden / intresten (ca. 50 grote uitbetalers) via KBO nr., maar niet gesynchroniseerd met db KBO: dus niet à jour gezet mocht KBO nr. wijzigen. Dus niet only once compliant. PM is immers een toepassing zonder automatische flows aan de invoerzijde (alleen manuele invoer).
+
+3 identificatie genieter van terugbetaling RV via mainframe identificatienummer : is geen unieke sleutel. Voor genieters is geen Kbo nr. opgeslagen: niet only once compliant.
+Genieters worden gecreëerd in de PM mainframe: iedere dag worden extracten uit de db PM mainframe met gegevens omtrent de genieters geladen in de php applicatie PM Light. De beide PM applicaties behandelen immers 2 verschillende procedures met deels dezelfde genieters die zo geen 2e maal moeten ingetikt worden in PM light."}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

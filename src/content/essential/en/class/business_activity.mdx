@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Business_Activity"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Business_Process_Type"]
+template_slot: ["ba_sub_business_tasks", "activity_implemented_by_physical", "defining_activity_diagram", "activity_implements_business_capabilty"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "An Elementary Business Process. These are processes that are performed by a single person (or system), in a single place at a single time.nBusiness Activities represent specifications or designs of how activities should be performed."}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Business_Activity"}, ]}]
+---

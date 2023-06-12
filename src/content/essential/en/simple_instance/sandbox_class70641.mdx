@@ -1,0 +1,33 @@
+---
+frametype: "simple_instance"
+name: "sandbox_Class70641"
+type: "Synonym"
+supertype: ["Utilities", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "synonym_language", value: [{value_type: "simple_instance", value_content: "KB_848683_Class0"}, ]}, 
+{slot_reference: "system_content_visibility", value: [{value_type: "simple_instance", value_content: "KB_229567_Class68"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "Aktes, bijlagen, relazen, statusupdate op flow van Comforphp naar DER (over ESB voor bepalen bedrag registratie en successierechten)"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Aktes, bijlagen, relazen, statusupdate op flow van Comforphp naar DER (over ESB voor bepalen bedrag registratie en successierechten) 
+Functies via deze interface: 
+-doorsturen akten en bijlagen 
+-registratie relazen 
+-statusupdate (bij succesvol versturen naar de notaris) 
+-statusupdate (bij afwachting provisie) 
+-weigering akte
+ Comfor  Der interface automatisch (soap) zoals interface met Vlabel
+ DER: notariële aktes worden doorgestuurd via Der naar Vlabel (enkel de metagegegevens van de akte)
+ relaas  getekend: alleen relaasstatus wordt met Comfor uitgewisseld
+
+DER stuurt aktes op naar ESB, maar deze aktes worden niet gebruikt in Comfor (akte komt niet toe in Comfor) 
+
+Bestand op flow van Comfor naar Stipad: “Formaliteit” gedaan in Comfor : bewijs komt dus van Comfor:
+ registratie manueel geëncodeerd in Comfor en vanaf 2 jan. automatisch:  dan wordt registratie elektronisch getransfereerd van Comfor naar Stipad
+ als registratie akte gevalideerd in Comfor, worden gegevens i.v.m. bewijs van de registratie (relaasstatus) getransfereerd via webservice van Comfor naar Der en naar Stipad: 
+
+ via deze webservice worden naar Stipad niet alleen gegevens omtrent formaliteit en registratie verzonden, maar ook extra gegevens, zoals bv. verkoopprijs (prix de vente) en heffingsgrondslag (base de perception)
+ “formaliteit” gedaan in Comfor : bewijs komt dus van Comfor
+  Lijst 67 respo: voor registratie &amp; relaas &amp; gegevens van gunsttrarieven
+ relaas gemaakt in Comfor en gestuurd naar Der en opgenomen in Stipad: dus relaas zit zowel in interfaces Comfor Der als Comfor Stipad : Der stuurt relaas door naar notaris en stipad stuurt soms relaas door naar notaris"}, ]}, 
+{slot_reference: "system_content_lifecycle_status", value: [{value_type: "simple_instance", value_content: "KB_229567_Class67"}, ]}, 
+{slot_reference: "external_repository_instance_reference", value: [{value_type: "simple_instance", value_content: "sandbox_Class80410"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

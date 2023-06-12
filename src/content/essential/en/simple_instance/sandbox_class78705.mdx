@@ -1,0 +1,19 @@
+---
+frametype: "simple_instance"
+name: "sandbox_Class78705"
+type: "Synonym"
+supertype: ["Utilities", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "synonym_language", value: [{value_type: "simple_instance", value_content: "KB_848683_Class0"}, ]}, 
+{slot_reference: "system_content_visibility", value: [{value_type: "simple_instance", value_content: "KB_229567_Class68"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "Nr. rol en nr. geselecteerd kohierartikel voor invordering van Niet FIscale openstaande schulden via wekelijkse flat file op flow van First NFi naar debiteurenbeheer"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Nr. rol en nr. geselecteerd kohierartikel voor invordering van openstaande First-NFI schulden via dagelijkse flat file op flow van First-NFI naar debiteurenbeheer.
+Bestand met openstaande schulden First-NFI wordt wekelijks  doorgestuurd naar Debiteurenbeheer. 
+Uit en ingaande flows tussen First-NFI en debiteurenbeheer (=GDD): GDD doet de inkohieringen nalatigheidsintresten First-NFI, want niet in andere applicaties: GDD creëert kohieren, berekent bedragen en verzendt naar bronapplicatie:
+1-ingaand: GDD ontvangt openstaande schulden First-NFI, nr. rol en nr. geselecteerd kohierartikel via dagelijkse flat file van First-NFI 
+2-verwerking: GDD brengt deze gegevens samen in een document: info vervolledigd in GDD, maar selectie artikels (kohiernrs. en artikelnrs.) komt van First-NFI 
+3-uitgaand: GDD verzendt dit document: kohieren lokaal afgeprint  in centrale teams op pc: pdf gedrukt en ondertekend en verzonden naar deurwaarder (‘rol’ wordt vergrendeld, vastgelegd op moment ondertekening, daarmee kan deurwaarder op pad) 
+4-feedback: daarna flow terug naar First-NFI: kohieren, rollen en aanmaningen: via flat file dagelijks (soms lege flat file want rol NFI schuld niet dagelijks, maar wekelijks gecreëerd in GDD)."}, ]}, 
+{slot_reference: "system_content_lifecycle_status", value: [{value_type: "simple_instance", value_content: "KB_229567_Class67"}, ]}, 
+{slot_reference: "external_repository_instance_reference", value: [{value_type: "simple_instance", value_content: "sandbox_Class78706"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

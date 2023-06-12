@@ -1,0 +1,10 @@
+---
+frametype: "class"
+name: "REPORT_TO_PORTAL_SECTION_RELATION"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["ESSENTIAL_VIEWER_RELATION"]
+template_slot: ["report_to_portal_section_index", "r2psr_report", "r2psr_portal_section"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "The relationship between a Report and a Portal Section"}, ]}]
+---

@@ -1,0 +1,20 @@
+---
+frametype: "simple_instance"
+name: "KB_909166_Class290"
+type: "APP_PRO_TO_INFOREP_RELATION"
+supertype: ["APP_TO_INFO_RELATION", "Application_Relationship", "EA_Relation", ":SYSTEM-CLASS", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "app_pro_to_inforep_to_inforep", value: [{value_type: "simple_instance", value_content: "KB_909166_Class291"}, ]}, 
+{slot_reference: "app_pro_persists_info_rep", value: [{value_type: "boolean", value_content: "false"}, ]}, 
+{slot_reference: "used_in_app_dependencies", value: [{value_type: "simple_instance", value_content: "KB_065670_Class48"}, {value_type: "simple_instance", value_content: "KB_065670_Class46"}, ]}, 
+{slot_reference: "app_pro_to_inforep_from_app", value: [{value_type: "simple_instance", value_content: "KB_958736_Class1124"}, ]}, 
+{slot_reference: "app_pro_reads_info_rep", value: [{value_type: "string", value_content: "Yes"}, ]}, 
+{slot_reference: "app_pro_creates_info_rep", value: [{value_type: "string", value_content: "Unknown"}, ]}, 
+{slot_reference: "app_pro_deletes_info_rep", value: [{value_type: "string", value_content: "Unknown"}, ]}, 
+{slot_reference: "app_pro_updates_info_rep", value: [{value_type: "string", value_content: "Unknown"}, ]}, 
+{slot_reference: "relation_description", value: [{value_type: "string", value_content: "Internationaal via Stirint uitgewisselde gegevens worden via webservice ter beschikking gesteld in TAXI en biztax (maar niet opgeslagen in Taxi, alleen getoond via Taxi), maar alleen de volledig automatisch uitgewisselde gegevens, niet de individueel uitgewisselde gegevens: zowel gegevens uit autodt fatca cbc etr crs maar nog niet sdoce maar wel in nabije toekomst sdoce voor aangiftes 2016
+Gewoon signaal naar Taxi / Biztax dat er nieuw bericht in deze Stirint applicatie binnengekomen is.
+(publish subscribe niet via esb wel via jms queues op weblogic servers)
+Stirint publiceert signalen op moment dat iets binnenkomt uit het buitenland."}, ]}, 
+{slot_reference: "relation_name", value: [{value_type: "string", value_content: "signaal dat in Stirint OCDE relevante gegevens aanwezig zijn m.b.t. bepaalde belastingplichtige (publish) op toekomstige flow van stirint ocde naar taxi managed by Stirint Save Directive et OCDE_PROD"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

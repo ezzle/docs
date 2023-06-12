@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Information_Physical"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Information_Layer"]
+template_slot: ["physical_info_contained_in_arch_states"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Abstract"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "The Physical view of the Application Layer of the meta model. A set of meta-classes that helps to describes the physical deployment of the enterprise's information assets"}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Information_Physical"}, ]}]
+---

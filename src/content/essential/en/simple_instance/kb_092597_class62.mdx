@@ -1,0 +1,29 @@
+---
+frametype: "simple_instance"
+name: "KB_092597_Class62"
+type: "APP_PRO_TO_INFOREP_RELATION"
+supertype: ["APP_TO_INFO_RELATION", "Application_Relationship", "EA_Relation", ":SYSTEM-CLASS", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "app_pro_to_inforep_to_inforep", value: [{value_type: "simple_instance", value_content: "KB_118845_Class482"}, ]}, 
+{slot_reference: "app_pro_persists_info_rep", value: [{value_type: "boolean", value_content: "true"}, ]}, 
+{slot_reference: "app_pro_to_inforep_from_app", value: [{value_type: "simple_instance", value_content: "KB_958736_Class646"}, ]}, 
+{slot_reference: "app_pro_reads_info_rep", value: [{value_type: "string", value_content: "Yes"}, ]}, 
+{slot_reference: "app_pro_creates_info_rep", value: [{value_type: "string", value_content: "Yes"}, ]}, 
+{slot_reference: "operated_data_reps", value: [{value_type: "simple_instance", value_content: "KB_110044_Class75"}, {value_type: "simple_instance", value_content: "KB_110044_Class76"}, {value_type: "simple_instance", value_content: "KB_110044_Class77"}, {value_type: "simple_instance", value_content: "KB_110044_Class78"}, {value_type: "simple_instance", value_content: "KB_110044_Class80"}, {value_type: "simple_instance", value_content: "KB_110044_Class81"}, {value_type: "simple_instance", value_content: "KB_110044_Class84"}, {value_type: "simple_instance", value_content: "KB_110044_Class85"}, {value_type: "simple_instance", value_content: "KB_110044_Class95"}, {value_type: "simple_instance", value_content: "KB_110044_Class98"}, {value_type: "simple_instance", value_content: "KB_110044_Class103"}, {value_type: "simple_instance", value_content: "KB_972633_Class30"}, {value_type: "simple_instance", value_content: "KB_972633_Class31"}, {value_type: "simple_instance", value_content: "KB_972633_Class34"}, ]}, 
+{slot_reference: "app_pro_deletes_info_rep", value: [{value_type: "string", value_content: "Yes"}, ]}, 
+{slot_reference: "app_pro_updates_info_rep", value: [{value_type: "string", value_content: "Yes"}, ]}, 
+{slot_reference: "relation_description", value: [{value_type: "string", value_content: "In de applicatie EORI worden de marktdeelnemers geïdentificeerd door een EORI nr. 
+EORI staat voor “Economic Operator’s registration and identification”. Het EORI-nummer wordt gebruikt om de marktdeelnemers (en andere personen) in hun betrekkingen met de Douaneautoriteiten te identificeren.
+Europese Eori nrs. worden opgeslagen in de EORI db; voor EORI-nrs. buiten de EU houdt AA D&amp;A een excel bij.
+EORI is relevant voor GDPR, gezien
+ EORI marktdeelnemers zowel rechtspersonen als natuurlijke personen kunnen zijn. Een Eori economische operator kan een natuurlijke persoon zijn.
+ sommige marktdeelnemers vertegenwoordigd worden door een mandataris natuurlijke persoon.
+Op de TAXUD site van de Europese Commissie kunnen EORI nrs. gevalideerd worden. Dit geldt voor EORI nrs. binnen de EU waarvoor betrokken marktdeelnemer de toestemming gaf (consent) om deze te publiceren op de EU site Taxud. 
+Binnen de Belgische EORI db wordt bij een EORI nr. een flag gezet, wanneer betrokken marktdeelnemer zijn toestemming gaf om dit EORI nr. te publiceren op Taxud (incl naam en adres) (consent).
+Zie ook :
+https://financien.belgium.be/nl/douane_accijnzen/ondernemingen/reglementering/taxud
+We houden een kopie bij van de identificatiegegevens van marktdeelnemers bijgehouden op Europees niveau: synchronisatie 3 maal per dag. Let wel voor EORI nrs buiten EU wordt een excel bestand bijgehouden.
+
+De db EORI bevat zowel gegevens AEO als gegevens EORI."}, ]}, 
+{slot_reference: "relation_name", value: [{value_type: "string", value_content: "EORI Database (RDC) managed by EORI_PROD"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

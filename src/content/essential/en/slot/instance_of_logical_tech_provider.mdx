@@ -1,0 +1,9 @@
+---
+frametype: "slot"
+name: "instance_of_logical_tech_provider"
+type: ":ESSENTIAL-SLOT"
+supertype: [":STANDARD-SLOT", ":SLOT", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+own_slot_value: [{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Mapping to the use of a Technology Provider in a logical Technology Provider architecture. That is, what is this Technology_Instance being used for"}, ]}, 
+{slot_reference: ":SLOT-INVERSE", value: [{value_type: "slot", value_content: "deployed_technology_instances"}, ]}, 
+{slot_reference: ":SLOT-VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Technology_Provider_Usage"}, ]}]
+---

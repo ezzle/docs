@@ -1,0 +1,23 @@
+---
+frametype: "simple_instance"
+name: "KB_855962_Class12"
+type: "Information_Representation"
+supertype: ["Information_Representation_Type", "Information_Logical", "Information_Layer", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "inforep_category", value: [{value_type: "simple_instance", value_content: "KB_788688_Class6"}, ]}, 
+{slot_reference: "infodata_rep_lifecycle_status", value: [{value_type: "simple_instance", value_content: "KB_659448_Class0"}, ]}, 
+{slot_reference: "representation_label", value: [{value_type: "string", value_content: "Informatie over rechtspersonen op flow van PM naar 180B / ICPC"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "Informatie over rechtspersonen op flow van PM naar 180B / ICPC"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Flow informatie over rechtspersonen van PM repertorium naar 180b/ICPC
+-ICPC en 180B: maandelijks bestand voor terugbetalingsproces: bestand met uit te voeren terugbetalingen RV gaat naar ICPC (AA I&amp;I) en dan gaat output van ICPC naar AA Thesaurie. Als maand geen terugbetaling, dan verwittigt AA Fisc het team van ICPC van AA I&amp;I die dan een nul-bestand aanmaken.
+AA Thesaurie betaalt op rekening van de bank  madataris en deze bank betaalt dat door aan zijn klant – begunstigde.
+
+-naar AA Thesaurie: verzamelstaat
+-naar 13 banken: maandelijkse CSV  files met indeling som per begunstigde
+= verzamelstaat per bank met uitsplitsing van terug te betalen bedrag per begunstigde: obv query Alfons de Gols
+(deze mainframe query is het enige consultatiemiddel om globale overzichten van de beslissingen teruggaves PM te genereren)
+Momenteel dus alleen ter beschikking gesteld van de 13 banken die het spontaan vroegen (controlemechanisme).
+ Eenmaal jaarlijkse opslag alle beslissingen in groot excel bestand"}, ]}, 
+{slot_reference: "external_repository_instance_reference", value: [{value_type: "simple_instance", value_content: "sandbox_Class77513"}, ]}, 
+{slot_reference: "synonyms", value: [{value_type: "simple_instance", value_content: "sandbox_Class77509"}, {value_type: "simple_instance", value_content: "sandbox_Class77511"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

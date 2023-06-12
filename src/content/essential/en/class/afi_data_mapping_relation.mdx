@@ -1,0 +1,10 @@
+---
+frametype: "class"
+name: "AFI_DATA_MAPPING_RELATION"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["APP_TO_INFO_RELATION"]
+template_slot: ["afi_data_map_target", "afi_data_map_source", "afi_performing_mapping"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Relationship that defines an information or data mapping in terms of source and target information and data. Any logic that is used in the mapping should be captured in the relation_description slot."}, ]}]
+---

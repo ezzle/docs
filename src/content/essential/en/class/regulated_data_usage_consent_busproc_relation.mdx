@@ -1,0 +1,10 @@
+---
+frametype: "class"
+name: "REGULATED_DATA_USAGE_CONSENT_BUSPROC_RELATION"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["OBLIGATION_MGT_RELATION"]
+template_slot: ["regdatausage_to_busproc_regdatausage", "regdatausage_to_busproc_consent_types", "regdatausage_to_busproc_consent_busproc"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Defines the relationship between a Regulated Data Usage, a Business Process that is used to achieve consent as well as the types of consent that can be given"}, ]}]
+---

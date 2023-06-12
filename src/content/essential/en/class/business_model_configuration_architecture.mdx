@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Business_Model_Configuration_Architecture"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Logical_Business_Model"]
+template_slot: ["bmc_architecture_dependencies", "bmc_architecture_elements", "architecture_of_business_model_configuration"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Defines the architecture of a Business Model Configuration in terms of coarse grained business, information, application and technology building blocks"}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Logical_Business_Model"}, ]}]
+---

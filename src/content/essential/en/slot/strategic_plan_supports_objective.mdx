@@ -1,0 +1,9 @@
+---
+frametype: "slot"
+name: "strategic_plan_supports_objective"
+type: ":ESSENTIAL-SLOT"
+supertype: [":STANDARD-SLOT", ":SLOT", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+own_slot_value: [{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Slot to manage the set of Objectives that are supported by a Strategic Plan"}, ]}, 
+{slot_reference: ":SLOT-INVERSE", value: [{value_type: "slot", value_content: "objective_supported_by_strategic_plan"}, ]}, 
+{slot_reference: ":SLOT-VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Information_Architecture_Objective"}, {value_type: "class", value_content: "Technology_Architecture_Objective"}, {value_type: "class", value_content: "Application_Architecture_Objective"}, {value_type: "class", value_content: "Business_Objective"}, ]}]
+---

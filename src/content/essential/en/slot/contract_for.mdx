@@ -1,0 +1,10 @@
+---
+frametype: "slot"
+name: "contract_for"
+type: ":ESSENTIAL-SLOT"
+supertype: [":STANDARD-SLOT", ":SLOT", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+own_slot_value: [{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Relationship to capture the EA_Class element(s) in the architecture for which this Contract applies. Defined via a relationship class that groups a set of elements with associated service qualities. Define multiple instances of the relationship classes to manage varying service qualities."}, ]}, 
+{slot_reference: ":SLOT-MINIMUM-CARDINALITY", value: [{value_type: "integer", value_content: "1"}, ]}, 
+{slot_reference: ":SLOT-INVERSE", value: [{value_type: "slot", value_content: "contract_component_from_contract"}, ]}, 
+{slot_reference: ":SLOT-VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "CONTRACT_COMPONENT_RELATION"}, ]}]
+---

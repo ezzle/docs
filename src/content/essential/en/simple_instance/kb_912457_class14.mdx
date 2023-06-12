@@ -1,0 +1,12 @@
+---
+frametype: "simple_instance"
+name: "KB_912457_Class14"
+type: "Group_Business_Role"
+supertype: ["Business_Role", "Business_Logical", "Business_Layer", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "bus_role_played_by_actor", value: [{value_type: "simple_instance", value_content: "KB_912457_Class13"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "Registratiekantoor authentieke akten"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Registratiekantoor authentieke akten
+
+DER verzendt akte naar registratiebureau i.f.v. plaats waar studie notaris gevestigd is. Elk registratiebureau heeft territorium : adres notariskantoor (= adres van de studie, vestiging) bepaalt welk registratiekantoor bevoegd om akte notaris te registreren (dus niet i.f.v. plaats van de onroerende goederen opgenomen in de te registreren akte). DER houdt link bij tss. registratiebureau en vestiging notaris, ongeacht of goed opgenomen in akte een roerend of onroerend goed is Specifiek voor onroerende goederen houdt DER ook link bij tss. registratiebureau en kadastrale afdeling (waarin het onroerend goed gelegen is)  Normaal gezien bepaalt adres notariskantoor dus het bevoegd registratiebureau, maar er is een uitzondering: als akte moet geregistreerd worden en overgeschreven op hypotheekkantoor en als geen enkel onroerend goed uit deze akte gelegen is in het territorium van het registratiekantoor dat bevoegd is o.b.v. het adres van het notariskantoor waarvan Fod Fin de te registreren akte ontving, dan wordt bevoegd registratiekantoor bepaald door het adres van het onroerend goed dat als eerste opgenomen is in deze akte.   Toevoegen als opmerking bij registratiekantoor:   bij gerechtsdeurwaarder: standplaats gerechtsdeurwaarder bepaalt registratiekantoor dat akte ontvangen van de deurwaarder, registreert   bij griffie: standplaats van de rechtbank bepaalt registratiekantoor bevoegd om akte te registreren   onderhandse akte met onroerend goed, bv. huurcontract : ligging onroerend goed bepaalt registratiekantoor bevoegd om akte te registreren   onderhandse akte zonder onroerend goed: om het even welk registratiekantoor   uitzondering bij schenkingen : andere regels om te bepalen welk registratiekantoor bevoegd om schenkingsakte te registreren"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

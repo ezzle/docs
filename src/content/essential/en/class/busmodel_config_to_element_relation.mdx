@@ -1,0 +1,10 @@
+---
+frametype: "class"
+name: "BUSMODEL_CONFIG_TO_ELEMENT_RELATION"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Business_Relationship"]
+template_slot: ["bmcr_required_from_date_ISO8601", "bmcr_required_performance", "bmcr_from_busmodel_config", "bmcr_to_element"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Defines a relationship between a Business Model Configurations and an enterprise element"}, ]}]
+---

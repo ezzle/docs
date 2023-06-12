@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Information_Concept"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Information_Conceptual"]
+template_slot: ["supporting_data_subjects", "belongs_to_business_domain_information", "info_concept_info_domain", "sequence_number", "related_information_concepts", "known_information_issues", "has_information_views", "info_concept_supports_bus_driver", "cost_types_for_element", "information_concept_id", "relevant_information_objectives", "information_principles_relevant_to_concept", "related_from_information_concepts"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "High level, conceptual elements that capture the type of Information items that are used in the course of running the business. e.g. Cost, Production Order, Sales Volume."}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Information_Concept"}, ]}]
+---

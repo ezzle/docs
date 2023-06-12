@@ -1,0 +1,10 @@
+---
+frametype: "class"
+name: "Report_Menu"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Menu_Management"]
+template_slot: ["report_menu_groups", "report_menu_is_default", "report_menu_class", "report_menu_short_name"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Defines a pop-up menu that displays a set of links to Essential Viewer Reports"}, ]}]
+---

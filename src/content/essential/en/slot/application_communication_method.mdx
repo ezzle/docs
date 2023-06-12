@@ -1,0 +1,11 @@
+---
+frametype: "slot"
+name: "application_communication_method"
+type: ":ESSENTIAL-SLOT"
+supertype: [":STANDARD-SLOT", ":SLOT", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+own_slot_value: [{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "The communication style that is employed for this relation. Either synchronous or asynchronous."}, ]}, 
+{slot_reference: ":SLOT-MAXIMUM-CARDINALITY", value: [{value_type: "integer", value_content: "1"}, ]}, 
+{slot_reference: ":SLOT-MINIMUM-CARDINALITY", value: [{value_type: "integer", value_content: "1"}, ]}, 
+{slot_reference: ":SLOT-DEFAULTS", value: [{value_type: "string", value_content: "Synchronous"}, ]}, 
+{slot_reference: ":SLOT-VALUE-TYPE", value: [{value_type: "string", value_content: "Symbol"}, {value_type: "string", value_content: "Synchronous"}, {value_type: "string", value_content: "Asynchronous"}, ]}]
+---

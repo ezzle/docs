@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Physical_Process"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Physical_Process_Type"]
+template_slot: ["known_business_issues", "inverse_of_contained_physical_sub_processes", "process_manager", "process_performed_at_sites", "contained_physical_sub_processes", "implements_business_process", "process_performed_by_actor_role"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "An instance of a Business Process that is performed by a group or individual in the enterprise."}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Physical_Process"}, ]}]
+---

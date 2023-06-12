@@ -1,0 +1,10 @@
+---
+frametype: "class"
+name: "ACTOR_REPORTSTO_ACTOR_RELATION"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Business_Relationship"]
+template_slot: ["indvact_reportsto_indvact_strength", "indvact_reportsto_indvact_from_actor", "indvact_reportsto_indvact_in_org_context", "indvact_reportsto_indvact_to_actor"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Relationship that captures a reporting line between individual actors"}, ]}]
+---

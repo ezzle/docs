@@ -1,0 +1,44 @@
+---
+frametype: "simple_instance"
+name: "KB_958736_Class898"
+type: "Application_Provider"
+supertype: ["Application_Provider_Type", "Application_Logical", "Application_Layer", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "lifecycle_status_application_provider", value: [{value_type: "simple_instance", value_content: "EAS_Meta_Model_v1.3_Instance_191"}, ]}, 
+{slot_reference: "deployments_of_application_provider", value: [{value_type: "simple_instance", value_content: "KB_077842_Class958"}, ]}, 
+{slot_reference: "provides_application_services", value: [{value_type: "simple_instance", value_content: "KB_106591_Class53"}, ]}, 
+{slot_reference: "ap_supplier", value: [{value_type: "simple_instance", value_content: "KB_688901_Class23"}, ]}, 
+{slot_reference: "type_of_application", value: [{value_type: "simple_instance", value_content: "KB_130995_Class7"}, ]}, 
+{slot_reference: "known_app_issue", value: [{value_type: "simple_instance", value_content: "KB_499601_Class21"}, {value_type: "simple_instance", value_content: "KB_802335_Class44"}, {value_type: "simple_instance", value_content: "KB_461338_Class14"}, {value_type: "simple_instance", value_content: "KB_461338_Class126"}, {value_type: "simple_instance", value_content: "KB_366793_Class1"}, {value_type: "simple_instance", value_content: "KB_366793_Class2"}, {value_type: "simple_instance", value_content: "KB_461338_Class55"}, ]}, 
+{slot_reference: "ap_site_access", value: [{value_type: "simple_instance", value_content: "KB_749917_Class456"}, ]}, 
+{slot_reference: "ap_delivery_model", value: [{value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class20005"}, ]}, 
+{slot_reference: "provides_application_service", value: [{value_type: "simple_instance", value_content: "KB_045816_Class535"}, ]}, 
+{slot_reference: "provides_application_function_implementations", value: [{value_type: "simple_instance", value_content: "KB_461338_Class6"}, {value_type: "simple_instance", value_content: "KB_461338_Class8"}, {value_type: "simple_instance", value_content: "KB_461338_Class10"}, {value_type: "simple_instance", value_content: "KB_461338_Class12"}, ]}, 
+{slot_reference: "app_pro_supports_phys_proc", value: [{value_type: "simple_instance", value_content: "KB_420303_Class77"}, ]}, 
+{slot_reference: "uses_information_representation", value: [{value_type: "simple_instance", value_content: "KB_802335_Class17"}, {value_type: "simple_instance", value_content: "KB_802335_Class52"}, {value_type: "simple_instance", value_content: "KB_971692_Class2"}, {value_type: "simple_instance", value_content: "KB_563594_Class508"}, {value_type: "simple_instance", value_content: "KB_208967_Class11"}, {value_type: "simple_instance", value_content: "KB_197824_Class12"}, {value_type: "simple_instance", value_content: "KB_197824_Class16"}, {value_type: "simple_instance", value_content: "KB_461338_Class18"}, {value_type: "simple_instance", value_content: "KB_461338_Class31"}, {value_type: "simple_instance", value_content: "KB_461338_Class48"}, {value_type: "simple_instance", value_content: "KB_461338_Class53"}, {value_type: "simple_instance", value_content: "KB_461338_Class103"}, {value_type: "simple_instance", value_content: "KB_583295_Class33"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "Mini One Stop Shop Back Office_prod (MOSS)"}, ]}, 
+{slot_reference: "element_classified_by", value: [{value_type: "simple_instance", value_content: "KB_889850_Class9"}, ]}, 
+{slot_reference: "performance_measures", value: [{value_type: "simple_instance", value_content: "KB_225773_Class77"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Deze toepassing beheert een bijzonder btw-stelsel , dat vanaf 1 januari 2015 beschikbaar is voor btw-plichtigen die niet zijn gevestigd in één of meer lidstaten van de EU en die diensten van telecommunicatie, radio en televisieomroep of elektronische diensten verlenen aan mensen die niet btw-plichtig zijn in deze lidstaten. Concreet heeft deze toepassing tot doel de betrokken btw-plichtigen de mogelijkheid te bieden om: 
+ zich te laten registreren via het loket in kwestie bij een lidstaat van identificatie =&gt; REGISTRATIE; en
+ binnen de lidstaat van identificatie langs elektronische weg één enkele btw-aangifte (specifiek voor die activiteiten) in te dienen voor alle activiteiten, uitgevoerd binnen de betrokken lidstaten van gebruik =&gt; AANGIFTE; en
+ aan de lidstaat van identificatie de ontvangen btw te betalen (tegen de tarieven, toegepast door de lidstaat van gebruik) =&gt; BETALING. 
+
+De lidstaat van identificatie is belast met het doorsturen van alle informatie met betrekking tot de registratie, de aangifte en de betalingen naar de betrokken lidstaten en met het verzekeren van de verdeling en de betaling van de ontvangen btw voor rekening van de lidstaten van gebruik. De lidstaat van gebruik of vestiging is verantwoordelijk voor het ontvangen en verzekeren van het beheer en de verwerking van die informatie. Dit nieuwe enig loket (MOSS) moet de huidige toepassing VOES1 (VAT on e services) overnemen en omvatten, die is bestemd voor dienstverleners, gevestigd buiten de EU. 
+
+Het project omvat tevens de uitvoering van de Europese bepalingen met betrekking tot de toegang tot databases en tot automatische uitwisselingen van informatie waarmee de lidstaten de controle over dit bijzondere stelsel kunnen verzekeren. Moss heeft zowel een gedeelte backoffice en frontoffice.
+
+Moss valideert aangiftes en regelt ook betalingen (uit aangifte blijkt dat betaald of terugbetaald moet worden).
+Moss gebruikt de Pay it  module en zendt bestanden naar Pay it die daarna van Pay it naar BTM en dan van Btm naar de Financiële Post gaan.
+In de omgekeerde richting ontvangt Moss  coda bestanden van pay it (flow van pay it naar moss).
+
+Gestion Back office du régime particulier TVA Mini One Stop Shop
+Other dependencies: FileNet, Webservice.
+
+Moss is geen Stirint module, wel btw applicatie
+
+Moss wordt binnenkort Oss: One Stop Shop: taks wordt geheven in land van consumptie (pays de consommation): voor alle diensten: de scope wordt zeer uitgebreid: op termijn zullen we veel info bijhouden over niet Belgische onderworpenen: voor elke onderworpene ongeacht van welk land ontvangen we registratiegegevens en stockeren we deze in db Moss en voorlopig nog in db Voes, maar in de toekomst niet meer in db Voes (Voes retired). Alle btw onderworpenen die nog actief zijn, zijn geregistreerd in Moss. 
+Moss bevat alle info over Belgische en buitenlandse onderworpenen die geregistreerd zijn in België en prestaties doen in andere lidstaten en die informatie wordt getransfereerd volgens Europese wetgeving."}, ]}, 
+{slot_reference: "stakeholders", value: [{value_type: "simple_instance", value_content: "KB_870833_Class23"}, {value_type: "simple_instance", value_content: "KB_687728_Class7"}, {value_type: "simple_instance", value_content: "KB_687728_Class14"}, {value_type: "simple_instance", value_content: "KB_687728_Class3"}, {value_type: "simple_instance", value_content: "KB_510628_Class2"}, {value_type: "simple_instance", value_content: "KB_687728_Class0"}, {value_type: "simple_instance", value_content: "KB_687728_Class2"}, {value_type: "simple_instance", value_content: "KB_471077_Class8"}, {value_type: "simple_instance", value_content: "KB_802335_Class3"}, {value_type: "simple_instance", value_content: "KB_802335_Class2"}, {value_type: "simple_instance", value_content: "KB_197824_Class7"}, {value_type: "simple_instance", value_content: "KB_689670_Class1222"}, ]}, 
+{slot_reference: "synonyms", value: [{value_type: "simple_instance", value_content: "sandbox_Class51930"}, {value_type: "simple_instance", value_content: "sandbox_Class51931"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

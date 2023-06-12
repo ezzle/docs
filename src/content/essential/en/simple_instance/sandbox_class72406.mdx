@@ -1,0 +1,13 @@
+---
+frametype: "simple_instance"
+name: "sandbox_Class72406"
+type: "Synonym"
+supertype: ["Utilities", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "synonym_language", value: [{value_type: "simple_instance", value_content: "KB_848683_Class0"}, ]}, 
+{slot_reference: "system_content_visibility", value: [{value_type: "simple_instance", value_content: "KB_229567_Class68"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "dagelijks csv bestand extract met openstaande penale boetes op Flow van First penale boetes naar ANPR DEV"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Flow van First penale boetes naar ANPR DEV (dagelijks extract met openstaande penale boetes). is een Mysql db die geconsulteerd kan worden om de verschillende lijsten overtredingen te raadplegen: nu penale boeten, alcohol en rode gasolie; bevat ook info uit tabel met nummerplaat die vroeger manueel aangeleverd werd. Nu gaat het via procedure via AA I&amp;I: gebeurt geautomatiseerd en AA I&amp;I levert dagelijks een update aan: csv bestand: in dat bestand zit nationaal nr., nummerplaat, totaal bedrag, een referentie en ook kantoor van AA I&amp;I. Csv penale boeten uit First en via batch worden nummerplaten eraan gekoppeld door AA I&amp;i. Iemand bij I&amp;i zorgt ervoor dat dat gebeurt en zij sturen bestand door naar SD Ict; dit csv bestand bevat ook kantoor, penale boete, schuldreferte. Die csv wordt dagelijks opgeladen. Mensen mobiele teams halen dat uit de database. SD ICT voegt dat Csv bestand toe in de Mysql db van Anpr. Ook worden lijsten met overtredingen aangemaakt door de client van applicatie MBM motorbrigades (Mario vandenbroeck). Het csv bestand gaat naar de mysql db en dan gaat info omtrent schulden n.a.v. overtredingen naar de Anpr applicatie zelf die alle schulden weergeeft. Indien iemand penale boetes heeft voor verschillende kantoren dan werd afgesproken dat moet geïnd worden door kantoor met grootste gezamenlijke schuld."}, ]}, 
+{slot_reference: "system_content_lifecycle_status", value: [{value_type: "simple_instance", value_content: "KB_229567_Class67"}, ]}, 
+{slot_reference: "external_repository_instance_reference", value: [{value_type: "simple_instance", value_content: "sandbox_Class81501"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

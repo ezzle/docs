@@ -1,0 +1,10 @@
+---
+frametype: "class"
+name: "Technology_Product_Dependency"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Technology_Product_Architecture_Type"]
+template_slot: ["tpd_unsupported_products", "tpd_supported_products", "tpd_technology_component"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Class to define dependencies of a Technology Product in terms of supported and un-supported products."}, ]}]
+---

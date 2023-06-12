@@ -1,0 +1,10 @@
+---
+frametype: "class"
+name: "CUST_JOURNEY_PHASE_TO_EXPERIENCE_RELATION"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["CUSTOMER_JOURNEY_RELATION"]
+template_slot: ["cust_journey_phase_to_experience_to_experience", "cust_journey_phase_to_experience_from_cust_journey_phase"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Defines a relationship between a Customer Jourmey and a Customer Experience Rating"}, ]}]
+---

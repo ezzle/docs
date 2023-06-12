@@ -1,0 +1,24 @@
+---
+frametype: "simple_instance"
+name: "KB_316337_Class1154"
+type: "Synonym"
+supertype: ["Utilities", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "synonym_language", value: [{value_type: "simple_instance", value_content: "essential_baseline_v3.0.4_Class10004"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "service DER"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "L'application DER est la passerelle des notaires vers le SPF Finances pour l'envoi des actes à enregistrer et/ou à déposer auprès des conservateurs d'hypothèques et de récupérer auprès de l'administration par ce moyen les certificats confirmant l'exécution des formalités demandées par le notaire. 
+
+DER fournit également des services importants pour les Régions. Les services actuellement en question :   
+ envoi des actes notariés pour le traitement de l'aspect fiscal (actuellement exclusivement en Flandre). Il s'agit à la fois des actes notariés déposés par voie électronique et des actes sur papier (ces derniers à partir de fin 2015) ;   
+ traitement des actes des comités d'acquisition (comités d'acquisition Fédéraux et régionaux). Noms des services web publié sur ESB(FodFin): DerFeedback  DerHypo  DerRequest  DerToVlabel.
+
+Guichet dématérialisé d'un bureau de Sécurité juridique de AA Padoc pour:
+ demandes de certificat patrimonial (CP)
+ les actes notariés et les actes des comités d'acquisition permettent aux notaires (et aux comités d'acquisition) d'envoyer leurs demandes de formalités administratives (enregistrement et hypothèque) par voie électronique (et de recevoir les réponses électroniquement). 
+L'échange de données s'effectue via le service web (et jms) avec STIPAD/FileNet, la Fédération des Notaires (via ASA (DAV)), VLABEL (taxes Flamandes (notamment pour l'enregistrement régionalisé (et droits de succession))) et HYPO. Il n'y a pas encore d'échange automatique avec COMFOR (mais il est prévu pour l'avenir). DER s'occupe également des actes notariés qui ne concernent pas l'immobilier.  
+
+Les notaires peuvent envoyer leurs actes avec pièces jointes par voie électronique au bureau d'enregistrement et au bureau d'hypothèques et les receveurs de l'enregistrement et les conservateurs des hypothèques peuvent à leur tour renvoyer les actes avec les formalités aux notaires par voie électronique. Ce projet est une extension de DERVE(-SP25) (Documents Electroniquement Reconnaissable).
+Si les données de signalétique sont enregistrées dans un acte, il est obligatoire d'utiliser systématiquement des numéros BCE et RN ou des numéros bis. Ces numéros BCE, RN ou bis ne peuvent être copiés que s'ils sont dans l'acte ; les parties peuvent décider qu'elles ne veulent pas que leur numéro de RN soit inclu dans l'acte, mais au moment du virement le lien avec le numéro RN est fait. Dans Hypo aucune donnée d'addresse est maintenue.
+Par numéro de formalité il y a donc un document pdf: 1 pdf pour une annexe hypo, 1 pdf pour un acte hypothécaire, 1 pdf pour une borderel
+(après avoir entrée dans DER, les pdf sont toujours séparés, mais en db ils sont fusionnés en 1 pdf)."}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

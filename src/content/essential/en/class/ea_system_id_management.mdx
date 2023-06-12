@@ -1,0 +1,10 @@
+---
+frametype: "class"
+name: "EA_System_ID_Management"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["EA_System"]
+template_slot: ["ea_last_class_id", "ea_last_slot_id"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Class to manage the assignment of internal system IDs in the Essential EIP, to those elements that do not already have this facility. e.g. Class and Slot"}, ]}]
+---

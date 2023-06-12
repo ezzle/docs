@@ -1,0 +1,12 @@
+---
+frametype: "class"
+name: "Technology_Product"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Technology_Provider"]
+template_slot: ["supplier_technology_product", "vendor_product_lifecycle_status", "technology_product_family", "technology_product_architecture", "product_label", "purchase_status"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "A commercially available Technology product that an organisation can buy in order to provide Technology Components."}, ]}]
+template_facet_value: [{slot_reference: "implements_technology_components", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Technology_Product_Role"}, ]}, 
+{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Technology_Product"}, ]}]
+---

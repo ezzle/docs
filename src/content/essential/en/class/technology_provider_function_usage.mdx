@@ -1,0 +1,13 @@
+---
+frametype: "class"
+name: "Technology_Provider_Function_Usage"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Technology_Build_Architecture_Type"]
+template_slot: ["provides_technology_function"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Class for modelling the usage of a Technology Function that is being implemented by a Technology Provider in a Technology Provider Architecture. This class holds the information about which Provider Usage is providing the Technology Function and which role (in terms of Technology Components) this Technology Provider is playing in this usage in the architecture"}, ]}]
+template_facet_value: [{slot_reference: "technology_architecture_display_label", facet_reference: ":DEFAULTS", value: [{value_type: "string", value_content: "&lt;function_used&gt;"}, ]}, 
+{slot_reference: "name", facet_reference: ":DEFAULTS", value: [{value_type: "string", value_content: "&lt;architecture&gt;::&lt;product&gt;::&lt;component&gt;::&lt;function&gt;"}, ]}, 
+{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Technology_Provider_Function_Usage"}, ]}]
+---

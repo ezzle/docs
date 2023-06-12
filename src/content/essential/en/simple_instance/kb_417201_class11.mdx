@@ -1,0 +1,19 @@
+---
+frametype: "simple_instance"
+name: "KB_417201_Class11"
+type: ":APU-TO-APU-STATIC-RELATION"
+supertype: [":APA-STATIC-RELATION", ":Application_Relationship", ":EA_Graph_Relation", ":DIRECTED-BINARY-RELATION", ":RELATION", ":SYSTEM-CLASS", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "apu_to_apu_relation_inforep_acquisition_method", value: [{value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class20026"}, ]}, 
+{slot_reference: "apu_to_apu_relation_inforep_service_quals", value: [{value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class20045"}, ]}, 
+{slot_reference: "apu_to_apu_relation_inforeps", value: [{value_type: "simple_instance", value_content: "KB_417201_Class12"}, ]}, 
+{slot_reference: "contained_in_static_application_provider_architecture", value: [{value_type: "simple_instance", value_content: "KB_349031_Class0"}, ]}, 
+{slot_reference: ":relation_name", value: [{value_type: "string", value_content: "Static Architecture of::ICPC_PROD: Relation from Debiteurenbeheer : in : ICPC: Relation from ICPC in ICPC"}, ]}, 
+{slot_reference: ":relation_description", value: [{value_type: "string", value_content: "Maandelijkse flow van ICPC naar debiteurenbeheer van openstaande schulden (zowel vervallen als niet vervallen schulden)
+-iedere nacht batch: nieuwe kohierartikels Dir. Belastingen: 3 dagen na creatie artikel owv bewerking op mainframe ertussen, zo heeft men in GDD praktisch onmiddellijk schuldtoestand na inkohiering
+-dagelijkse flat file van programma op de Bull: actualisatie saldi ICPC aanslagen (vervallen intresten en niet betaalde bedragen)
+-maandelijkse flat file van programma op de Bull: update invorderingscodes van reeds in GDD opgenomen aanslagen: invorderingscode wordt eenmaal maandelijks berekend via ICMOD3 en na verwerking verzonden via flat file van ICPC naar debiteurenbeheer."}, ]}, 
+{slot_reference: ":relation_label", value: [{value_type: "string", value_content: "depends on"}, ]}, 
+{slot_reference: ":FROM", value: [{value_type: "simple_instance", value_content: "KB_417201_Class10"}, ]}, 
+{slot_reference: ":TO", value: [{value_type: "simple_instance", value_content: "KB_349031_Class1"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

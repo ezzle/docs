@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Modal_Report"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Modal_Management"]
+template_slot: ["modal_report_is_enabled", "modal_report_template_name", "modal_report_js_name", "modal_report_menu_label", "modal_report_menu_item_category", "modal_report_for_classes", "modal_report_content_apis"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "ESSENTIAL CLOUD/DOCKER ONLY: Defines a static or interactive report/editor that is presented to a user as a popup modal"}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Essential_Viewer"}, ]}]
+---

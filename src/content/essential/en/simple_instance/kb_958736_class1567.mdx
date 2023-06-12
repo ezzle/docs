@@ -1,0 +1,46 @@
+---
+frametype: "simple_instance"
+name: "KB_958736_Class1567"
+type: "Application_Provider"
+supertype: ["Application_Provider_Type", "Application_Logical", "Application_Layer", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "application_provider_purpose", value: [{value_type: "simple_instance", value_content: "essential_prj_CC_v1.4.2_Instance_670003"}, ]}, 
+{slot_reference: "lifecycle_status_application_provider", value: [{value_type: "simple_instance", value_content: "EAS_Meta_Model_v1.3_Instance_191"}, ]}, 
+{slot_reference: "provides_application_services", value: [{value_type: "simple_instance", value_content: "KB_106591_Class278"}, ]}, 
+{slot_reference: "type_of_application", value: [{value_type: "simple_instance", value_content: "KB_117159_Class0"}, {value_type: "simple_instance", value_content: "KB_130995_Class8"}, ]}, 
+{slot_reference: "ap_codebase_status", value: [{value_type: "simple_instance", value_content: "essential_prj_AA_v1.4_Instance_119"}, ]}, 
+{slot_reference: "known_app_issue", value: [{value_type: "simple_instance", value_content: "KB_378628_Class11"}, {value_type: "simple_instance", value_content: "KB_327144_Class28"}, {value_type: "simple_instance", value_content: "KB_455519_Class26"}, {value_type: "simple_instance", value_content: "KB_455519_Class29"}, {value_type: "simple_instance", value_content: "KB_738849_Class0"}, {value_type: "simple_instance", value_content: "KB_709760_Class2"}, ]}, 
+{slot_reference: "ap_site_access", value: [{value_type: "simple_instance", value_content: "KB_749917_Class456"}, ]}, 
+{slot_reference: "ap_delivery_model", value: [{value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class20005"}, ]}, 
+{slot_reference: "implemented_with_technology", value: [{value_type: "simple_instance", value_content: "KB_802895_Class17"}, ]}, 
+{slot_reference: "ap_static_architecture", value: [{value_type: "simple_instance", value_content: "KB_324783_Class45"}, ]}, 
+{slot_reference: "operates_on_information_representation", value: [{value_type: "simple_instance", value_content: "KB_575642_Class11"}, {value_type: "simple_instance", value_content: "KB_324783_Class64"}, {value_type: "simple_instance", value_content: "KB_236685_Class29"}, ]}, 
+{slot_reference: "provides_application_service", value: [{value_type: "simple_instance", value_content: "KB_209475_Class8"}, ]}, 
+{slot_reference: "provides_application_function_implementations", value: [{value_type: "simple_instance", value_content: "KB_337228_Class6"}, {value_type: "simple_instance", value_content: "KB_229096_Class44"}, {value_type: "simple_instance", value_content: "KB_229096_Class45"}, {value_type: "simple_instance", value_content: "KB_229096_Class46"}, {value_type: "simple_instance", value_content: "KB_229096_Class47"}, ]}, 
+{slot_reference: "app_pro_supports_phys_proc", value: [{value_type: "simple_instance", value_content: "KB_236685_Class28"}, ]}, 
+{slot_reference: "uses_information_representation", value: [{value_type: "simple_instance", value_content: "KB_324783_Class53"}, {value_type: "simple_instance", value_content: "KB_193714_Class49"}, {value_type: "simple_instance", value_content: "KB_036446_Class9"}, {value_type: "simple_instance", value_content: "KB_106368_Class160"}, {value_type: "simple_instance", value_content: "KB_455519_Class18"}, {value_type: "simple_instance", value_content: "KB_455519_Class27"}, {value_type: "simple_instance", value_content: "KB_455519_Class30"}, {value_type: "simple_instance", value_content: "KB_455519_Class32"}, {value_type: "simple_instance", value_content: "KB_455519_Class34"}, {value_type: "simple_instance", value_content: "KB_116671_Class15"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "Vignettes 705_Prod"}, ]}, 
+{slot_reference: "element_classified_by", value: [{value_type: "simple_instance", value_content: "KB_024608_Class12"}, {value_type: "simple_instance", value_content: "KB_889850_Class1"}, ]}, 
+{slot_reference: "performance_measures", value: [{value_type: "simple_instance", value_content: "KB_225773_Class43"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Een applicatie aangewend om, voornamelijk in het kader van de invoer of de intracommunautaire verwerving van voertuigen, vignetten 705 te registreren en af te leveren:  identificatie van voertuig op vlak van de douanereglementering. 
+
+Dit zijn Vignetten die bestemd zijn voor voertuigen die in het buitenland worden aangekocht maar in België worden ingeschreven. Alvorens de DIV een nummerplaat kan aanmaken, moeten deze voertuigen bij FOD Financiën aangegeven worden.
+Om de 10 minuten wordt er contact gemaakt met de applicatie van het DIV. Dit zorgt er dan ook voor dat de invoerder van een voertuig van zodra zijn vignet 705 aangemaakt is, online bij het DIV zijn nummerplaat kan aanvragen.
+
+Roos formulier na keuring met sticker e705 en daarop wordt gezet of Btw betaald al dan niet.
+
+Door de ontwikkeling en de IAM-integratie van de toepassing GI consult, wordt het huidig authenticatiemechanisme van deze toepassing (en 21 andere toepassingen) op korte termijn redundant. Bovendien wordt (de inhoud en de vorm van) de toepassing GI consult op middellange termijn grondig herzien. Na de ingebruikname van de toepassing E705, wordt de functionaliteit van deze toepassing redundant. Deze applicatie zal bijgevolg op korte termijn omgevormd worden tot een rapporteringsapplicatie.
+
+Applicatie-eigenaar: Johan Dejaeger
+
+Authenticatie gebruikers:paswoordbeveiligde applicatie. Met lokaal login en passwoord (geëncrypteerd) beheer, niet Iam compliant.
+3 soorten vergunningen vignetten 705
+Technologie: Php + php runner met maria db (toekomst db2)
+
+Oude toepassing vignetten 705 werkt met Mysql db maar nieuwe toepassing Vignetten 705 zal met db2 databank werken. Oude toepassing wordt read only om duplicaten te maken.
+Naast Vignetten 705 is er E705, wat een beheersapplicatie is waarmee de centrale component van Team vergunningen kan ingrijpen bij vignetten 705 als nodig om wijzigingen of opzoekingen te doen met meer opties dan kantoor kan.
+
+Vignetten 705 = echte input applicatie, waarin xml document opgeladen wordt dat toekomt op centrale component. Team vergunning centrale component laadt xml op over vergunninghouders vignetten 705 die vereenvoudigde procedure krijgen en hebben reeks vignetten gereserveerd voor hen en die ze ten allen tijde mogen gebruiken. XML wordt aangemaakt vanuit pdf."}, ]}, 
+{slot_reference: "stakeholders", value: [{value_type: "simple_instance", value_content: "KB_522925_Class79"}, {value_type: "simple_instance", value_content: "KB_471077_Class93"}, {value_type: "simple_instance", value_content: "KB_361629_Class25"}, {value_type: "simple_instance", value_content: "KB_687214_Class32"}, {value_type: "simple_instance", value_content: "KB_687214_Class40"}, {value_type: "simple_instance", value_content: "KB_471077_Class71"}, {value_type: "simple_instance", value_content: "KB_538670_Class86"}, {value_type: "simple_instance", value_content: "KB_361629_Class22"}, {value_type: "simple_instance", value_content: "KB_323549_Class904"}, {value_type: "simple_instance", value_content: "KB_933153_Class3"}, {value_type: "simple_instance", value_content: "KB_629485_Class1"}, ]}, 
+{slot_reference: "synonyms", value: [{value_type: "simple_instance", value_content: "sandbox_Class53346"}, {value_type: "simple_instance", value_content: "sandbox_Class53347"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

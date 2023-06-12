@@ -1,0 +1,10 @@
+---
+frametype: "class"
+name: "EA_User"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["EA_Security"]
+template_slot: ["user_first_name", "email", "ea_security_user_id", "ea_security_clearance_read", "ea_security_clearance_edit", "user_last_name"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "The basic user database for the open source Essential Viewer, which can be used where a user profile manager is not available."}, ]}]
+---

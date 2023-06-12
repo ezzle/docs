@@ -1,0 +1,17 @@
+---
+frametype: "simple_instance"
+name: "sandbox_Class78850"
+type: "Synonym"
+supertype: ["Utilities", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "synonym_language", value: [{value_type: "simple_instance", value_content: "essential_baseline_v3.0.4_Class10004"}, ]}, 
+{slot_reference: "system_content_visibility", value: [{value_type: "simple_instance", value_content: "KB_229567_Class68"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "Ordonnance et 2 fichiers de paiement pour Bpost sur le flux par FTP de TR-Restitution / Respo vers BTM"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Flux de Restitution TR / Respo vers  BTM. Interface avec un serveur FTP qui met un fichier à disposition de l'application Acces encoding payments et l'envoie à  BTM, qui l'envoie au mainframe IBM et du mainframe IBM vers BTM et de BTM à la Poste financière. 
+Sur le serveur FTP sont envoyés : à la fois l'ordonnance et 2 fichiers pour Bpost ; après activation par SD B&amp;B le fichier est converti en fichier XML parce que XML est nécessaire pour envoyer à la Poste financière.
+Un fichier est créé pour effectuer les remboursements: l'ordonnance est créée à la fin.
+Pour chaque directeur d'un centre régional, les remboursements sont fusionnés en une seule ordonnance et confirmés par la direction de Bruxelles.
+Via le serveur FTP, un fichier est mis à disposition de l'AG Trésorie et SD B&amp;B, et après activation par SD B&amp;B de BTM: via l'application acces encoding payments. Au BTM, ce dossier est signé par le comptable centralisateur. L'application encoding payments est donc également utilisée par SD B&amp;B. L'application Acces de la CDVU pour le remboursement des salaires est également utilisée par DCK et SD B&amp;B. Différentes interfaces acces avec 1 db central: ce flux de paiement peut être optimisé. L'application Acces encoding payments crée un fichier plat qui doit être converti en un fichier XML qui peut être envoyé à la Poste financière: cela se fait comme suit : en envoyant l'extraction Acces au mainframe IBM ; sur le mainframe IBM un batch s'exécute qui via une bibliothèque Cobol lance l'application pc xml tunder qui crée le fichier xml (fichier plat de conversion à partir de encoding payments) et le transmet à BTM : éventuellement à lier à d'autres applications pour les flux de paiement, pensez à l'AG Trésorie, SD B&amp;B, SD P&amp;O (Cdvu)."}, ]}, 
+{slot_reference: "system_content_lifecycle_status", value: [{value_type: "simple_instance", value_content: "KB_229567_Class67"}, ]}, 
+{slot_reference: "external_repository_instance_reference", value: [{value_type: "simple_instance", value_content: "sandbox_Class78851"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

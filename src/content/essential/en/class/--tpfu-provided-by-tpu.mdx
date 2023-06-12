@@ -1,0 +1,16 @@
+---
+frametype: "class"
+name: ":TPFU-PROVIDED-BY-TPU"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: [":TPA-RELATION"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Relation to model the Technology Provider Usage that is providing a Technology Provider Function Usage. This relation enables the modeller to capture those Technology Functions that are exposed by a Technology Provider."}, ]}]
+template_facet_value: [{slot_reference: ":relation_name", facet_reference: ":DEFAULTS", value: [{value_type: "string", value_content: "&lt;architecture&gt;::&lt;from&gt;::provided by::&lt;to&gt;"}, ]}, 
+{slot_reference: ":relation_label", facet_reference: ":DEFAULTS", value: [{value_type: "string", value_content: "provided by"}, ]}, 
+{slot_reference: ":FROM", facet_reference: ":DOCUMENTATION-IN-FRAME", value: [{value_type: "string", value_content: "The Technology Product Function Usage that is being provided"}, ]}, 
+{slot_reference: ":FROM", facet_reference: ":MINIMUM-CARDINALITY", value: [{value_type: "integer", value_content: "1"}, ]}, 
+{slot_reference: ":FROM", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Technology_Provider_Function_Usage"}, ]}, 
+{slot_reference: ":TO", facet_reference: ":DOCUMENTATION-IN-FRAME", value: [{value_type: "string", value_content: "The Technology Product Usage that is providing the Technology Function in a Technology Product Architecture."}, ]}, 
+{slot_reference: ":TO", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Technology_Provider_Usage"}, ]}]
+---

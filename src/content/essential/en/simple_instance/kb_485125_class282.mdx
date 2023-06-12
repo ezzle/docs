@@ -1,0 +1,25 @@
+---
+frametype: "simple_instance"
+name: "KB_485125_Class282"
+type: "Business_Task"
+supertype: ["Business_Process_Type", "Business_Logical", "Business_Layer", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "business_process_performed_by_business_role", value: [{value_type: "simple_instance", value_content: "KB_485125_Class138"}, ]}, 
+{slot_reference: "business_process_id", value: [{value_type: "string", value_content: "P011.AB05.10.4"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "P011.AB05.10.4 4. Opvolgen (huur, staat van het goed, indexatie)  / 4. Effectuer suivi (loyer, état du bien, indexation)"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "De dossierbeheerder van FinDomImmo kijkt in FEDCOM-SAP na of de huurder de betaling van de huur heeft uitgevoerd. Bij niet-betaling stuurt de dossierbeheerder een herinnering aan de huurder. Na de derde rappel wordt de huur opgezegd en gaat het proces verder met activiteit Betekenen opzeg.
+
+De controle van de betaling van de huur is een activiteit die regelmatig wordt uitgevoerd tot het einde van het contract en waarvan de periodiciteit afhangt van het type huurcontract.
+
+De dossierbeheerder van FinDomImmo verricht een controle naar de staat van het gehuurde goed. Wanneer hij schade vaststelt dat door de huurder werd toegebracht, vraagt hij hem om het gehuurde goed in goede staat terug te brengen. Hij voert deze activiteit jaarlijks uit tot het einde van het contract. Wanneer na controle het goed niet in goede staat werd teruggebracht, gaat het proces verder met activiteit Betekenen opzeg.
+
+De dossierbeheerder van FinDomImmo berekent de indexatie van de huur op basis van de van toepassing zijnde index en deelt het bedrag van de geïndexeerde huur mee aan de huurder. Deze actie wordt jaarlijks uitgevoerd tot het einde van de huur.
+
+ / Le gestionnaire de dossier FinDomImmo vérifie dans FEDCOM-SAP si le paiement du loyer a été réalisé par le locataire. En cas de non-paiement, le gestionnaire de dossier FinDomImmo envoie un rappel de paiement au locataire. Au bout du 3ème rappel, la résiliation du bail est décidée et le processus se poursuit avec l’activité Signifier résiliation.
+
+Le contrôle du paiement du loyer est une activité qui est effectuée régulièrement jusqu’au terme du bail et dont la périodicité dépend du type de bail.
+
+Le gestionnaire de dossier FinDomImmo réalise un contrôle de l’état du bien loué. S’il constate des dégâts causés par le locataire, il lui demande de remettre le bien loué en conformité. Il réalise cette activité annuellement jusqu’au terme du bail. Si après contrôle, la mise en conformité n’a pas été effectuée, le processus se poursuit avec l’activité Signifier résiliation.
+
+Le gestionnaire de dossier FinDomImmo calcule l’indexation du loyer sur base de l’index applicable et communique le montant du loyer indexé au locataire. Cette activité est réalisée annuellement jusqu’au terme du bail."}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

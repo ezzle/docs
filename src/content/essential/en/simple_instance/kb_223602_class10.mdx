@@ -1,0 +1,34 @@
+---
+frametype: "simple_instance"
+name: "KB_223602_Class10"
+type: "Application_Provider_Role"
+supertype: ["Application_Logical", "Application_Layer", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "implementing_application_service", value: [{value_type: "simple_instance", value_content: "KB_045816_Class803"}, ]}, 
+{slot_reference: "apr_lifecycle_status", value: [{value_type: "simple_instance", value_content: "EAS_Meta_Model_v1.3_Instance_191"}, ]}, 
+{slot_reference: "role_for_application_provider", value: [{value_type: "simple_instance", value_content: "KB_223602_Class9"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "STIRON lot 2  TR (track rekeningen) as Stiron BTW service"}, ]}, 
+{slot_reference: "element_classified_by", value: [{value_type: "simple_instance", value_content: "KB_024608_Class12"}, {value_type: "simple_instance", value_content: "KB_889850_Class0"}, {value_type: "simple_instance", value_content: "KB_889850_Class9"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "De Track Rekeningen houdt zich bezig met alle aspecten van de boekhouding van de BTW aangiften.  Voor elke BTW belastingsplichtige zal een fiscale balans (een boekhouddossier) bijgehouden worden.
+
+De Track Rekeningen houdt zich bezig met alle aspecten van de boekhouding van de BTW aangiften. 
+
+Onder de Track Rekeningen verstaan we in de context van dit document de volgende modules:
+-Module 2 : Rekening Courant
+-Module 3 : Invordering (RCIV)
+-Module 4 : Bijzondere rekeningen (BRCS)
+-Module 7 : Intranettoepassingen
+-Module 8 : Link DIM (MyScan) en Filenet
+
+Data uitwisseling STIRON TRACK REKENINGEN:
+
+1 De communicatie tussen STIRON2-TR en E604 gebeurt via webservice calls. Wanneer een BTW hoedanigheid wordt toegekend aan een onderneming, moet STIRON2-TR hiervan op de hoogte gebracht worden zodat de BTW entiteit kan aangemaakt worden.  Ook bij wijzigingen aan de BTW hoedanigheid moet STIRON2-TR hiervan op de hoogte gebracht worden.
+
+2 Alle communicatie tussen STIR-BTW en STIRON2-TR zal verlopen via JMS. De BTW gegevens van STIRON2-TR worden opgeslagen in de databank STIR-BTW, die reeds alle BTW aangiften bevat.  
+
+3 Verdere integratie met STIMER zal vooral op het niveau van de schermen plaatsvinden, bv. wanneer een agent de eventuele openstaande schulden van een BP (belastingplichtige) wil nakijken, zal hij hiervoor naar de schermen van STIMER moeten kunnen navigeren.  Hiervoor zal STIRON2-TR beroep doen op een door STIMER te voorziene « CCFF Application Caller » service.
+
+De use case ontvangen van betalingen heeft een relevante impact op de globale architectuur, aangezien deze use case een belangrijke flow van de STIRON2-TR applicatie beschrijft. Deze use case bevat strenge technische vereisten, aangezien het gaat om grote volumes.
+
+STIRON2-TR stelt geen archiveringsstrategie voor. Dit betekent dat de data niet gearchiveerd wordt en dat er na verloop van tijd – wanneer STIRON2-TR veel data bevat  een potentiële impact op de performantie mogelijk is."}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

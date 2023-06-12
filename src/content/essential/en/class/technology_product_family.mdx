@@ -1,0 +1,12 @@
+---
+frametype: "class"
+name: "Technology_Product_Family"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Technology_Logical"]
+template_slot: ["groups_technology_products"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Class to group related Technology Product instances into a product 'family'. This should be used to group separate version instances of a Technology Product into a family for that Product. e.g. WebLogic to group WebLogic 7.0, WebLogic 8.0, WebLogic 9.0.
+This provides a more powerful and flexible approach than using Enumerations or Taxonomies.
+Each version instance can be related in terms of the supersession of versions using the supersedes_version slot. e.g. ProductX 2.0 supersedes ProductX 1.5"}, ]}]
+---

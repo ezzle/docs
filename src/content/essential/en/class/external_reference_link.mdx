@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "External_Reference_Link"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["External_Integration"]
+template_slot: ["erl_source_name", "external_link_type", "erl_date_iso_8601", "erl_source_email", "erl_date", "erl_source_url", "external_reference_url", "referenced_ea_instance"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Class to manage links to external resources that are relevant to elements in the Essential Architecture Manager repository model, e.g. documentation. Links are defined by a URL."}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "External_Reference_Link"}, ]}]
+---

@@ -1,0 +1,42 @@
+---
+frametype: "simple_instance"
+name: "KB_855962_Class4"
+type: "Issue"
+supertype: ["Strategic_Requirement", "Strategy_Management", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "related_business_elements", value: [{value_type: "simple_instance", value_content: "KB_857622_Class4"}, {value_type: "simple_instance", value_content: "KB_857622_Class0"}, ]}, 
+{slot_reference: "issue_impact", value: [{value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class90071"}, ]}, 
+{slot_reference: "issue_priority", value: [{value_type: "string", value_content: "High"}, ]}, 
+{slot_reference: "related_application_elements", value: [{value_type: "simple_instance", value_content: "KB_958736_Class591"}, ]}, 
+{slot_reference: "related_information_elements", value: [{value_type: "simple_instance", value_content: "KB_627313_Class21"}, {value_type: "simple_instance", value_content: "KB_402170_Class5"}, ]}, 
+{slot_reference: "issue_source", value: [{value_type: "simple_instance", value_content: "KB_714291_Class711"}, ]}, 
+{slot_reference: "issue_categories", value: [{value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class20009"}, {value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class20012"}, ]}, 
+{slot_reference: "requirement_status", value: [{value_type: "simple_instance", value_content: "sandbox_Class40005"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "E notaire  verzendingswijze van de kennisgevingen (notificaties) wijzigt"}, ]}, 
+{slot_reference: "element_classified_by", value: [{value_type: "simple_instance", value_content: "KB_889850_Class0"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "De verzendingswijze van de kennisgevingen wijzigt:
+
+As is  kennisgeving (= notificatie)
+Momenteel wordt kennisgeving:
+ manueel aangemaakt 
+ niet opgeslagen in de db “schulden” van E notaire
+ als volgt verzonden:
+  kennisgeving na avis1 verkoop onroerend goed /boot:
+wordt aangetekend per papieren post verzonden door team invordering Fod Financiën via Fedict naar notaris / aankoopcomité
+  kennisgeving na avis 1 erfopvolging:
+wordt in pdf bijlage via mail rechtstreeks verzonden door team invordering Fod Financien naar ontvanger successierechten / ook naar Comfor ?
+
+To be  kennisgeving (= notificatie)
+In de toekomst worden kennisgevingen:
+ automatisch aangemaakt in nieuwe toepassing ter vervanging van E Notaire (dus schulden niet langer manueel in te vullen, maar schulden worden via flow aangeleverd aan E Notaire)
+ wel opgeslagen in db “schulden” 
+ elektronisch verzonden via Hyperxml (versleutelde xml) uit de nieuwe toepassing E-Notaire
+
+  kennisgeving na avis1 verkoop onroerend goed / boot wordt:
+1) wordt als xml verzonden door team invordering Fod Financien van nieuwe E notaire applicatie via Fedict naar notarissen / aankoopcomité (via Esb Fod Financien en dan via FSB Fedict i.p.v. aangetekend via post)
+2) en dan wordt een functionele en technische ack (ontvangstmelding) terug gezonden naar AA I&amp;I.
+
+  kennisgeving na avis 1 erfopvolging wordt:
+1) als xml bijlage via mail rechtstreeks verzonden door team Invordering van Fod Financiën van E Notaire naar ontvanger van successierechten / Comfor? (dus niet via Fedict) (xml i.p.v. pdf bij mail)
+2) en dan wordt ack ontvangstmelding van die mail terug gezonden naar AA I&amp;I."}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

@@ -1,0 +1,9 @@
+---
+frametype: "slot"
+name: "system_content_quality_review_escalations"
+type: ":ESSENTIAL-SLOT"
+supertype: [":STANDARD-SLOT", ":SLOT", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+own_slot_value: [{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "The escalations for the Content Quality Review"}, ]}, 
+{slot_reference: ":SLOT-INVERSE", value: [{value_type: "slot", value_content: "system_content_quality_escalation_to_actor_from_review"}, ]}, 
+{slot_reference: ":SLOT-VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "SYS_CONTENT_QUALITY_ESCALATION_TO_ACTOR_RELATION"}, ]}]
+---

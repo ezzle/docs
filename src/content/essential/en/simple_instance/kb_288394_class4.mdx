@@ -1,0 +1,34 @@
+---
+frametype: "simple_instance"
+name: "KB_288394_Class4"
+type: "Information_Representation"
+supertype: ["Information_Representation_Type", "Information_Logical", "Information_Layer", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "inforep_used_by_app_pro", value: [{value_type: "simple_instance", value_content: "KB_288394_Class3"}, ]}, 
+{slot_reference: "implements_information_views", value: [{value_type: "simple_instance", value_content: "KB_716260_Class51"}, {value_type: "simple_instance", value_content: "KB_185634_Class13"}, ]}, 
+{slot_reference: "inforep_category", value: [{value_type: "simple_instance", value_content: "KB_788688_Class6"}, ]}, 
+{slot_reference: "infodata_rep_lifecycle_status", value: [{value_type: "simple_instance", value_content: "KB_659448_Class0"}, ]}, 
+{slot_reference: "representation_label", value: [{value_type: "string", value_content: "XML bestand met formaliteitsnummers (etiketten voor verwerking door DER in aktes en patrimoniële certificaten, cfr. relaas) op flow van Hypocomtabi naar DER"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "XML bestand met formaliteitsnummers (etiketten voor verwerking door DER in aktes en patrimoniële certificaten, cfr. relaas) op flow van Hypocomtabi naar DER"}, ]}, 
+{slot_reference: "element_classified_by", value: [{value_type: "simple_instance", value_content: "KB_889850_Class7"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Bestand op flow van  Hypocomptabi naar DER
+
+Hypocomptabi stuurt etiketten terug naar DER.  
+Name interface:SP25 DER-HYPOCOMPTABI Description : wordt gebruikt door Hypocomptabi om etiketten uit Hypo aan te leveren. 
+Deze etiketten worden door DER verwerkt in de aktes en patrimoniële certificaten. 
+Source/Producer:HypoComptabi 
+Protocol:Webservice (SOAP) 
+Consumer:DER  
+Xml-bestand dat terecht komt in DER (afkomstig van Hypocomptabi) 
+Dit xml-bestand bevat formaliteitsetiketnr. (relaas) van hypocomtabi omdat kosten erbij op staan.  Vroeger in Hypocomptabi kreeg je etikketen te zien, maar tegenwoordig als je de etiketten nu niet afdrukt, stuurt  de applicatie Hypocomptabi al die etiketten via een xml-bestand naar DER en in DER vul je formaliteitsnr. in.
+In DER zijn de formaliteitsnummers zichtbaar en in DER zal de hypotheekbewaarder het relaas mee met de akte terugsturen naar de notaris (referentie formaliteit en berekening kosten).  
+Wat gaat er functioneel over    Interface Hypocomptabi-DER (niet via ESB)  hypothecair relaas – geassocieerd met akte of borderel of doorhalingscertificaat of akte + bijlage/annex(en)
+
+PDF DER verschillende lagen (hypothecair relaas / akte / hypotheekakte / hypotheeknummer / registratierelaas).
+akte  = antwoord naar notaris  
+
+1) Als wel registratierelaas aanwezig bij akte die als antwoord naar notaris verzonden wordt, dan geen metagegevens in zelfde document, maar wel 2e apart pdf document als bijlage (2 pdf documenten)  (In loop van de verwerking wordt registratierelaas toegevoegd om te zeggen dat deze akte nu erkend wordt als bestaand wat betreft Fod Fin)  als relaas aanwezig, komt er dus een 2e aparte pdf doc bij (bijlage registratierelaas)  
+
+2) Als geen registratierelaas aanwezig bij akte die als antwoord naar notaris verzonden wordt, dan wel metagegevens met anotaties erop (=zelfde pdf maar incl. 2e laag) (1 pdf document)"}, ]}, 
+{slot_reference: "synonyms", value: [{value_type: "simple_instance", value_content: "KB_500095_Class877"}, {value_type: "simple_instance", value_content: "KB_500095_Class879"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

@@ -1,0 +1,35 @@
+---
+frametype: "simple_instance"
+name: "KB_855962_Class22"
+type: "Issue"
+supertype: ["Strategic_Requirement", "Strategy_Management", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "related_business_elements", value: [{value_type: "simple_instance", value_content: "KB_883624_Class141"}, ]}, 
+{slot_reference: "issue_impact", value: [{value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class90055"}, ]}, 
+{slot_reference: "issue_priority", value: [{value_type: "string", value_content: "Medium"}, ]}, 
+{slot_reference: "related_application_elements", value: [{value_type: "simple_instance", value_content: "KB_958736_Class1517"}, {value_type: "simple_instance", value_content: "KB_958736_Class1140"}, {value_type: "simple_instance", value_content: "KB_958736_Class1142"}, ]}, 
+{slot_reference: "related_information_elements", value: [{value_type: "simple_instance", value_content: "KB_855962_Class43"}, {value_type: "simple_instance", value_content: "KB_855962_Class47"}, {value_type: "simple_instance", value_content: "KB_855962_Class51"}, {value_type: "simple_instance", value_content: "KB_855962_Class37"}, ]}, 
+{slot_reference: "issue_source", value: [{value_type: "simple_instance", value_content: "KB_689670_Class1868"}, ]}, 
+{slot_reference: "issue_categories", value: [{value_type: "simple_instance", value_content: "KB_255141_Class10"}, ]}, 
+{slot_reference: "requirement_status", value: [{value_type: "simple_instance", value_content: "sandbox_Class40005"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "Secal mainframe  autorisatie niet IAM, wel authenticatie"}, ]}, 
+{slot_reference: "element_classified_by", value: [{value_type: "simple_instance", value_content: "KB_889850_Class0"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Mainframe  authenticatie tp alim:
+=&gt; gebruikt wel  Iam op naam om in te loggen via belconet on web
+
+Mainframe  autorisatie Tp Alim:
+=&gt; niet o.b.v. IAM, maar o.b.v. BR-codes toegewezen aan diensten per Bow toepassing (geen IAM autorisatie-matrix)
+Toegang: via Belconet WSM 
+Autorisatie BOW-toepassingen via BR-codes:
+ Intake Davo cellen binnen Infocenters hebben toegang tot zowel creatie dossier als wijzigen en raadplegen
+ Rnfi kantoren hadden toegang: maar niet in creatie, wel consulteren en wijzigen Davo-dossiers
+ Team Aba business projects kunnen zowel dossiers creëren, wijzigen, consulteren als ook regulariseren.
+NB. Gezien Intake Davo cellen eigen specifieke BR code kregen, hebben binnen infocenters alleen de intake davo cellen toegang tot davo dossiers.
+
+Algemeen toegangsprofiel Bow omgeving (belconet on web):
+cddb-kantoorcodes en BR-bow autorisatiecodes zijn beide eigen aan mainframe-omgeving.
+ Kantoor heeft kantoornr. en cddb code
+ Cel / dienst binnen kantoor heeft crestra code. 
+ De agenten van dezelfde cel / dienst hebben dus dezelfde Crestra code. Cddb code wordt automatisch toegewezen aan gecreëerd dossier obv crestra code agent die dossier creëert.
+ Indien dienst met Bow-toepassing werkt, is aan crestra code ook BR code gelinkt = autorisatieprofiel. Aan iedere cel / dienst wordt per Bow mainframe-toepassing een BR-code toegewezen. Zo kan zelfde BR code aan verschillende Rnfi kantoren gelinkt zijn, indien deze kantoren dezelfde autorisaties hebben binnen dezelfde bow-toepassing."}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

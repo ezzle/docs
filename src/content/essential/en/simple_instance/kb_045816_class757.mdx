@@ -1,0 +1,18 @@
+---
+frametype: "simple_instance"
+name: "KB_045816_Class757"
+type: "Application_Service"
+supertype: ["Application_Logical", "Application_Layer", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "provided_by_application_provider_roles", value: [{value_type: "simple_instance", value_content: "KB_106591_Class139"}, ]}, 
+{slot_reference: "application_service_status", value: [{value_type: "string", value_content: "For_Retirement"}, ]}, 
+{slot_reference: "provided_by_application_provider", value: [{value_type: "simple_instance", value_content: "KB_958736_Class1178"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "Recherche dettes fiscales service"}, ]}, 
+{slot_reference: "element_classified_by", value: [{value_type: "simple_instance", value_content: "KB_889850_Class0"}, {value_type: "simple_instance", value_content: "KB_889850_Class9"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Le site :http://www.finbel.intra/CCFF_SP5_Intra/Index.do est toujours fonctionnel mais il ne sert plus à faire les recherches des dettes  fiscales sur des personnes physiques ou morales et la recherche des  avis  mais à faire la recherche des avis uniquement. Les utilisateurs autorisés(Team business E_notariat) y ont accès. Pour la recherche des dettes fiscales, ils utilisent Belconet-on-web qui a remplacé SP05 pour ce service. Il ne faut donc pas supprimer SP05 de la CMDB(si j'ai bien compris c'était ta question).  PS: comment cela fonctionne-t-il?  
+
+(1) http://www.finbel.intra/CCFF_SP5_Intra/Index.do 
+(2)vous êtes dirigé vers une page d'authentification par le proxy (IAM)
+(3) une fois authentifié, vous êtes dirigé vers la page: http://www.finbel.intra/CCFF_SP5_Intra/openenZoekenFiscaleSchuld.do Si vous avez les droits sur cette page,  vous pouvez faire la recherche des avis Avant vous pouviez également faire la recherche des dettes mais la fonctionnalité a été remplacée par Belconet-on-web Bien à toi, Claver. Sp05 Dettes fiscales wordt gesplitst in : 1) Belconet on Web /ICPC/ICPC242=&gt; Opzoeken schulden ICPC/180B/BTW/DAVO/REGI/SUCC/PLDA/NFTS. 2)  Consult E-Notariaat :   (Sp05 dettes Fiscales= alleen opzoeking Bericht/recherche Avis) wordt in september 2015 gearchiveerd en vervangen door E-Notaire2_Prod. zie schema in bijlage"}, ]}, 
+{slot_reference: "synonyms", value: [{value_type: "simple_instance", value_content: "KB_316337_Class2273"}, {value_type: "simple_instance", value_content: "KB_440909_Class1573"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

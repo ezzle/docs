@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Business_Model_Directive"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Business_Conceptual"]
+template_slot: ["bmd_for_operating_model_category", "bmd_for_business_model", "bmd_directive_statements", "bmd_of_class"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Defines a high-level description for how a Business Model intends to operate a given type of enterprise element"}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Business_Conceptual"}, ]}]
+---

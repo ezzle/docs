@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Application_Family"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Application_Logical"]
+template_slot: ["supports_business_process_app", "groups_applications"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "A convenience component for defining types of applications. Enables the application modeller to specify that 2 Application Providers are each a type of an Application. e.g. applicationProviderX and applicationProviderY are types of SAP (Application). In addition, this can be used to group Application Providers under a name by which they are commonly referred to in the enterprise."}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Application_Family"}, ]}]
+---

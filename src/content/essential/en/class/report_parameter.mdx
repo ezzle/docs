@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Report_Parameter"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Report_Configuration"]
+template_slot: ["report_parameter_name", "report_parameter_for_report", "report_parameter_string_value", "report_parameter_instance_value"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Provides the ability to pre-define parameters that are passed to Essential Viewer reports"}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Essential_Viewer"}, ]}]
+---

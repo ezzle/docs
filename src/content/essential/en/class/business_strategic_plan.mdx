@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Business_Strategic_Plan"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Strategic_Plan"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "A Strategic plan for elements in the Business Layer of the architecture"}, ]}]
+template_facet_value: [{slot_reference: "strategic_plan_for_element", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Business_Layer"}, {value_type: "class", value_content: "Business_Relationship"}, {value_type: "class", value_content: "APP_TO_BUS_RELATION"}, {value_type: "class", value_content: "Business_Service_Quality"}, {value_type: "class", value_content: "Business_Service_Quality_Value"}, ]}, 
+{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Business_Strategic_Plan"}, ]}]
+---

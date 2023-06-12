@@ -1,0 +1,42 @@
+---
+frametype: "simple_instance"
+name: "KB_958736_Class597"
+type: "Application_Provider"
+supertype: ["Application_Provider_Type", "Application_Logical", "Application_Layer", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "lifecycle_status_application_provider", value: [{value_type: "simple_instance", value_content: "EAS_Meta_Model_v1.3_Instance_191"}, ]}, 
+{slot_reference: "provides_application_services", value: [{value_type: "simple_instance", value_content: "KB_846084_Class178"}, ]}, 
+{slot_reference: "ap_supplier", value: [{value_type: "simple_instance", value_content: "essential_prj_AA_v1.4_Instance_10005"}, ]}, 
+{slot_reference: "type_of_application", value: [{value_type: "simple_instance", value_content: "KB_130995_Class8"}, ]}, 
+{slot_reference: "known_app_issue", value: [{value_type: "simple_instance", value_content: "KB_577457_Class62"}, {value_type: "simple_instance", value_content: "KB_629485_Class25"}, {value_type: "simple_instance", value_content: "KB_599977_Class101"}, {value_type: "simple_instance", value_content: "KB_599977_Class4"}, ]}, 
+{slot_reference: "ap_site_access", value: [{value_type: "simple_instance", value_content: "KB_749917_Class456"}, ]}, 
+{slot_reference: "ap_delivery_model", value: [{value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class20005"}, ]}, 
+{slot_reference: "implemented_with_technology", value: [{value_type: "simple_instance", value_content: "KB_275901_Class8"}, ]}, 
+{slot_reference: "has_software_architecture", value: [{value_type: "simple_instance", value_content: "KB_888683_Class6"}, ]}, 
+{slot_reference: "ap_static_architecture", value: [{value_type: "simple_instance", value_content: "KB_110044_Class2"}, ]}, 
+{slot_reference: "parent_application_provider", value: [{value_type: "simple_instance", value_content: "KB_958736_Class881"}, ]}, 
+{slot_reference: "provides_application_function_implementations", value: [{value_type: "simple_instance", value_content: "KB_629485_Class15"}, {value_type: "simple_instance", value_content: "KB_599977_Class87"}, ]}, 
+{slot_reference: "app_pro_supports_phys_proc", value: [{value_type: "simple_instance", value_content: "KB_599977_Class86"}, ]}, 
+{slot_reference: "uses_information_representation", value: [{value_type: "simple_instance", value_content: "KB_629485_Class19"}, {value_type: "simple_instance", value_content: "KB_629485_Class23"}, {value_type: "simple_instance", value_content: "KB_599977_Class0"}, {value_type: "simple_instance", value_content: "KB_599977_Class1"}, {value_type: "simple_instance", value_content: "KB_599977_Class91"}, {value_type: "simple_instance", value_content: "KB_599977_Class95"}, {value_type: "simple_instance", value_content: "KB_366793_Class66"}, {value_type: "simple_instance", value_content: "KB_593298_Class2"}, {value_type: "simple_instance", value_content: "KB_593298_Class3"}, {value_type: "simple_instance", value_content: "KB_593298_Class4"}, {value_type: "simple_instance", value_content: "KB_008457_Class267"}, {value_type: "simple_instance", value_content: "KB_599977_Class1"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "PLDA ECS_PROD"}, ]}, 
+{slot_reference: "element_classified_by", value: [{value_type: "simple_instance", value_content: "KB_889850_Class1"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "ECS=Export Control System. 
+ECS is een systeem voor het opvolgen van uitvoeraangiften die in een andere lidstaat het grondgebied van de Europese Unie zullen verlaten.
+Nadat aangifte verwerkt werd, zal Ecs opvolgen dat geëxporteerde goederen de EU effectief verlaten = bedoeling Ecs : controleactiviteit.
+
+ECS is onderdeel van PLDA, applicatie Douane en Accijnzen met db2 databank.
+
+ECS aangifte gegevens gaan dus wel naar het buitenland: als iemand nu goederen bv. naar China stuurt, en als een persoon een aangifte daarvoor indient in Frankrijk, moeten we terugmelden aan Frankrijk dat de goederen hier het land verlaten hebben (vermits op weg naar China).
+Xml berichten gemaakt door Plda ecs worden doorgegeven naar Masp_com (doorgeefluik) en vandaar naar Ccn (Europa). Masp_com is dus een doorgeefluik databank waarlangs alle berichten naar Ccn-netwerk passeren. Die Ccn-queues hebben maar max. grootte en daarom zit er zo'n buffer tussen.
+
+ICS en ECS worden samen met PLDA gedeployed
+
+This MASP_PLDA component corresponds with the ECS Export Control System. The ECS is a EU governed exchange mechanism to manage export declarations, whereby the goods are exported from one country, but exit the EU territory from another country.
+
+Ecn4ecs gateway: communicatie met Europa: Bart Cieters.
+Common is onderdeel van plda niet van ECS.
+
+Ook statistieken naar NBB, geen online gegevens en statistieken naar FOD Economie."}, ]}, 
+{slot_reference: "stakeholders", value: [{value_type: "simple_instance", value_content: "KB_522925_Class79"}, {value_type: "simple_instance", value_content: "KB_471077_Class93"}, {value_type: "simple_instance", value_content: "KB_962852_Class31"}, {value_type: "simple_instance", value_content: "KB_391259_Class49"}, {value_type: "simple_instance", value_content: "KB_999748_Class126"}, {value_type: "simple_instance", value_content: "KB_366793_Class55"}, {value_type: "simple_instance", value_content: "KB_687214_Class46"}, ]}, 
+{slot_reference: "synonyms", value: [{value_type: "simple_instance", value_content: "sandbox_Class52275"}, {value_type: "simple_instance", value_content: "sandbox_Class52276"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

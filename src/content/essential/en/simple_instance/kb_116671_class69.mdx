@@ -1,0 +1,39 @@
+---
+frametype: "simple_instance"
+name: "KB_116671_Class69"
+type: "APP_PRO_TO_INFOREP_RELATION"
+supertype: ["APP_TO_INFO_RELATION", "Application_Relationship", "EA_Relation", ":SYSTEM-CLASS", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "app_pro_to_inforep_to_inforep", value: [{value_type: "simple_instance", value_content: "KB_116671_Class68"}, ]}, 
+{slot_reference: "app_pro_persists_info_rep", value: [{value_type: "boolean", value_content: "true"}, ]}, 
+{slot_reference: "app_pro_to_inforep_from_app", value: [{value_type: "simple_instance", value_content: "KB_958736_Class1007"}, ]}, 
+{slot_reference: "app_pro_reads_info_rep", value: [{value_type: "string", value_content: "Yes"}, ]}, 
+{slot_reference: "app_pro_creates_info_rep", value: [{value_type: "string", value_content: "Yes"}, ]}, 
+{slot_reference: "app_pro_deletes_info_rep", value: [{value_type: "string", value_content: "Yes"}, ]}, 
+{slot_reference: "app_pro_updates_info_rep", value: [{value_type: "string", value_content: "Yes"}, ]}, 
+{slot_reference: "relation_description", value: [{value_type: "string", value_content: "Module AP  gegevens:
+-	penale boetes: datum vonnis, gerechtskosten, gevangenisstraf, details van de schuld en aantal belangrijke datums om verjaring tegen te houden, detail van de boete, datum, plaats van de feiten, bedrag en opcentiemen 
+-	gegevens veroordeling: bevat altijd gerechtskost, soms boete en bevat fondsbijdrage (verschillende fondsen): bevat dus steeds minstens een bedrag aan gerechtskosten
+-	boete vonnis politierechtbank: uitwisseling via 1 txt-bestand politievonnissen ontvangen van FOD Justitie en automatisch in FOD Financiën ingelezen
+-	penale boete correctioneel vonnis: uitwisseling via vonnis-uitreksel, wordt manueel ingevoerd / andere via xml-bestand;
+vonnisuitreksels bevatten gegevens omtrent een veroordeling en er is dus 1 vonnisuitreksel per betichtenummer. Indien een betichte een andere veroordeling heeft, ontvangt FOD Financiën hiervoor een ander vonnisuitreksel; een betichtenummer geldt dus per betichte en per veroordeling (andere veroordeling zelfde persoon zelfde rechtbank = nieuw betichtenummer)
+-	identificatienummer Fod Justitie bestaat uit jaar vonnis en het betichte-nummer, maar is zeker geen unieke sleutel, gezien veroordelingsnummer niet verschillend over rechtbanken heen.
+
+Module penale boeten
+Bij doorsturen penale boeten worden RR-nrs. mee opgenomen:
+alle penale boeten worden via manuele flux overgemaakt van Fod Justitie aan FOD Financiën (toekomst 1 van de voorwaarden generieke intake).
+As is: alleen FOD Justitie toch alternatieve flux: zou moeten beperkt zijn in de tijd
+
+
+2. Module “Penale Boeten”: db-schema AP
+Module Penale boeten AP: alleen voor niet betaalde penale boetes maakt FOD Justitie de informatie omtrent veroordelingen over aan FOD Financiën. Authentieke bron van gegevens omtrent veroordelingen tot betalen penale boete = Fod Justitie (politievonnissen en correctionele vonnissen). Nu heeft FOD Financiën geen toegang tot de authentieke bron van vonnissen penale boetes van FOD Justitie. Als Fod Financiën hieromtrent vragen krijgt, verwijzen we deze vragen door naar FOD Justitie.
+
+Fod Justitie levert deze informatie over veroordelingen aan aan FOD Financiën op 2 manieren:
+-	txt  file voor politievonnissen: automatische gegevensinvoer
+-	vonnisuitreksels voor correctionele vonnissen: manuele invoer.
+
+Als Fod Justitie RR-nrs. of bisnrs. i.v.m. penale boetes ter beschikking heeft, geven ze die meestal door (bv. via de txt-file), maar het hangt af van rechtbank tot rechtbank.
+Voor penale boetes met KBO-nrs. ligt het echter wat moeilijker. AA Inning voegt KBO-nummers wel toe, terwijl ze de gegevens omtrent de veroordeling van de txt-files of van de vonnisuitreksels invoert. De ontbrekende KBO-nummers moeten toegevoegd worden, anders kan men geen veroordeling inbrengen.
+Wat betreft de veroordeling is er een zg. “fondsbijdrage”: er is onder andere het Vlaams fonds en het slachtofferhulpfonds."}, ]}, 
+{slot_reference: "relation_name", value: [{value_type: "string", value_content: "db First schema AP (Amendes pénales) managed by FIRST Penal Fines_PROD"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

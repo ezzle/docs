@@ -1,0 +1,9 @@
+---
+frametype: "slot"
+name: "contained_sub_actors"
+type: ":ESSENTIAL-SLOT"
+supertype: [":STANDARD-SLOT", ":SLOT", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+own_slot_value: [{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "The set of actors that are members of this Actor, e.g. when an Actor represents a group or department, the sub-actors define the teams and members of that department."}, ]}, 
+{slot_reference: ":SLOT-INVERSE", value: [{value_type: "slot", value_content: "is_member_of_actor"}, ]}, 
+{slot_reference: ":SLOT-VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Actor"}, ]}]
+---

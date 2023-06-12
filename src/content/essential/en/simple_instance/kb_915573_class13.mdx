@@ -1,0 +1,31 @@
+---
+frametype: "simple_instance"
+name: "KB_915573_Class13"
+type: "Issue"
+supertype: ["Strategic_Requirement", "Strategy_Management", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "related_business_elements", value: [{value_type: "simple_instance", value_content: "KB_857622_Class0"}, ]}, 
+{slot_reference: "issue_impact", value: [{value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class90055"}, ]}, 
+{slot_reference: "issue_priority", value: [{value_type: "string", value_content: "High"}, ]}, 
+{slot_reference: "related_application_elements", value: [{value_type: "simple_instance", value_content: "KB_958736_Class708"}, ]}, 
+{slot_reference: "related_information_elements", value: [{value_type: "simple_instance", value_content: "KB_231178_Class17"}, ]}, 
+{slot_reference: "related_technology_elements", value: [{value_type: "simple_instance", value_content: "KB_533885_Class0"}, ]}, 
+{slot_reference: "issue_source", value: [{value_type: "simple_instance", value_content: "KB_511918_Class488"}, ]}, 
+{slot_reference: "issue_categories", value: [{value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class20010"}, {value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class20009"}, ]}, 
+{slot_reference: "requirement_status", value: [{value_type: "simple_instance", value_content: "sandbox_Class40005"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "Applicatie Fin Rek  beperkt gebruik van rekeningnummers van begunstigden van een terugbetaling in db Fin REK (niet OO compliant)"}, ]}, 
+{slot_reference: "element_classified_by", value: [{value_type: "simple_instance", value_content: "KB_889850_Class0"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "De bankrekeningnummers in db “Fin Rek” kunnen niet alleen gebruikt worden voor terugbetalingen Personenbelasting (PB), maar ook voor terugbetalingen andere belastingtypes dan Personenbelasting (PB), bv. ook voor terugbetalingen BTW.
+Maar dit is nog niet volledig gerealiseerd. Het komt dus nog voor dat bankrekeningnummers opgeslagen worden in andere toepassingen die instaan voor inning van andere belastingtypes dan Personenbelasting (PB) en dat vanuit deze andere toepassingen (andere dan Fin Rek) een brief verzonden wordt naar de belastingplichtige om het bankrekeningnummer op te vragen, specifiek voor een terugbetaling m.b.t. een ander belastingtype, hoewel dit rekeningnummer dus mogelijks reeds gekend is in db FIN Rek voor terugbetalingen Personenbelasting. Dit is dus niet Only Once compliant.
+
+Indien een andere applicatie dan mainframe-toepassing FIN REK bankrekeningnummers opvraagt bij de belastingplichtige, is deze andere applicatie dus niet OO-compliant:
+ bv. terugbetaling mazoutkorting Federale Overheid
+ bv. terugbetalingen Onroerende Voorheffing gewest Brussel (bv. vermindering voor klein beschrijf) door de applicatie Claims non workflow. De bankrekeningnummers voor terugbetalingen Onroerende Voorheffing zijn in OVE gestockeerd (Christian de Witte), niet in db FIN REK.
+
+Beperkt gebruik van de Cobol-module die de link legt tussen gegevens van de begunstigden in db's NP en db van de
+applicatie Fin Rek:
+Momenteel gebruiken andere diensten dan AA I&amp;I nog niet de info uit de mainframe Cobol module die de verbinding legt tussen de mainframe db’s NP (mainframekopie Rijksregister) en FIN REK (financiële rekeningnrs. voor terugbetaling), om na te gaan of voor een gegeven Rijksregisternummer van de begunstigde van een terugbetaling, een bankrekeningnummer voorhanden is.
+
+Nu wordt de info uit deze Cobol-module alleen gebruikt voor terugbetalingen in de Personenbelasting. De info uit deze Cobol module zou echter ook gebruikt kunnen worden om een rekeningnummer op te zoeken voor terugbetalingen i.v.m. andere belastingtypes dan PB. Men kan  via de Cobol module die de link legt tussen db NP en db FIN REK  voor een gegeven Rijksregisternummer nagaan of voor dit RR-nr. een rekeningnummer gekend is in Fod Financiën om op terug te betalen. Ook i.g.v. men beslag wil leggen, kan men via deze methode nagaan of voor het Rijksregisternummer van de schuldenaar een rekeningnummer gekend is in Fod Financiën waarop beslag gelegd kan worden. Zo zijn in 180B (applicatie AA I&amp;I voor oude schulden) geen rekeningnummers opgeslagen. 
+Men kan, als men in applicatie 180B werkt, voor een gegeven Rijksregisternummer in 180B (schuldenaar) via de Cobol-module die de link legt tussen NP (RR nrs.) en FIN REK (bankrekeningnummers), verifiëren of een rekeningnummer beschikbaar is."}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

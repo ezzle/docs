@@ -1,0 +1,10 @@
+---
+frametype: "class"
+name: "BUSPROCTYPE_TO_INFOVIEW_RELATION"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Business_Relationship"]
+template_slot: ["busproctype_deletes_infoview", "busproctype_to_infoview_to_infoview", "busproctype_updates_infoview", "busproctype_reads_infoview", "busproctype_to_infoview_from_busproc", "busproctype_creates_infoview"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Relationship that captures how a type of Business Process uses an Information View."}, ]}]
+---

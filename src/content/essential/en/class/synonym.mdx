@@ -1,0 +1,12 @@
+---
+frametype: "class"
+name: "Synonym"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Utilities"]
+template_slot: ["synonym_language"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Class to manage synonyms for any element in the model. Synonyms can be classified by Taxonomies, e.g. Languages, Organisation Units, Domains and so on. Synonyms are managed from the element to which they apply and so, an explicit bi-directional relationship is not defined.
+The Name field, defines the name of the synonym and in this context, the Description field is certainly optional."}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Utilities"}, ]}]
+---

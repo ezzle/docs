@@ -1,0 +1,12 @@
+---
+frametype: "simple_instance"
+name: "sandbox_Class73307"
+type: "Synonym"
+supertype: ["Utilities", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "synonym_language", value: [{value_type: "simple_instance", value_content: "essential_baseline_v3.0.4_Class10004"}, ]}, 
+{slot_reference: "system_content_visibility", value: [{value_type: "simple_instance", value_content: "KB_229567_Class68"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "Données de la déclaration ECS en xml sur le flux d'ECS vers CCN par le buffer Masp_com"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Les données de la déclaration ECS vont donc à l'étranger : si quelqu'un envoie maintenant des marchandises en Chine, par exemple, et si une personne fait une déclaration en France, nous devons déclarer à la France que les marchandises ont quitté le pays ici (puisqu'elles sont en route pour la Chine). Les messages Xml créés par Plda ecs seront transmis à Masp_com (hachure de transmission) et de là à Ccn (Europe). Masp_com est donc une base de données de passage à travers laquelle passent tous les messages destinés au réseau Ccn. Ces files d'attente Ccn n'ont qu'une taille maximale et il y a donc un buffer entre elles. Les messages Ecs et NCTS sont d'abord traduits en Edifact sur le buffer de masp.com et ce n'est qu'ensuite que les messages ECS et NCTS sont transmis aux autres États membres, contrairement aux messages Ics envoyés en xml sans traduction Edifact."}, ]}, 
+{slot_reference: "system_content_lifecycle_status", value: [{value_type: "simple_instance", value_content: "KB_229567_Class67"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

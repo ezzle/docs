@@ -1,0 +1,24 @@
+---
+frametype: "simple_instance"
+name: "KB_189126_Class44"
+type: "Information_Representation"
+supertype: ["Information_Representation_Type", "Information_Logical", "Information_Layer", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "inforep_used_by_app_pro", value: [{value_type: "simple_instance", value_content: "KB_189126_Class43"}, ]}, 
+{slot_reference: "inforep_category", value: [{value_type: "simple_instance", value_content: "KB_788688_Class6"}, ]}, 
+{slot_reference: "infodata_rep_lifecycle_status", value: [{value_type: "simple_instance", value_content: "KB_921918_Class2"}, ]}, 
+{slot_reference: "representation_label", value: [{value_type: "string", value_content: "Kohieren, rollen en aanmaningen nalatigheidsintresten niet-fiscale schulden via dagelijkse flat file op flow van Debiteurenbeheer naar first Nfi:"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "Kohieren, rollen en aanmaningen nalatigheidsintresten niet-fiscale schulden via dagelijkse flat file op flow van Debiteurenbeheer naar first Nfi:"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Kohieren, rollen en aanmaningen nalatigheidsintresten niet-fiscale schulden via dagelijkse flat file op flow van Debiteurenbeheer naar first Nfi:
+flow terug naar first NFI: kohieren, rollen en aanmaningen: via flat file dagelijks (soms lege flat file want rol NFI schuld niet dagelijks, maar wekelijks gecreëerd in GDD !)
+
+Uit en ingaande flows rond first Nfi &lt;=&gt; debiteurenbeheer:
+GDD doet de inkohieringen nalatigheidsintresten first NFI, want niet in andere applicaties: GDD creëert kohieren, berekent bedragen en verzendt naar bronapplicatie: 
+1-ingaand: GDD ontvangt openstaande schulden first NFI, nr. rol en nr. geselecteerd kohierartikel via dagelijkse flat file van first nfi
+2-verwerking GDD brengt deze gegevens samen in een document: info vervolledigd in GDD, maar selectie artikels (kohiernrs. en artikelnrs.) komt van first nfi
+3-uitgaand GDD verzendt dit document: kohieren afgeprint lokaal in centrale teams op pc: pdf gedrukt en ondertekend en verzonden naar deurwaarder
+(‘rol’ wordt vergrendeld, vastgelegd op moment ondertekening, daarmee kan deurwaarder op pad)
+4-feedback: daarna flow terug naar first NFI: kohieren, rollen en aanmaningen: via flat file dagelijks (soms lege flat file want rol NFI schuld niet dagelijks, maar wekelijks gecreëerd in GDD !)"}, ]}, 
+{slot_reference: "external_repository_instance_reference", value: [{value_type: "simple_instance", value_content: "sandbox_Class78042"}, ]}, 
+{slot_reference: "synonyms", value: [{value_type: "simple_instance", value_content: "sandbox_Class78038"}, {value_type: "simple_instance", value_content: "sandbox_Class78040"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

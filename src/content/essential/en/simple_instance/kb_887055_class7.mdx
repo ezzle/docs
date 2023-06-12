@@ -1,0 +1,26 @@
+---
+frametype: "simple_instance"
+name: "KB_887055_Class7"
+type: "Application_Provider_Role"
+supertype: ["Application_Logical", "Application_Layer", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "implementing_application_service", value: [{value_type: "simple_instance", value_content: "KB_045816_Class178"}, ]}, 
+{slot_reference: "apr_lifecycle_status", value: [{value_type: "simple_instance", value_content: "EAS_Meta_Model_v1.3_Instance_191"}, ]}, 
+{slot_reference: "role_for_application_provider", value: [{value_type: "simple_instance", value_content: "KB_701763_Class263"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "CCN gateway 1 as CCN/CSI service"}, ]}, 
+{slot_reference: "element_classified_by", value: [{value_type: "simple_instance", value_content: "KB_889850_Class1"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Gateway met de Europese Commissie voor applicaties AA D&amp;A, maar ook AA Fisc.
+
+Er zijn 2 CCN gateways: CCN gateway 1 in C+ geschreven en de meer recente CCN Gateway 2 in JAVA. Bij AA D&amp;A wordt nog hoofdzakelijk CCN gateway 1 gebruikt. Bij AA Fisc is er wel de applicatie Stirint MDR die reeds met CCN Gateway 2 communiceert. We zien interapplicatieve flows van Douane applicaties zoals EMCS, PLDA, NCTS, AEO, EORI, MCC en ICS naar CCN Gateway 1. We zien ook een interapplicatieve flow van Stirint MDR naar CCN gateway 2.
+
+De CCN gateway staat op servers in het datacenter, maar is eigendom van de Europese Commissie en wordt onderhouden door Atos.
+In iedere applicatie afzonderlijk die communiceert met de Europese Commissie via CCN, is een CCN  adapter ingebouwd (Java CCFF standaard). Deze laat toe te communiceren met de CCN Gateway die op haar beurt communiceert met de Europese applicaties.
+
+Verschillende applicaties communiceren met Europa: Emcs, Plda, Ncts, MCC, maar ook bv. Stirint MDR van AA Fisc.
+Bv. voor uitwisseling van EAD berichten met Europa: in deze berichten staat wie verzender is, wie ontvanger, wie transporteur is van de producten vermeld in de aangifte bij AA D&amp;A.
+Via de CCN gateway worden ook berichten i.v.m. administratieve bijstand uitgewisseld tss. lidstaten; als een andere EU-lidstaat vragen heeft, dan kan deze lidstaat een verzoek om administratieve bijstand richten aan de Belgische Douanediensten.
+
+CCN / CSI is de afkorting van de Common Communication Network  Common System Interface.
+
+Via de CCN gateway worden gegevens rechtspersonen verzonden, maar het is in theorie niet uitgesloten dat ook gegevens natuurlijke personen verzonden worden via de CCN gateway: het is theoretisch mogelijk om PLDA aangiften voor particulieren op te maken (dient in feite nog nagegaan te worden)."}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

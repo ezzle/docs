@@ -1,0 +1,12 @@
+---
+frametype: "simple_instance"
+name: "KB_500095_Class2396"
+type: "Synonym"
+supertype: ["Utilities", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "synonym_language", value: [{value_type: "simple_instance", value_content: "essential_baseline_v3.0.4_Class10004"}, ]}, 
+{slot_reference: "system_content_visibility", value: [{value_type: "simple_instance", value_content: "KB_229567_Class68"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "données tarifaires pour valider les codes tarifaires sur le flux de Tarbel vers PLDA"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Plda utilise les données tarifaires pour valider les codes tarifaires. Tarbel est utilisé par Plda pour la validation des déclarations. Pldtb rdc db = réplica dans PLDA de la db source TARBEL2 : cette réplica ne contient que des données Tarbel (données tarifaires). Comme la db source TARBEL, le pldtb contient également 2 séries de tableaux. Pldtb reçoit quotidiennement des données de la base de données Oracle et celles-ci sont ensuite utilisées par PLDA pour valider réellement les codes tarifaires. PLDA n'interroge pas directement l'oracle tarbel sourcedb. PLDA interroge la réplica Pldtb pendant la journée et la db source oracle tarbel est alimenté par l'Europe et la nuit la db oracla db Tarbel est repliquée vers la db Pldtb. La db Européenne TARIC alimente la db oracla db tarbel1 ou db tarbel2 (db db2), d'où l'information va de Tarbel web vers pldtb vers PLDA pour valider les déclarations. Tous les modules de contrôle et les calculs sont désormais effectués dans Plda, mais à terme, l'AG D&amp;A utilisera les webservices de European Dynamics : à l'avenir, les simulations du portail Tarbel seront mises à la disposition des entreprises. Les statistiques sont également calculées par Tarbel et stockées dans PLDA. Plda lit Pldtb dans la structure Tarbel1 actuelle."}, ]}, 
+{slot_reference: "system_content_lifecycle_status", value: [{value_type: "simple_instance", value_content: "KB_229567_Class67"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

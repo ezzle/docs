@@ -1,0 +1,12 @@
+---
+frametype: "simple_instance"
+name: "KB_500095_Class1121"
+type: "Synonym"
+supertype: ["Utilities", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "synonym_language", value: [{value_type: "simple_instance", value_content: "essential_baseline_v3.0.4_Class10004"}, ]}, 
+{slot_reference: "system_content_visibility", value: [{value_type: "simple_instance", value_content: "KB_229567_Class68"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "déclaration PLDA (dans des messages XML) sur le flux de PLDA vers CCN gateway 1 sur masp com buffer"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Déclarations sur le flux de Plda vers CCN gateway. Les messages Xml créés par Plda sont transmis vers Masp_com et de là vers Ccn (Europe). Masp_com est donc une base de données de passage à travers laquelle passent tous les messages destinés au réseau Ccn. Ces files d'attente Ccn n'ont qu'une taille maximale et il y a donc un buffer entre elles. Le Système Commun de Transfert de Données CDTS est utilisé pour l'échange de fichiers QUOTA (TQM) et SURVEILLANCE (SCI) de  PLDA : les fichiers Quota sont construits et envoyés automatiquement de  Plda vers l'Europe ; les fichiers Surveillance sont envoyés vers l'Europe après intervention de Bart Cieters. Les messages Ics sont envoyés en xml tandis que pour les messages ECS et NCTS, une traduction vers Edifact est d'abord effectuée et ce n'est qu'ensuite que les messages ECS et NCTS sont envoyés aux autres Etats membres."}, ]}, 
+{slot_reference: "system_content_lifecycle_status", value: [{value_type: "simple_instance", value_content: "KB_229567_Class67"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

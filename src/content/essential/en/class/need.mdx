@@ -1,0 +1,13 @@
+---
+frametype: "class"
+name: "Need"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Strategic_Requirement"]
+template_slot: ["need_related_information", "need_related_technology", "need_related_business", "need_source", "need_related_application", "need_priority", "need_impact"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Represents an need that exists across one or EA elements. Also provides a means to define the Strategic Plans that are expected to meet the need."}, ]}]
+template_facet_value: [{slot_reference: "sr_lifecycle_status", facet_reference: ":DEFAULTS", value: [{value_type: "simple_instance", value_content: "KB_229567_Class73"}, ]}, 
+{slot_reference: "system_content_lifecycle_status", facet_reference: ":DEFAULTS", value: [{value_type: "simple_instance", value_content: "KB_229567_Class74"}, ]}, 
+{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Strategy_Management"}, ]}]
+---

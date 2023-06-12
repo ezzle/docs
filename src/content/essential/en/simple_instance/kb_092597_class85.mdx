@@ -1,0 +1,26 @@
+---
+frametype: "simple_instance"
+name: "KB_092597_Class85"
+type: "APP_PRO_TO_INFOREP_RELATION"
+supertype: ["APP_TO_INFO_RELATION", "Application_Relationship", "EA_Relation", ":SYSTEM-CLASS", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "app_pro_to_inforep_to_inforep", value: [{value_type: "simple_instance", value_content: "KB_092597_Class84"}, ]}, 
+{slot_reference: "app_pro_persists_info_rep", value: [{value_type: "boolean", value_content: "true"}, ]}, 
+{slot_reference: "app_pro_to_inforep_from_app", value: [{value_type: "simple_instance", value_content: "KB_958736_Class1561"}, ]}, 
+{slot_reference: "app_pro_reads_info_rep", value: [{value_type: "string", value_content: "Yes"}, ]}, 
+{slot_reference: "app_pro_creates_info_rep", value: [{value_type: "string", value_content: "Yes"}, ]}, 
+{slot_reference: "app_pro_deletes_info_rep", value: [{value_type: "string", value_content: "Yes"}, ]}, 
+{slot_reference: "app_pro_updates_info_rep", value: [{value_type: "string", value_content: "Yes"}, ]}, 
+{slot_reference: "relation_description", value: [{value_type: "string", value_content: "Flow betalingsinfo van bestand “Courant” naar VA db UIT(3)
+VA db UIT3 wordt geactualiseerd o.b.v. betalingen in bestand “Courant” en tijdens dit actualisatieproces zendt een programma rekening-uittreksels met de huidige toestand naar de belastingplichtige (grote verzendingen RU’s iedere maand). Tijdens de actualisatie van de VA db UIT3 wordt de ontvangen betaling uit bestand “Courant” gewoon in de db VA toegewezen aan een belastingplichtige natuurlijke persoon of rechtspersoon.
+I.g.v. teveel (vooraf) betaald bedrag kan de belastingplichtige vragen om terugbetaald te worden zolang de betaling in het bestand “Courant” staat.
+
+Flows van en naar VA db UIT / UIT3 i.g.v. terugbetaling / overdracht:
+Aanvragen voor terugbetalingen VA gebeuren via een gewone aanvraag (niet via een formulier)
+=&gt; opgenomen in een aparte DB op GCOS8, VADBUIT.
+Via gewone aanvraag kan begunstigde vragen teveel vooraf betaald bedrag terug te betalen of over te dragen (overboeken) naar latere schuld (report).
+De agent zal dit bedrag registreren in de VA db UIT en een batch zoekt het juiste bedrag op in de records van de VA db UIT(3?) en haalt dan dit bedrag weg uit de VA db UIT en boekt het in de db VAC 56c2.
+I.g.v. vraag om terugbetaling wordt van daaruit terugbetaald.
+I.g.v. vraag om overdracht (report) wordt het bedrag teruggeboekt van de db VAC/56c2 naar de db VA om te imputeren op de volgende periode. Nooit wordt binnen de db VA intern overgeboekt: men passeert via de db VAC/56c2 ook igv vraag om overdracht naar latere schuld."}, ]}, 
+{slot_reference: "relation_name", value: [{value_type: "string", value_content: "db UIT (VA) managed by Versements anticipés_PROD"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

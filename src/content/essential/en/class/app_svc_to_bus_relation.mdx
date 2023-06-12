@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "APP_SVC_TO_BUS_RELATION"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["APP_TO_BUS_RELATION"]
+template_slot: ["appsvc_to_bus_from_appsvc", "appsvc_to_bus_managed_info_views", "appsvc_to_bus_to_busproc"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "An Application Service supports a Business Process, Activity or Task, optionally requiring a Application Service Qualities."}, ]}]
+template_facet_value: [{slot_reference: "relation_name", facet_reference: ":DEFAULTS", value: [{value_type: "string", value_content: "&lt;app_svc&gt;::&lt;supports&gt;::&lt;business process type&gt;"}, ]}]
+---

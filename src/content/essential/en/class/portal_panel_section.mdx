@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Portal_Panel_Section"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Portal_Configuration"]
+template_slot: ["portal_panel_section_label", "portal_parent_panel", "portal_panel_section_sequence", "portal_panel_section_reports", "portal_panel_actors"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "A subsection within a sidebar panel on a portal"}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Essential_Viewer"}, ]}]
+---

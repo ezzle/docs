@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Element_Style"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Report_Styling"]
+template_slot: ["element_style_text_colour", "element_style_label", "style_for_elements", "element_style_icon", "element_style_class", "element_style_colour"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Defines styling features for one or more elements"}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Essential_Viewer"}, ]}]
+---

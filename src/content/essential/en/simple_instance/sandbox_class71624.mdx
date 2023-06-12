@@ -1,0 +1,13 @@
+---
+frametype: "simple_instance"
+name: "sandbox_Class71624"
+type: "Synonym"
+supertype: ["Utilities", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "synonym_language", value: [{value_type: "simple_instance", value_content: "essential_baseline_v3.0.4_Class10004"}, ]}, 
+{slot_reference: "system_content_visibility", value: [{value_type: "simple_instance", value_content: "KB_229567_Class68"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "fichiers de paiement sur le flux de VAT Refund vers Pay it"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "VAT Refund valide les déclarations et également les paiements (la déclaration indique que le paiement ou le remboursement doit être effectué). VAT Refund utilise le module Pay-IT et envoie des fichiers à Pay qui vont ensuite de Pay IT vers BTM et finalement de Btm vers la Poste Financière. Dans le sens inverse, VAT Refund reçoit des fichiers coda de Pay-IT (flux de Pay-IT vers VAT Refund). Des remboursements TVA en ce qui concerne les déclarations MOSS est un flux séparé par sujet, qui passe également en partie par Vatrefund (Vatrefund vers pay-IT), sauf si le remboursement est déclaré par note de crédit ; dans ce cas, la correction est effectuée sur la déclaration dans Moss et est remboursée directement à la personne concernée sans détour par Vatrefund (Moss vers Pay-IT). Pay-IT est un système qui traite les paiements des décisions positives sur les demandes étrangères Vatrefund pour remboursement. Pay-IT = interface FTP vers le système de paiement des demandes étrangères Vatrefund dans les zones SEPA et non SEPA. Le même format XML sera utilisé que celui reconnu par BTM de CCFF afin de simplifier les migrations futures éventuelles vers BTM."}, ]}, 
+{slot_reference: "system_content_lifecycle_status", value: [{value_type: "simple_instance", value_content: "KB_229567_Class67"}, ]}, 
+{slot_reference: "external_repository_instance_reference", value: [{value_type: "simple_instance", value_content: "sandbox_Class81013"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

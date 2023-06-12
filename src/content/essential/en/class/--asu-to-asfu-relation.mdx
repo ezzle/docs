@@ -1,0 +1,17 @@
+---
+frametype: "class"
+name: ":ASU-TO-ASFU-RELATION"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: [":AFA-RELATION"]
+template_slot: ["returned_information", "sequence_number", "sent_information", "application_communication_method"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Relation from an Application Service Usage and an Application Function Usage. An Application Service uses/calls/invokes the Application Function in an Application Function Architecture."}, ]}]
+template_facet_value: [{slot_reference: ":relation_label", facet_reference: ":DEFAULTS", value: [{value_type: "string", value_content: "requests"}, ]}, 
+{slot_reference: ":FROM", facet_reference: ":DOCUMENTATION-IN-FRAME", value: [{value_type: "string", value_content: "Usage of Application Service in the architecture that is using the Application Function"}, ]}, 
+{slot_reference: ":FROM", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Application_Service_Usage"}, ]}, 
+{slot_reference: ":TO", facet_reference: ":DOCUMENTATION-IN-FRAME", value: [{value_type: "string", value_content: "Usage of the Application Function (in this architecture) that is being used by the Application Service at the FROM end of the relation"}, ]}, 
+{slot_reference: ":TO", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Application_Function_Usage"}, ]}, 
+{slot_reference: "returned_information", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Information_View_Usage"}, {value_type: "class", value_content: "Information_View"}, ]}, 
+{slot_reference: "sent_information", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Information_View_Usage"}, {value_type: "class", value_content: "Information_View"}, ]}]
+---

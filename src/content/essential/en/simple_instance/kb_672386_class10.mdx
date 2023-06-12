@@ -1,0 +1,33 @@
+---
+frametype: "simple_instance"
+name: "KB_672386_Class10"
+type: "Static_Application_Provider_Usage"
+supertype: ["Static_Application_Provider_Architecture_Type", "Logical_Application_Model", "Application_Logical", "Application_Layer", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "static_usage_of_app_provider", value: [{value_type: "simple_instance", value_content: "KB_958736_Class101"}, ]}, 
+{slot_reference: "static_app_provider_arch_display_label", value: [{value_type: "string", value_content: "Belconet archieven in Belconet archiv"}, ]}, 
+{slot_reference: "used_in_static_app_provider_architecture", value: [{value_type: "simple_instance", value_content: "KB_672386_Class9"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "Belconet archiv_PROD::in::Static Architecture of::Belconet archiv_PROD"}, ]}, 
+{slot_reference: "element_classified_by", value: [{value_type: "simple_instance", value_content: "KB_889850_Class0"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Detail, frequenties archivering:
+ Icpc maandelijks gearchiveerd, behalve kosten 56c1 (jaarlijks), inschrijvingen 56c2 (jaarlijks) en betalingen BCH modellen 6 (jaarlijks) (*)
+ verkeersbelasting (Brussel) maandelijks gearchiveerd 
+ onroerende voorheffing  maandelijks gearchiveerd
+ 180b jaarlijks 
+ voorafbetalingen jaarlijks gearchiveerd 
+ Bedrijfsvoorheffing jaarlijks gearchiveerd
+
+(*) modellen 6: bestanden met overzicht betalingen worden jaarlijks naar Belconet archieven gestuurd om daar te consulteren   Belconet archieven bevat historiek Coda-bestanden van de Post : betreft betalingsinformatie laat toe om voor gegeven betaling op te zoeken wie deze betaling uitgevoerd heeft. Deze gegevens komen uit ICPC waar de dagelijks van bank van de post ontvangen bestanden geboekt worden via icmar. Deze coda betalingsbestanden van de POST kunnen in de vorm van txt files  gevisualiseerd worden.
+
+Alle transfers naar Belconet archieven lopen als volgt: 
+Aan Bull zijde mainframe wordt Java programma toegepast dat extracten neemt uit bron db’s met een vlag en vervolgens wordt de inhoud van deze extracten weggeschreven naar de archieven.
+	in detail: als Veerle Blanckaert vlag ziet (bv. vlag bij 180b), dan 
+1 haalt Veerle bestand van de bull mainframe en
+2 dan wordt dit bestand (flat file) via ftp getransfereerd naar de server
+3 en op de server behandeld door een java toepassing die de flat file in stukken (verschillende pdf’s) indeelt (bv. voor ICPC meerdere pdf’s in groepen ingedeeld)
+4 de inhoud wordt in de ene of andere catalog van de belconet archief applicatie gezet. Veerle slaat alleen rijksregisternr. op en plaats waar je gegevens kan vinden (index).
+
+Uitvoer: alleen consultatie ofwel printen, geen batch files vanuit archieven:
+ consultatie: consultatieprogramma zelf van de archieven is ook in java code geschreven
+ printen: belconet archieven laat toe om rekeninguitreksels te printen uit ICPC en om blad rekeninguitreksel te tonen als pdf bestand."}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

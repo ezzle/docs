@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Application_Capability"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Application_Conceptual"]
+template_slot: ["application_objectives_for_application_capability", "mapped_to_business_domain", "relevant_application_principles", "sequence_number", "contained_app_capabilities", "realised_by_application_services", "app_cap_supporting_tech_caps", "app_cap_supports_bus_cap", "contained_in_application_capability"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Provides the abstract perspective on the functional behaviour required to support the business. Capabilities are mapped to the Business Domain that they support.nOne of the additional purposes of this meta class is to provide a grounding for Applications Functions, enabling one to model that a particular Application Function is a one of these &lt;Application Capabilities&gt;"}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Application_Capability"}, ]}]
+---

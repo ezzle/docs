@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "APP_TO_BUS_RELATION"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Application_Relationship"]
+template_slot: ["required_application_service_quality", "app_to_process_business_criticality"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Abstract"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Abstract class defining how Application components support Business Processes/Activities/Tasks. An Application Service Quality for how this application supports the Business Process/Activity/Task can be specified."}, ]}]
+template_facet_value: [{slot_reference: "relation_name", facet_reference: ":DEFAULTS", value: [{value_type: "string", value_content: "&lt;architecture&gt;::&lt;app&gt;::&lt;supports&gt;::&lt;business artefact&gt;"}, ]}]
+---

@@ -1,0 +1,13 @@
+---
+frametype: "simple_instance"
+name: "KB_500095_Class1355"
+type: "Synonym"
+supertype: ["Utilities", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "synonym_language", value: [{value_type: "simple_instance", value_content: "essential_baseline_v3.0.4_Class10004"}, ]}, 
+{slot_reference: "system_content_visibility", value: [{value_type: "simple_instance", value_content: "KB_229567_Class68"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "PLDTB Database (RDC)"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Base de données relationnelle PLDTB sur l'environnement DB2 RDC
+Pldtb = base de données db2 avec réplication de la base de données oracle Tarbel (réplication via des jobs batch ; la db Pldtb utilise 2 séries de tables qui sont commutés à minuit). ECS et ICS utilisent les informations tarifaires de la db Pldtb (alimenté par Tarbel), lors du traitement des déclarations d'exportation (ECS) ou d'importation (ICS). La db RDC Pldtb est réplica dans PLDA sur la base de la db source TARprdb : cette réplica ne contient que des données Tarbel. Aussi la db pldtb, comme la db de source tarbel contient également 2 séries de tables. La db Pldtb reçoit quotidiennement des données de la db Oracle et celles-ci sont ensuite utilisées par PLDA pour valider réellement les codes tarifaires. PLDA n'interroge pas directement la db source oracle tarbel. Plda interroge la réplica Pldtb pendant la journée; la db de source Oracle tarbel  est alimenté par l'Europe et pendant la nuit il y a une réplica de la db oracle tarbel vers la db pldtb. La db Européenne TARIC alimente la db oracle tarbel1 ou la db tarbel 2 (db2), d'où l'info va à tarbel web vers pldtb vers PLDA pour valider les déclarations. Plda  lit dans Pldtb dans la structure Tarbel1 actuelle. Dans le futur : réplica de la db db2 Tarbel2 vers la db db2 Pldtb  : cette réplica sera beaucoup plus facile que celle de la db oracle Tarprd  vers la db db2 Pldtb."}, ]}, 
+{slot_reference: "system_content_lifecycle_status", value: [{value_type: "simple_instance", value_content: "KB_229567_Class67"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

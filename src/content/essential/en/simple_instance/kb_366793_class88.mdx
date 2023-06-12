@@ -1,0 +1,22 @@
+---
+frametype: "simple_instance"
+name: "KB_366793_Class88"
+type: "APP_PRO_TO_INFOREP_RELATION"
+supertype: ["APP_TO_INFO_RELATION", "Application_Relationship", "EA_Relation", ":SYSTEM-CLASS", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "app_pro_to_inforep_to_inforep", value: [{value_type: "simple_instance", value_content: "KB_366793_Class89"}, ]}, 
+{slot_reference: "app_pro_persists_info_rep", value: [{value_type: "boolean", value_content: "false"}, ]}, 
+{slot_reference: "app_pro_to_inforep_from_app", value: [{value_type: "simple_instance", value_content: "KB_701763_Class263"}, ]}, 
+{slot_reference: "app_pro_reads_info_rep", value: [{value_type: "string", value_content: "Yes"}, ]}, 
+{slot_reference: "app_pro_creates_info_rep", value: [{value_type: "string", value_content: "Unknown"}, ]}, 
+{slot_reference: "operated_data_reps", value: [{value_type: "simple_instance", value_content: "KB_769905_Class47"}, ]}, 
+{slot_reference: "app_pro_deletes_info_rep", value: [{value_type: "string", value_content: "Unknown"}, ]}, 
+{slot_reference: "app_pro_updates_info_rep", value: [{value_type: "string", value_content: "Unknown"}, ]}, 
+{slot_reference: "relation_description", value: [{value_type: "string", value_content: "MASP_com zit ertussen; de ccn queues hebben maar max grootte en daarom zit er zo n buffer tussen.
+ENS aangifte uit het buitenland passeert langs CCN, en eerst langs Belgische db masp_com vooraleer in de Belgische plda db opgeladen te worden, en in de toekomst in ICS2 db.
+ICS ontvangt Entry Summary Declarations (ENS-aangiften) en elke partij die hierin voorkomt, wordt geïdentificeerd aan de hand van een EORI-nummer  een uniek Europees registratienummer dat toelaat om handelingen bij douane te verrichten (te vergelijken met KBO-nummer, maar dan voor douane).
+In praktijk verwerken we enkel bedrijven, maar bestaat niet op zijn minst een theoretische mogelijkheid of ook een natuurlijk persoon ICS kan gebruiken.
+Ics-aangiftes worden rechtstreeks als Xml verzonden via CCN, er vindt geen Edifact vertaling plaats voor Ics-berichten.
+(de Masp_com buffer doet wel de vertaling naar Edifact van Xml berichten met Ecs en Ncts-aangiftes)."}, ]}, 
+{slot_reference: "relation_name", value: [{value_type: "string", value_content: "ENS aangifte uit het buitenland op flow van CCN1 naar ICS managed by CCN gateway 1"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

@@ -1,0 +1,12 @@
+---
+frametype: "class"
+name: "Start_Process_Flow"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Business_Process_Flow_Type"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "The starting point for a business process flow"}, ]}]
+template_facet_value: [{slot_reference: "business_process_arch_display_label", facet_reference: ":DEFAULTS", value: [{value_type: "string", value_content: "Start"}, ]}, 
+{slot_reference: "name", facet_reference: ":DEFAULTS", value: [{value_type: "string", value_content: "Start"}, ]}, 
+{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Start_Process_Flow"}, ]}]
+---

@@ -1,0 +1,10 @@
+---
+frametype: "class"
+name: "REGULATED_COMPONENT_RELATION"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["OBLIGATION_MGT_RELATION"]
+template_slot: ["regulated_component_service_quals", "regulated_component_to_element", "regulated_component_regulation"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Relationship class to define the set of elements for which a regulation applies and to manage associated attributes for the relationship, e.g. service qualities."}, ]}]
+---

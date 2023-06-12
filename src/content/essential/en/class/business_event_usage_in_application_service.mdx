@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Business_Event_Usage_In_Application_Service"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Application_Service_Architecture_Type"]
+template_slot: ["business_event_criteria", "usage_of_business_event_in_application_service"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Abstract"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Usage of Business Events in an Application Service Architecture. These can either be initiating events or raised events in the architecture."}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Business_Event_Usage_In_Application_Service"}, ]}]
+---

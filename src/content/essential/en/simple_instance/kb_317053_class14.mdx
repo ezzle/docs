@@ -1,0 +1,20 @@
+---
+frametype: "simple_instance"
+name: "KB_317053_Class14"
+type: "Information_Representation"
+supertype: ["Information_Representation_Type", "Information_Logical", "Information_Layer", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "inforep_used_by_app_pro", value: [{value_type: "simple_instance", value_content: "KB_193714_Class100"}, ]}, 
+{slot_reference: "inforep_category", value: [{value_type: "simple_instance", value_content: "KB_788688_Class6"}, ]}, 
+{slot_reference: "infodata_rep_lifecycle_status", value: [{value_type: "simple_instance", value_content: "KB_921918_Class2"}, ]}, 
+{slot_reference: "representation_label", value: [{value_type: "string", value_content: "synchronisatie ontvangen stortingen voorafbetalingen Personenbelasting op flow van first VA naar db Taxi"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "synchronisatie ontvangen stortingen voorafbetalingen Personenbelasting op flow van first VA naar db Taxi"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Flow van  VA naar db taxi 
+In Taxi zijn ook gegevens omtrent voorafbetalingen opgeslagen: synchronisatie voorafbetalingen van  VA toepassing (AA I&amp;I) naar Taxi (AA Fisc). Louter om technische redenen worden die gegevens omtrent voorafbetalingen weggeschreven in Taxi en maandelijks geactualiseerd via manuele synchronisatie van toepassing voorafbetalingen (AA I&amp;I) naar Taxi (AA Fisc).
+Indien taxatiedienst AA Fisc correctie dient uit te voeren omtrent voorafbetalingen, vraagt AA Fisc eerst aan de Dienst Voorafbetalingen AA I&amp;I om wijziging op VA bestand toe te passen en pas achteraf wordt Taxi aangeroepen: voor calculatrix is dit volledig transparant: voor calculatrix lijkt het dezelfde tabel VA als de tabel VA van Taxi.
+
+flow van  va naar taxi aanslag: 
+Bestand door AA I&amp;I geconstrueerd  met ontvangen stortingen voorafbetalingen Personenbelasting (PB), maandelijks op balansdatum ingeladen in TAXI na manuele mise à jour binnen ABA dienst.
+Bij voorinvulling resulterend verschuldigd bedrag PB in Taks on web worden de reeds ontvangen stortingen voorafbetalingen Personenbelasting opgehaald uit Taxi, niet uit VA (immers reeds voordien op maandelijkse balansdatum vanuit VA in Taxi ingeladen)."}, ]}, 
+{slot_reference: "synonyms", value: [{value_type: "simple_instance", value_content: "KB_500095_Class2306"}, {value_type: "simple_instance", value_content: "KB_500095_Class2308"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

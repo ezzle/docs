@@ -1,0 +1,25 @@
+---
+frametype: "simple_instance"
+name: "KB_645641_Class0"
+type: "Information_Representation"
+supertype: ["Information_Representation_Type", "Information_Logical", "Information_Layer", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "inforep_used_by_app_pro", value: [{value_type: "simple_instance", value_content: "20160707_Class18"}, ]}, 
+{slot_reference: "supporting_data_representations", value: [{value_type: "simple_instance", value_content: "KB_204950_Class12"}, {value_type: "simple_instance", value_content: "KB_204950_Class16"}, {value_type: "simple_instance", value_content: "KB_204950_Class21"}, ]}, 
+{slot_reference: "known_information_issues", value: [{value_type: "simple_instance", value_content: "KB_915573_Class19"}, {value_type: "simple_instance", value_content: "KB_915573_Class18"}, {value_type: "simple_instance", value_content: "KB_696438_Class8"}, {value_type: "simple_instance", value_content: "KB_450711_Class8"}, ]}, 
+{slot_reference: "inforep_category", value: [{value_type: "simple_instance", value_content: "KB_788688_Class6"}, ]}, 
+{slot_reference: "infodata_rep_lifecycle_status", value: [{value_type: "simple_instance", value_content: "KB_659448_Class1"}, ]}, 
+{slot_reference: "representation_label", value: [{value_type: "string", value_content: "Nr. rol en nr. geselecteerd kohierartikel voor invordering van 180B-NFI openstaande schulden via dagelijkse flat file op flow van 180B NFI naar Debiteurenbeheer"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "Nr. rol en nr. geselecteerd kohierartikel voor invordering van 180B-NFI openstaande schulden via dagelijkse flat file op flow van 180B NFI naar Debiteurenbeheer"}, ]}, 
+{slot_reference: "element_classified_by", value: [{value_type: "simple_instance", value_content: "KB_889850_Class0"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Nr. rol en nr. geselecteerd kohierartikel voor invordering van 180B-NFI openstaande schulden via dagelijkse flat file op flow van 180B NFi naar debiteurenbeheer
+Bestand met openstaande schulden 180B-NFI om de gegevens door te sturen naar Debiteurenbeheer, wekelijkse flow
+Uit en ingaande flows rond 180b nfi &lt;=&gt; debiteurenbeheer (=GDD):
+GDD doet de inkohieringen nalatigheidsintresten 180b NFI, want niet in andere applicaties: GDD creëert kohieren, berekent bedragen en verzendt naar bronapplicatie: 
+1-ingaand: GDD ontvangt openstaande schulden 180B NFI, nr. rol en nr. geselecteerd kohierartikel via dagelijkse flat file van 180b nfi
+2-verwerking GDD brengt deze gegevens samen in een document: info vervolledigd in GDD, maar selectie artikels (kohiernrs. en artikelnrs.) komt van 180b nfi
+3-uitgaand GDD verzendt dit document: kohieren afgeprint lokaal in centrale teams op pc: pdf gedrukt en ondertekend en verzonden naar deurwaarder (‘rol’ wordt vergrendeld, vastgelegd op moment ondertekening, daarmee kan deurwaarder op pad)
+4-feedback: daarna flow terug naar 180b NFI: kohieren, rollen en aanmaningen: via flat file dagelijks (soms lege flat file want rol NFI schuld niet dagelijks, maar wekelijks gecreëerd in GDD)."}, ]}, 
+{slot_reference: "external_repository_instance_reference", value: [{value_type: "simple_instance", value_content: "sandbox_Class78702"}, ]}, 
+{slot_reference: "synonyms", value: [{value_type: "simple_instance", value_content: "sandbox_Class78698"}, {value_type: "simple_instance", value_content: "sandbox_Class78700"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

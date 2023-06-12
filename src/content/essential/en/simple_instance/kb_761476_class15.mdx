@@ -1,0 +1,21 @@
+---
+frametype: "simple_instance"
+name: "KB_761476_Class15"
+type: "Information_Representation"
+supertype: ["Information_Representation_Type", "Information_Logical", "Information_Layer", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "inforep_used_by_app_pro", value: [{value_type: "simple_instance", value_content: "KB_761476_Class14"}, ]}, 
+{slot_reference: "implements_information_views", value: [{value_type: "simple_instance", value_content: "KB_153205_Class19"}, {value_type: "simple_instance", value_content: "KB_116671_Class122"}, {value_type: "simple_instance", value_content: "KB_173072_Class1"}, ]}, 
+{slot_reference: "inforep_category", value: [{value_type: "simple_instance", value_content: "KB_788688_Class6"}, ]}, 
+{slot_reference: "infodata_rep_lifecycle_status", value: [{value_type: "simple_instance", value_content: "KB_659448_Class0"}, ]}, 
+{slot_reference: "representation_label", value: [{value_type: "string", value_content: "Cadastral Division ID van landmeterplannen op flow van Stipad naar Surveyorplan over ESB"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "Cadastral Division ID van landmeterplannen op flow van Stipad naar Surveyorplan over ESB"}, ]}, 
+{slot_reference: "element_classified_by", value: [{value_type: "simple_instance", value_content: "KB_889850_Class7"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Cadastral Division ID op flow van Stipad naar Surveyorplan over ESB
+Deze batch zorgt ervoor dat deze data (cadastral division ID / sequence number) vanuit Stipad naar Surveyorplan gaat.
+Data landmeterplannen worden bijgehouden in Filenet en Stipad; deze data kunnen opgezocht worden door 2 webservices van Landmeterplan: beide genoemd Surveyorplan ; de ene ws gaat via My MinfinPRO en zoekt via metadata en de andere webservice zoekt puur fysieke plannen zonder MyMinfin pro:
+-1e webservice Surveyorplan op ESB (Stipad intern ontikkeld) gaat via Minfinpro, geeft eerst metadata door (degene die de landmeter ingeeft bij zijn opzoeking via My minfinpro) om daarna in Filenet landmeterplan op te roepen a.d.h.v. deze metadata
+-2e webservice Surveyorplan haalt via ESB fysieke plannen op: identificatie verzonden en document terug ontvangen."}, ]}, 
+{slot_reference: "external_repository_instance_reference", value: [{value_type: "simple_instance", value_content: "sandbox_Class81242"}, ]}, 
+{slot_reference: "synonyms", value: [{value_type: "simple_instance", value_content: "sandbox_Class71993"}, {value_type: "simple_instance", value_content: "sandbox_Class71995"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

@@ -1,0 +1,31 @@
+---
+frametype: "simple_instance"
+name: "sandbox_Class70639"
+type: "Synonym"
+supertype: ["Utilities", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "synonym_language", value: [{value_type: "simple_instance", value_content: "essential_baseline_v3.0.4_Class10004"}, ]}, 
+{slot_reference: "system_content_visibility", value: [{value_type: "simple_instance", value_content: "KB_229567_Class68"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "Flux de Comfor Php vers Der (via l'ESB pour la détermination des montants des droits de l'enregistrement et des droits de succession) avec des actes, des pièces jointes, des relations d’enregistrement, mise à jour du statut"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Actes, annexes, relations, actualiation de status sur le flux de Comforphp vers Der (via l'ESB pour déterminer le montant d'enrégistrement et droits de succession).
+Fonctions par cette interface:
+-envoyer des actes et annexes 
+-enrégistrement relations 
+-actualiation de status (en cas d’envoi positif vers le notaire) 
+-actualiation de status (en attente de la provision) 
+-refus de l’acte
+-Comfor – DER: interfaces automatiques  (soap) comme l’interface avec Vlabel
+-DER: actes notariés sont envoyés par DER vers Vlabel (uniquement des metadonnées de l’acte)
+-relation de l'enrégistrement  signé: uniquement le status de la relation de l'enrégistrement est échangé avec Comfor.
+DER envoit des actes vers ESB, mais ces actes ne sont pas utilisés dans Comfor (l’acte n’arrive pas dans Comfor)
+
+Fichier sur le flux de Comfor vers Stipad: la “Formalité” est fait dans Comfor : la preuve vient donc de Comfor
+ l’enrégistrement est encodé manuellement dans Comfor et à partir de 2 janvier automatiquement: alors l’enrégistrement est transféré électroniquement de Comfor vers Stipad
+ quand l’enrégistrement de l'acte est validée dans Comfor, les données concernant la preuve de l'enrégistrement (status de la relation de l'enrégistrement) sont transféré par webservice de Comfor vers Der et vers Stipad: 
+ par ce webservice sont transférés vers Stipad pas uniquement des données concernant la formalité et l’enrégistrement, mais aussi des données en plus, comme par exemple le prix de vente et le base tarifaire (base de perception) 
+ la “formalité” est fait dans Comfor: la preuve vient donc de Comfor
+ liste 67 respo: pour l’enrégistrement &amp; relation de l'enrégistrement &amp; données des tarifs faveur 
+ la relation de l'enrégistrement est fait dans Comfor et envoyé vers Der et repris en Stipad: donc la relation de l'enrégistrement est aussi bien dans les interfaces Comfor-DER, comme Comfor-Stipad: DER envoye la relation de l'enrégistrement vers le notaire et Stipad envoie de temps en temps la relation de l'enrégistrement vers le notaire."}, ]}, 
+{slot_reference: "system_content_lifecycle_status", value: [{value_type: "simple_instance", value_content: "KB_229567_Class67"}, ]}, 
+{slot_reference: "external_repository_instance_reference", value: [{value_type: "simple_instance", value_content: "sandbox_Class80411"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

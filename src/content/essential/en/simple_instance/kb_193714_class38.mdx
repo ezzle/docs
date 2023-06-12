@@ -1,0 +1,28 @@
+---
+frametype: "simple_instance"
+name: "KB_193714_Class38"
+type: "Information_Representation"
+supertype: ["Information_Representation_Type", "Information_Logical", "Information_Layer", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "inforep_used_by_app_pro", value: [{value_type: "simple_instance", value_content: "KB_193714_Class37"}, ]}, 
+{slot_reference: "known_information_issues", value: [{value_type: "simple_instance", value_content: "KB_990529_Class43"}, ]}, 
+{slot_reference: "inforep_category", value: [{value_type: "simple_instance", value_content: "KB_788688_Class6"}, ]}, 
+{slot_reference: "infodata_rep_lifecycle_status", value: [{value_type: "simple_instance", value_content: "KB_659448_Class0"}, ]}, 
+{slot_reference: "representation_label", value: [{value_type: "string", value_content: "(1) klein bestandje ontvangen van dienst Marc Praet met ca. 5 tal kohierartikels van reeds ingekohierde schulden / (2) bestanden van ICPC met betalingen op flow van Icpc naar Niet Geaut VB"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "(1) klein bestandje ontvangen van dienst Marc Praet met ca. 5 tal kohierartikels van reeds ingekohierde schulden / (2) bestanden van ICPC met betalingen op flow van Icpc naar Niet Geaut VB"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Flow icpc =&gt; niet geaut vb
+(1) Ingaande flow terug van ICPC naar Niet Geaut VB: 
+klein bestandje ontvangen van dienst Marc Praet met ca. 5 tal kohierartikels wordt opgeladen in de db Niet Geaut VB door Eric Sandra a.d.h.v. een programmatje. Betreft dus kohierartikels van reeds ingekohierde schulden “niet geaut vb” of na schuldvgl. gecompenseerde schulden “niet geaut VB” (flux “tcvbart, programma 14”):
+= semi-manuele invoer in db niet geaut VB (opladen na manuele trigger)
+= beperkt aantal kohierartikelnrs.: wel aangeven en niet betalen komt zeer weinig voor.
+
+1e fase inkohiering: overzicht interapplicatieve flows :
+A flows ICPC =&gt; GEAUT VB/ niet GEAUT VB
+B flows GRA =&gt; GEAUT VB/ niet GEAUT VB
+C flow Fod Mobiliteit applicatie Vignetten 705 =&gt; Geaut VB (goca)
+
+(2)  inkomende bestanden van ICPC met betalingen naar Niet geaut vb
+Icpc ontvangt geld en levert info ontvangen betalingen aan Eric Sandra. Bij betalingen Niet Geaut VB wordt een onderdeel in de gestructureerde mededeling gebruikt om aan te geven dat het de “niet Geaut VB” betreft en dan wordt deze betaling voor de “Niet Geaut VB” niet in Icpc behandeld, maar wel opzijgezet in een bestand dat ICPC doorstuurt naar Eric. Wordt dagelijks behandeld door de dienst “assistance informatique” (dienst DCI op de noga A16). Er is een programma dat de betaling beheert en dat het bestand dat icpc zette op de mainframe, recupereert voor Eric Sandra. Overdracht bestand door Eric Sandra naar dienst “assistance informatique” manueel ."}, ]}, 
+{slot_reference: "external_repository_instance_reference", value: [{value_type: "simple_instance", value_content: "sandbox_Class80005"}, ]}, 
+{slot_reference: "synonyms", value: [{value_type: "simple_instance", value_content: "sandbox_Class70003"}, {value_type: "simple_instance", value_content: "sandbox_Class70005"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

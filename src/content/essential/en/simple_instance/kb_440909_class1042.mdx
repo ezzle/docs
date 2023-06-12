@@ -1,0 +1,26 @@
+---
+frametype: "simple_instance"
+name: "KB_440909_Class1042"
+type: "Synonym"
+supertype: ["Utilities", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "synonym_language", value: [{value_type: "simple_instance", value_content: "KB_848683_Class0"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "Mini One Stop Shop Back Office service"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "MOSS beheert een bijzonder Btw-stelsel, dat vanaf 1 januari 2015 beschikbaar is voor btw-plichtigen die niet zijn gevestigd in één of meer lidstaten van de EU en die diensten van telecommunicatie, radio en televisieomroep of elektronische diensten verlenen aan mensen die niet btw-plichtig zijn in deze lidstaten. Concreet heeft deze toepassing tot doel de betrokken btw-plichtigen de mogelijkheid te bieden om: 
+ zich te laten registreren via het loket in kwestie bij een lidstaat van identificatie =&gt; REGISTRATIE; en
+ binnen de lidstaat van identificatie langs elektronische weg één enkele btw-aangifte (specifiek voor die activiteiten) in te dienen voor alle activiteiten, uitgevoerd binnen de betrokken lidstaten van gebruik =&gt; AANGIFTE; en
+ aan de lidstaat van identificatie de ontvangen btw te betalen (tegen de tarieven, toegepast door de lidstaat van gebruik) =&gt; BETALING. 
+
+De lidstaat van identificatie is belast met het doorsturen van alle informatie met betrekking tot de registratie, de aangifte en de betalingen naar de betrokken lidstaten en met het verzekeren van de verdeling en de betaling van de ontvangen btw voor rekening van de lidstaten van gebruik. De lidstaat van gebruik of vestiging is verantwoordelijk voor het ontvangen en verzekeren van het beheer en de verwerking van die informatie. Dit nieuwe enig loket (MOSS) moet de huidige toepassing VOES1 (VAT on e-services) overnemen en omvatten, die is bestemd voor dienstverleners, gevestigd buiten de EU. 
+
+Het project omvat tevens de uitvoering van de Europese bepalingen met betrekking tot de toegang tot databases en tot automatische uitwisselingen van informatie waarmee de lidstaten de controle over dit bijzondere stelsel kunnen verzekeren. Moss heeft zowel een gedeelte backoffice en frontoffice.
+
+Moss valideert aangiftes en regelt ook betalingen (uit aangifte blijkt dat betaald of terugbetaald moet worden).
+Moss gebruikt de Pay it  module en zendt bestanden naar Pay it die daarna van Pay it naar BTM en dan van Btm naar de Financiële Post gaan.
+In de omgekeerde richting ontvangt Moss  coda bestanden van pay it (flow van pay it naar moss).
+
+Moss is geen Stirint module, wel btw applicatie
+
+Moss wordt binnenkort Oss: One Stop Shop: taks wordt geheven in het land van consumptie voor alle diensten. De scope wordt zeer uitgebreid: op termijn zullen we veel info bijhouden over niet Belgische onderworpenen: voor elke onderworpene ongeacht van welk land ontvangen we registratiegegevens en stockeren we deze in db Moss en voorlopig nog in db Voes, maar in de toekomst niet meer in db Voes (Voes retired). Alle btw onderworpenen die nog actief zijn, zijn geregistreerd in Moss. 
+Moss bevat alle info over Belgische en buitenlandse onderworpenen die geregistreerd zijn in België en prestaties doen in andere lidstaten en die informatie wordt getransfereerd volgens Europese wetgeving."}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

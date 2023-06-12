@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Business_Capability_Chain"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Conceptual_Business_Model"]
+template_slot: ["contained_business_capability_relations", "chain_steps_used", "defines_business_capability"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "An architecture that defines the flow of high level Business Capabilities (e.g. Value Chain, Demand Chan)"}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Business_Capability_Chain"}, ]}]
+---

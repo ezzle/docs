@@ -1,0 +1,13 @@
+---
+frametype: "class"
+name: "Technology_Function"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Technology_Logical"]
+template_slot: ["realisation_of_function_type"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Technology Function define, at a finer level of granularity, what technical functions a component offers. e.g. a relational database might offer create(), update(), read(), delete()"}, ]}]
+template_facet_value: [{slot_reference: "name", facet_reference: ":DOCUMENTATION-IN-FRAME", value: [{value_type: "string", value_content: "Name of the Technology Function"}, ]}, 
+{slot_reference: "name", facet_reference: ":DEFAULTS", value: [{value_type: "string", value_content: "&lt;Technology_Component&gt;::&lt;Technology_Function&gt;"}, ]}, 
+{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Technology_Function"}, ]}]
+---

@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Management_Framework_Type"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Framework_Management"]
+template_slot: ["mft_managed_information_scope", "mft_managed_business_scope", "mft_managed_technology_scope", "mft_managed_class_scope", "mft_managed_support_scope", "mft_managed_application_scope"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Class to capture types of management frameworks that are adopted by the enterprise. Management Framework Types group the actual, concrete management frameworks. E.g.  TOGAF (Management Framework) is an implementation of an EA Framework (Management Framework Type)"}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "EA_Support"}, ]}]
+---

@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Business_Process_Type"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Business_Logical"]
+template_slot: ["business_process_owned_by_business_role", "bus_process_type_reads_information", "lifecycle_status_business", "standardisation_level", "busproctype_uses_infoviews", "bpt_business_criticality", "business_process_performed_by_business_role", "bp_supported_by_app_app", "bus_process_type_updates_information", "bp_supported_by_app_svc", "bp_supported_by_app_fun", "busproctype_in_busprocfamily", "bus_process_type_deletes_information", "bus_process_type_creates_information", "business_process_id", "busproctype_belongs_to_busprocfamily"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Abstract"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Super class of Business Process, Business Activity and Business Task. Can be used to generically refer to Business Process work constructs. e.g. Used for mapping relationships from Application constructs"}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Business_Process_Type"}, ]}]
+---

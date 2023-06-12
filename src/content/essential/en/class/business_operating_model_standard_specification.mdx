@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Business_Operating_Model_Standard_Specification"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Business_Standards_Management"]
+template_slot: ["boms_standard_group_business_role"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Specifies a Group Business Role as the anchor point for a blueprint that provides a logical representation of a standard business operating model in terns of organisational structure, processes performed, supporting application services and required technology components"}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "EA_Support"}, ]}]
+---

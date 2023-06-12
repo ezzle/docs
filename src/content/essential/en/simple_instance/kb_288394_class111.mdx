@@ -1,0 +1,30 @@
+---
+frametype: "simple_instance"
+name: "KB_288394_Class111"
+type: "APP_PRO_TO_INFOREP_RELATION"
+supertype: ["APP_TO_INFO_RELATION", "Application_Relationship", "EA_Relation", ":SYSTEM-CLASS", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "app_pro_to_inforep_to_inforep", value: [{value_type: "simple_instance", value_content: "KB_288394_Class108"}, ]}, 
+{slot_reference: "app_pro_persists_info_rep", value: [{value_type: "boolean", value_content: "false"}, ]}, 
+{slot_reference: "app_pro_to_inforep_from_app", value: [{value_type: "simple_instance", value_content: "KB_958736_Class279"}, ]}, 
+{slot_reference: "app_pro_reads_info_rep", value: [{value_type: "string", value_content: "Yes"}, ]}, 
+{slot_reference: "app_pro_creates_info_rep", value: [{value_type: "string", value_content: "No"}, ]}, 
+{slot_reference: "operated_data_reps", value: [{value_type: "simple_instance", value_content: "KB_284427_Class11"}, ]}, 
+{slot_reference: "app_pro_deletes_info_rep", value: [{value_type: "string", value_content: "No"}, ]}, 
+{slot_reference: "app_pro_updates_info_rep", value: [{value_type: "string", value_content: "No"}, ]}, 
+{slot_reference: "relation_description", value: [{value_type: "string", value_content: "Flow overschrijving tussen journaals van betaalgegevens n.a.v. registratie akte van BTM naar Comfor
+Info Zeb 21/12: betaalverwerking nu manueel via Payatfinpost en vanaf 1 april 2017 geautomatiseerd om volgend jaar codabestanden automatisch in te lezen in BTM.
+2e betaalproces: transfereren betalingen aan thesaurie = maandelijkse overschrijvingen.
+Gegevensoverdracht Comfor  Fedcom voorlopig manueel (bij maandelijke afsluiting van de boekhouding): nu via xls  bestand dat manueel getransfereerd wordt naar de Boekhouddienst die deze zet in Fedcom: binnenkort automatische interface.
+
+Transfer (Overschrijving) BTM / Comfor :
+“uitgaande betalingen: 2 soorten overschrijvingen: maandelijkse overschrijving en gezamenlijke overschrijvingen waaronder geoorloofde voorschotten”  
+
+Toelichting: we onderscheiden:   
+ transfer “Comfor  algemene boekhouding”  
+ transfer overschrijving: Comfor stuurt uitgaande betalingsorders van registratiebureau naar klant door (voorlopig nog via interface “pay-at-finpost”, vanaf april via interface BTM): 
+ voor “gezamenlijke overschrijving”: kleine terugbetalingen voorschot of terugstorting geld op rekening Thesaurie  
+ voor “maandelijkse overschrijving”.  3 gele blokken (boekhoudproces, objecten “transactie” en “payment”): uitgaande betalingen  
+ overschrijving tss. journaals komt v. BTM (rechtsboven geel in midden) : kan niet bevestigd worden (“journaal”is de term die in publieke sector gebruikt wordt voor “vastleggingen”)"}, ]}, 
+{slot_reference: "relation_name", value: [{value_type: "string", value_content: "Overschrijving tussen journaals van betaalgegevens n.a.v. registratie akte op flow van BTM naar Comfor managed by BTM_PROD"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

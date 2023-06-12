@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Hardware_Instance"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Technology_Instance"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Class to capture hardware Technology Instances, e.g. servers, desktop workstations, network routers and so on."}, ]}]
+template_facet_value: [{slot_reference: "name", facet_reference: ":DEFAULTS", value: [{value_type: "string", value_content: "&lt;device name&gt;"}, ]}, 
+{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Hardware_Instance"}, ]}]
+---

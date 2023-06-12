@@ -1,0 +1,31 @@
+---
+frametype: "simple_instance"
+name: "KB_366793_Class37"
+type: "Application_Function_Implementation"
+supertype: ["Application_Provider_Type", "Application_Logical", "Application_Layer", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "application_function_implementation_provided_by", value: [{value_type: "simple_instance", value_content: "KB_958736_Class439"}, ]}, 
+{slot_reference: "implements_application_function", value: [{value_type: "simple_instance", value_content: "KB_366793_Class38"}, ]}, 
+{slot_reference: "app_func_impl_name", value: [{value_type: "string", value_content: "ICS_UC012: validate and register diversion request"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "PLDA ICS_PROD::ICS_UC012: validate and register diversion request"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "ICS_UC012	
+-Validate and register diversion request	
+-This UC is important because of the following interactions:
+Communication with economic operators.
+Exchange of messages with customs offices in other member states.
+Integration with the AEO/EORI system.
+The first part of this use case realization illustrates the typical processing of incoming B2B messages, sent by any economic operator:
+The economic operator submits the message to the ICS system by means of a published web service.
+The web service forwards the message to the routing service for further processing, and returns a correlation number which can be used later on for referring to this specific message submission. The web service will have persisted the received message before forwarding it.
+The routing service will handle necessary formatting, transformation and (technical) validation of the incoming message, and finally forward it to the appropriate business service  for final processing.
+As part of the validation of the diversion request, the goodsflow service will verify that the economic operator notifying the diversion is the same one that initially submitted the (summary) declaration, and that he has a valid registration id .
+
+1-If the original ENS is found, and the diversion request is valid, then:
+The new (actual) office of first entry is notified. This is achieved by the collaboration of routing service, format translation service, and ECN gateway service already discussed above.
+The economic operator is notified that the diversion request was accepted. Again the routing service and format translation service play a prominent role. The final delivery is performed using a (web service) callback to the economic operator’s system . Another option is “polling”. ICS then stores the return message in its database, where the economic operator can retrieve it using another web service call. This option is not illustrated here . This sequence is illustrative of message delivery to an economic operator system.
+The (summary) declaration state is set to DIVERSION_REGISTERED.
+
+2-On the other hand, if the diversion request is determined to be invalid, then the diversion request is rejected and the economic operator is notified of this using the same message delivery mechanism discussed above.
+
+The ICS of the declared office of first entry accepts and registers this diversion request, and if it is valid, forwards it to the customs office where the goods will actually enter by using an IE303 message"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

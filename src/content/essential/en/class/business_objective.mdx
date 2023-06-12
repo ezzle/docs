@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Business_Objective"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Business_Objective_Type"]
+template_slot: ["bo_measures", "bo_target_date_iso_8601", "objective_supported_by_objective", "supporting_business_principles", "objective_supports_objective", "objective_supports_goals", "supporting_business_capabilities", "bo_performance_measures", "objective_supported_by_strategic_plan", "bo_target_date"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "A strategic business goal for an enterprise"}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Business_Objective"}, ]}]
+---

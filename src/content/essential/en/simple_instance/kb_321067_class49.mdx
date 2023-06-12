@@ -1,0 +1,25 @@
+---
+frametype: "simple_instance"
+name: "KB_321067_Class49"
+type: ":APU-TO-APU-STATIC-RELATION"
+supertype: [":APA-STATIC-RELATION", ":Application_Relationship", ":EA_Graph_Relation", ":DIRECTED-BINARY-RELATION", ":RELATION", ":SYSTEM-CLASS", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "apu_to_apu_relation_inforep_acquisition_method", value: [{value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class20026"}, ]}, 
+{slot_reference: "apu_to_apu_relation_inforep_service_quals", value: [{value_type: "simple_instance", value_content: "KB_974414_Class18"}, ]}, 
+{slot_reference: "apu_to_apu_relation_inforeps", value: [{value_type: "simple_instance", value_content: "KB_321067_Class50"}, ]}, 
+{slot_reference: "contained_in_static_application_provider_architecture", value: [{value_type: "simple_instance", value_content: "KB_321067_Class48"}, ]}, 
+{slot_reference: ":relation_name", value: [{value_type: "string", value_content: "Static Architecture of::Calcul IPP  Aanslagjaar 2020_PROD: Relation from ICPC : in : Calcul IPP2020: Relation from Calcul IPP2020 : in : Calcul IPP2020"}, ]}, 
+{slot_reference: ":relation_description", value: [{value_type: "string", value_content: "Flow inkohieringen PB van Calcul IPP naar ICPC. AA Fisc vestigt de belasting en geeft netto bedrag vordering of terugbetaling door aan ICPC invordering.
+Calcul Ipp maakt bestand aan m.b.t. kohier dat naar Icpc verzonden wordt (batch).
+
+1. Calculatrix berekent en stockeert gegevens in Taxi
+2. Tijdens het inkohieringsproces vestigt Calculipp de kohiers en vraagt aan ICPC de nodige artikel en kohiernummers. Deze informatie wordt gestockeerd in TaxiDb.
+3. Op basis van de door ICPC ontvangen artikel en kohiernummers, creërt Calculipp het definitieve aanslagbiljet (bestand fedopress) en de bestanden voor ICPC met artikels en kohiers.
+4. “icpc feedback”: AA Fisc dienst Calcul Ipp stuurt via Taxi kohier naar AA I&amp;I (Icpc) met in kohier alle resultaten van de berekening, ev. terug te betalen bedrag, wie heeft recht op welke terugbetaling met welk kohierartikelnr., datum uitvoerbaarverklaring
+5. verschillende toepassingen van ICPC binnen AGPR gebruiken die gegevens dan om aanmaning op te maken of om terugbetaling uit te voeren enz.
+6. aanmaak terugbetalingsbestand op de mainframe
+7. effectieve vereffening terugbetaling wordt uitgevoerd door AA Thesaurie."}, ]}, 
+{slot_reference: ":relation_label", value: [{value_type: "string", value_content: "depends on"}, ]}, 
+{slot_reference: ":FROM", value: [{value_type: "simple_instance", value_content: "KB_321067_Class55"}, ]}, 
+{slot_reference: ":TO", value: [{value_type: "simple_instance", value_content: "KB_321067_Class54"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

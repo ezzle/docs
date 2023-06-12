@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Application_Deployment"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Application_Physical"]
+template_slot: ["application_deployment_label", "application_provider_deployed", "application_deployment_technical_arch", "known_app_issue", "uses_information_stores", "deployment_of_software_components", "application_deployment_technology_instance", "belongs_to_deployment_group", "application_deployment_role", "contained_application_deployments"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "A physical deployment of an Application component in the organisation. e.g. the Production Environment, the Test Environment etc. Deployments define one or more instances of the application (e.g. live, failover) to capture all the physical instances of the Application."}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Application_Deployment"}, ]}]
+---

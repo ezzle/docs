@@ -1,0 +1,16 @@
+---
+frametype: "class"
+name: ":TPRA-RELATION"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: [":Technology_Relationship"]
+template_slot: ["relation_contained_in_tech_product_architecture"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Set of relationships that are allowed in Technology Product Architectures."}, ]}]
+template_facet_value: [{slot_reference: ":relation_label", facet_reference: ":DEFAULTS", value: [{value_type: "string", value_content: "depends on"}, ]}, 
+{slot_reference: ":FROM", facet_reference: ":DOCUMENTATION-IN-FRAME", value: [{value_type: "string", value_content: "Slot managing the source slot on the relation."}, ]}, 
+{slot_reference: ":FROM", facet_reference: ":MINIMUM-CARDINALITY", value: [{value_type: "integer", value_content: "1"}, ]}, 
+{slot_reference: ":FROM", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Technology_Product_Architecture_Type"}, ]}, 
+{slot_reference: ":TO", facet_reference: ":DOCUMENTATION-IN-FRAME", value: [{value_type: "string", value_content: "Slot to hold the TO side of the relationship. The target of the relationship"}, ]}, 
+{slot_reference: ":TO", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Technology_Product_Architecture_Type"}, ]}]
+---

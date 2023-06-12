@@ -1,0 +1,10 @@
+---
+frametype: "class"
+name: "BUSPROCTYPE_TO_INFOVIEW_TO_DATAOBJ_RELATION"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Business_Relationship"]
+template_slot: ["busproctype2infoview_updates_dataobj", "busproctype2infoview_deletes_dataobj", "busproctype2infoview_reads_dataobj", "busproctype_to_infoview_to_dataobj_from_busproc2infoview", "busproctype2infoview_creates_dataobj", "busproctype_to_infoview_to_dataobj_to_dataobj"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Relationship that captures how a type of Business Process interacts with specific data objects contained within an Information View"}, ]}]
+---

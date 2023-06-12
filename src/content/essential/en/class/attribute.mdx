@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Attribute"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Utilities"]
+template_slot: ["attribute_value_unit"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Meta class that is used to define attributes for other classes. The modeller should create instances of this class in order to define a particular attribute, e.g. cost. Usages of this class are then associated with Instances of artefacts that have that attribute in order to specify the value for that attribute."}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Attribute"}, ]}]
+---

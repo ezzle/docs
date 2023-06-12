@@ -1,0 +1,18 @@
+---
+frametype: "simple_instance"
+name: "sandbox_Class78038"
+type: "Synonym"
+supertype: ["Utilities", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "synonym_language", value: [{value_type: "simple_instance", value_content: "essential_baseline_v3.0.4_Class10004"}, ]}, 
+{slot_reference: "system_content_visibility", value: [{value_type: "simple_instance", value_content: "KB_229567_Class68"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "rôles et sommations intérêts moratoires des dettes non fiscales par fichier plat journalier sur le flux de Gestion Des Debiteurs vers First Nfi"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Les réclamations, les rôles et les rappels des intérêts de retard pour les dettes non fiscales via un fichier plat quotidien sur le flux de Gestion des débiteurs vers First Nfi: retour vers First NFI: 
+Flux sortants et entrants autour de First-NFI et gestion des débiteurs (=GDD) : GDD effectue les enrôlements des intérêts de retard First-NFI, car pas dans d'autres applications : GDD crée les taux, calcule les montants et les envoie à l'application source:
+1  entrant : GDD reçoit les créances en cours First-NFI, no. rôle et no. article de rôle sélectionné via fichier plat quotidien de First-NFI
+2  traitement: GDD rassemble ces données dans un document: info complétée dans GDD, mais la sélection des articles provient du First-NFI (numéros de rôle et numéros d'article de rôle)
+3  sortant: GDD envoie ce document: les rôles sont imprimés localement dans les équipes centrales sur pc : pdf imprimé et signé et envoyé à l'huissier ('rôle' est verrouillé, enregistré au moment de la signature, cela permet à l'huissier de partir)
+4  feedback: puis retour vers First-NFI :  rôles et rappels: via fichier plat quotidien (parfois fichier plat vide car le rôle de dette NFI n'est pas créé quotidienne, mais hebdomadaire dans GDD)."}, ]}, 
+{slot_reference: "system_content_lifecycle_status", value: [{value_type: "simple_instance", value_content: "KB_229567_Class67"}, ]}, 
+{slot_reference: "external_repository_instance_reference", value: [{value_type: "simple_instance", value_content: "sandbox_Class78039"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

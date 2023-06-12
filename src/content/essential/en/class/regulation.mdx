@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Regulation"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Obligation_Management"]
+template_slot: ["regulation_attributes", "regulation_related_regulations", "regulation_supported_drivers", "regulation_for_compliance_obligations", "regulation_applies_to", "regulation_regulatory_body"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "stemming from laws, regulations, licence conditions, supervisory requirements, and self-regulatory industry codes of conduct."}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "EA_Support"}, ]}]
+---

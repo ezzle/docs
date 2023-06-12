@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Application_Provider_Type"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Application_Logical"]
+template_slot: ["user_count_range", "uses_information_representation", "ea_recovery_point_objective", "afi_maps_info_data", "ap_business_criticality", "ea_recovery_time_objective", "purchase_status"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Abstract"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Base class of Application Provider and Application Function Implementations. These are logical things that provide implementations to the Application Services and Application Functions. These are real application components that one can buy (e.g. packaged applications) or that have been built  either customised packages or purely bespoke applications."}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Application_Provider_Type"}, ]}]
+---

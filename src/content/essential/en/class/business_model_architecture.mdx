@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Business_Model_Architecture"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Conceptual_Business_Model"]
+template_slot: ["business_model_architecture_elements", "architecture_of_business_model", "business_model_architecture_dependencies"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "An architecture model that describes the configuration of conceptual elements that are required to deliver a Business Model"}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Conceptual_Business_Model"}, ]}]
+---

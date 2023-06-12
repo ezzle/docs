@@ -1,0 +1,10 @@
+---
+frametype: "class"
+name: "CONTRACT_COMPONENT_RELATION"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["OBLIGATION_MGT_RELATION"]
+template_slot: ["ccr_currency", "ccr_end_date_ISO8601", "ccr_renewal_model", "ccr_start_date_ISO8601", "contract_component_to_element", "ccr_contract_unit_of_measure", "ccr_license", "ccr_total_annual_cost", "contract_component_from_contract", "ccr_contracted_units", "ccr_renewal_notice_days", "contract_component_service_quals"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Relationship class to define the set of elements for which a contract applies and to manage associated attributes for the relationship, e.g. service qualities."}, ]}]
+---

@@ -1,0 +1,22 @@
+---
+frametype: "simple_instance"
+name: "KB_366793_Class74"
+type: "Information_Representation"
+supertype: ["Information_Representation_Type", "Information_Logical", "Information_Layer", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "inforep_used_by_app_pro", value: [{value_type: "simple_instance", value_content: "KB_366793_Class73"}, ]}, 
+{slot_reference: "known_information_issues", value: [{value_type: "simple_instance", value_content: "KB_962852_Class36"}, ]}, 
+{slot_reference: "inforep_category", value: [{value_type: "simple_instance", value_content: "KB_788688_Class6"}, ]}, 
+{slot_reference: "infodata_rep_lifecycle_status", value: [{value_type: "simple_instance", value_content: "KB_659448_Class0"}, ]}, 
+{slot_reference: "representation_label", value: [{value_type: "string", value_content: "Belgische ICS aangiften op flow van ics2 naar ccn gateway1"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "Belgische ICS aangiften op flow van ics2 naar ccn gateway1"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Flow van ICS2 naar CCN
+Belgische ICS aangiften worden doorgegeven naar Masp_com (doorgeefluik) en vandaar naar Ccn (Europa). Masp_com is dus een doorgeefluik databank waarlangs alle berichten naar Ccn-netwerk passeren. Die Ccn-queues hebben maar max. grootte en daarom zit er zo'n buffer tussen.
+Exchange of messages with customs offices in other member states via DG Taxud: use case ICS_UC009.
+Wanneer in de Entry Summary Declaration wordt vermeld dat nog andere lidstaten op de route van een voertuig liggen vermeld in de ENS-aangifte, dan worden die gegevens ook naar die lidstaten doorgestuurd (ENS aangifte samen met resultaat van de risicoanalyse).
+Andere lidstaten kunnen goederengegevens ENS aangiftes en resultaten risicoanalyse opvragen.
+Ics-aangiftes worden rechtstreeks als Xml verzonden via CCN, er vindt geen Edifact vertaling plaats voor Ics-berichten.
+(de Masp_com buffer doet wel de vertaling naar Edifact van Xml berichten met Ecs en Ncts-aangiftes)."}, ]}, 
+{slot_reference: "external_repository_instance_reference", value: [{value_type: "simple_instance", value_content: "sandbox_Class80842"}, ]}, 
+{slot_reference: "synonyms", value: [{value_type: "simple_instance", value_content: "sandbox_Class71340"}, {value_type: "simple_instance", value_content: "sandbox_Class71342"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

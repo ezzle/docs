@@ -1,0 +1,29 @@
+---
+frametype: "simple_instance"
+name: "KB_294257_Class2"
+type: "Issue"
+supertype: ["Strategic_Requirement", "Strategy_Management", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "related_business_elements", value: [{value_type: "simple_instance", value_content: "KB_857622_Class0"}, ]}, 
+{slot_reference: "issue_impact", value: [{value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class90070"}, {value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class90055"}, ]}, 
+{slot_reference: "issue_priority", value: [{value_type: "string", value_content: "High"}, ]}, 
+{slot_reference: "related_application_elements", value: [{value_type: "simple_instance", value_content: "KB_958736_Class877"}, {value_type: "simple_instance", value_content: "KB_958736_Class1521"}, {value_type: "simple_instance", value_content: "KB_958736_Class812"}, ]}, 
+{slot_reference: "related_information_elements", value: [{value_type: "simple_instance", value_content: "KB_118845_Class642"}, ]}, 
+{slot_reference: "issue_source", value: [{value_type: "simple_instance", value_content: "KB_329961_Class6"}, ]}, 
+{slot_reference: "issue_categories", value: [{value_type: "simple_instance", value_content: "KB_255141_Class10"}, ]}, 
+{slot_reference: "requirement_status", value: [{value_type: "simple_instance", value_content: "sandbox_Class40005"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "ICPC toepassingen  authenticatie ICPC-toepassingen wel via IAM, maar autorisatie niet via IAM"}, ]}, 
+{slot_reference: "element_classified_by", value: [{value_type: "simple_instance", value_content: "KB_889850_Class0"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "1e fase = authentificatie
+Authentificatie  ICPC-toepassingen WEL via IAM (check door Belconet WSM o.b.v. IAM) (Belconet on Web geen deel van periferie van ICPC, want is toegangsfilosofie van ICPC).
+
+2e fase: autorisatie ICPC-toepassingen NIET via IAM:
+autorisatie buiten IAM via Belconet WSM Security model voor gewone Belconetfuncties
+(securitymodel van 2005-2006 (Mathias Vandenbroeck) voor ICPC en voor taxatie, waarbij autorisatie en security-logging sterk vereenvoudigd zijn: finesse in Belconet on web security model opgeheven)
+
+3e fase:
+voor beperkt aantal belangrijke functies voor beperkt aantal personen: autorisatie buiten IAM op mainframe zelf :
+3.1 voor sommige functies o.b.v. Crestra-code van ontvangstkantoor waar de persoon die autorisatie vraagt, werkt en o.b.v. mapping met oude mainframecodes ontvangstkantoren meegegeven tijdens login (=code gelinkt aan authenticatie van de persoon)
+3.2 andere functies nominatief gedefinieerd voor bv. ontvangers van kantoor voorafbetalingen of verkeersbelastingen die grote overschrijvingen doen van ontvangen gelden naar thesaurierekeningen
+3.3 hardgecodeerde mainframe autorisatie voor aantal specifieke mainframe programma’s, vb. TP’s: rechtstreekse controle van de toegelaten gebruiker a.d.h.v. Gcos8 account."}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

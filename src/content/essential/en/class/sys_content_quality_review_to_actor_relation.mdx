@@ -1,0 +1,10 @@
+---
+frametype: "class"
+name: "SYS_CONTENT_QUALITY_REVIEW_TO_ACTOR_RELATION"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["SYS_CONTENT_QUALITY_RELATION"]
+template_slot: ["system_content_quality_review_to_actor_from_review", "system_content_quality_review_to_actor_assignment_date_iso8601", "system_content_quality_review_to_actor_to_actor", "system_content_quality_review_to_actor_comms_datetimes_iso8601", "system_content_quality_review_to_actor_assigned_by_actor", "system_content_quality_review_to_actor_previous_assignment"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Defines the relationship between a content review and the individual responsible for performing the review"}, ]}]
+---

@@ -1,0 +1,12 @@
+---
+frametype: "class"
+name: "Technology_Provider_Standard_Specification"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Technology_Standards_Management"]
+template_slot: ["tps_standard_usage", "tps_standard_tech_provider_role"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Specifies a standard technology provider that should be adopted to implement a given technology component"}, ]}]
+template_facet_value: [{slot_reference: "name", facet_reference: ":DEFAULTS", value: [{value_type: "string", value_content: "&lt;ORG/GEO SCOPE&gt;:&lt;TECHNOLOGY COMPONENT NAME&gt; Standard  &lt;TECHNOLOGY PRODUCT NAME&gt;"}, ]}, 
+{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "EA_Support"}, ]}]
+---

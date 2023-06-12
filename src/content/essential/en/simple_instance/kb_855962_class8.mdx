@@ -1,0 +1,37 @@
+---
+frametype: "simple_instance"
+name: "KB_855962_Class8"
+type: "Issue"
+supertype: ["Strategic_Requirement", "Strategy_Management", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "related_business_elements", value: [{value_type: "simple_instance", value_content: "KB_883624_Class141"}, ]}, 
+{slot_reference: "issue_impact", value: [{value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class90055"}, ]}, 
+{slot_reference: "issue_priority", value: [{value_type: "string", value_content: "Low"}, ]}, 
+{slot_reference: "related_application_elements", value: [{value_type: "simple_instance", value_content: "KB_958736_Class1022"}, ]}, 
+{slot_reference: "related_information_elements", value: [{value_type: "simple_instance", value_content: "KB_201275_Class74"}, ]}, 
+{slot_reference: "issue_source", value: [{value_type: "simple_instance", value_content: "KB_329961_Class6"}, ]}, 
+{slot_reference: "issue_categories", value: [{value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class20014"}, ]}, 
+{slot_reference: "requirement_status", value: [{value_type: "simple_instance", value_content: "sandbox_Class40005"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "PM (roerende voorheffing)  manuele inputflows"}, ]}, 
+{slot_reference: "element_classified_by", value: [{value_type: "simple_instance", value_content: "KB_889850_Class0"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Alle input in de PM mainframe toepassing gebeurt manueel (geen inkomende bestanden in PM).
+Via papieren document 276 DIV vraagt de niet inwoner om roerende voorheffing terug te betalen: dit wordt manueel op kantoor verwerkt en ingetikt in mainframe toepassing PM.
+Opslag aanvragen teruggaves in db “RV276REG”.
+Aanvraagborderel wordt manueel geëncodeerd in PM.
+
+Nog geen mogelijkheid voor mandataris om csv  file toe te sturen aan FOD Financiën wat nuttig zou zijn voor bundeling aanvragen terugbetaling RV.
+Ook nog geen online invulformulier ter beschikking  voor individuele aanvragen terugbetaling RV.
+
+Validatie-regels nodig om dubbele records te ontdekken in de db.
+
+Uitgaande flows semi  manueel:
+Bedoeling dat uitgaande flow met maandelijks bestand terugbetalingen RV van PM naar ICPC in de toekomst volautomatisch zou verlopen vanuit de nieuwe PM (RV) toepassing naar ICPC: momenteel nog manuele interventie nodig om maandelijks bestand te injecteren in ICPC (hetzij door Alfons de Gols, hetzij door ICPC team AA I&amp;I i.g.v. nul-bestand: als maand geen terugbetaling RV i.h.k.v. dubbelbelastingverdrag, dan verwittigt AA Fisc het ICPC team van AA I&amp;I die dan een nul-bestand aanmaken).
+
+Uitgaande flow maandelijkse Csv verzamelstaat naar 13 banken met indeling totale som per begunstigde wordt opgesteld o.b.v. query van Alfons de Gols
+(deze mainframe query is het enige consultatiemiddel om globale overzichten van de beslissingen te genereren).
+Deze flow zou in de toekomst vanuit de nieuwe toepassing PM Light kunnen gegenereerd worden en verzonden via mail naar de 13 banken (PM Light is niet alleen de naam van de huidige php toepassing voor terugbetalingen intern recht, maar ook de naam van de nog niet bestaande toekomstige PM toepassing die de mainframe PM toepassing zal vervangen).
+
+Soms terugbetalingen op non SEPA bankrekeningen: niet gestructureerd, manueel terug te betalen.
+
+Verzending papieren beslissingen 439D door Fedopress naar kantoren zal afgeschaft worden."}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

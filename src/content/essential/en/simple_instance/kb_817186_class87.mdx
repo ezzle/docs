@@ -1,0 +1,37 @@
+---
+frametype: "simple_instance"
+name: "KB_817186_Class87"
+type: "APP_PRO_TO_INFOREP_RELATION"
+supertype: ["APP_TO_INFO_RELATION", "Application_Relationship", "EA_Relation", ":SYSTEM-CLASS", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "app_pro_to_inforep_to_inforep", value: [{value_type: "simple_instance", value_content: "KB_817186_Class88"}, ]}, 
+{slot_reference: "app_pro_persists_info_rep", value: [{value_type: "boolean", value_content: "false"}, ]}, 
+{slot_reference: "app_pro_to_inforep_from_app", value: [{value_type: "simple_instance", value_content: "KB_958736_Class1529"}, ]}, 
+{slot_reference: "app_pro_reads_info_rep", value: [{value_type: "string", value_content: "Yes"}, ]}, 
+{slot_reference: "app_pro_creates_info_rep", value: [{value_type: "string", value_content: "Unknown"}, ]}, 
+{slot_reference: "operated_data_reps", value: [{value_type: "simple_instance", value_content: "KB_271498_Class66"}, {value_type: "simple_instance", value_content: "KB_271498_Class67"}, {value_type: "simple_instance", value_content: "KB_271498_Class68"}, ]}, 
+{slot_reference: "app_pro_deletes_info_rep", value: [{value_type: "string", value_content: "Unknown"}, ]}, 
+{slot_reference: "app_pro_updates_info_rep", value: [{value_type: "string", value_content: "Unknown"}, ]}, 
+{slot_reference: "relation_description", value: [{value_type: "string", value_content: "Flow van Sitran naar  VA :
+manuele flow van Sitran naar VA o.b.v. txt-bestand
+=&gt; bijwerking gebeurt n.a.v. verworpen ontvangen (vooraf)betalingen.
+1) Creatie records nieuwe natuurlijke personen en nieuwe vennootschappen in db VA
+2) Bijwerking gegevens reeds in db VA van natuurlijke personen en vennootschappen.
+
+Flow van Sitran naar VA (manuele flow o.b.v. txt-bestand)
+Trigger: verworpen ontvangen (vooraf)betalingen 
+Creatie in db VA van nieuwe ‘klanten’ vennootschappen, maar ook van nieuwe natuurlijke personen (al dan niet zelfstandig).
+
+Bijwerking signaletiekgegevens van reeds in db VA opgenomen ‘klanten’ natuurlijke personen / vennootschappen.
+Db VAC (= db VA56c2) is wachtregister voor VA (te vergelijken met 56C2 van ICPC) voor ontvangen voorafbetalingen die niet meteen toegewezen kunnen worden aan een in VA gekende natuurlijke persoon of rechtspersoon. Voor deze nog niet toegewezen betalingen in db VAC worden signaletiekgegevens (o.a. adres “klant” voorafbetaler) opgezocht in Sitran o.b.v. RR-nr. of KBO-nr. in vrije mededeling van de betaling in VAC. Dan worden nieuwe VA-klanten gecreëerd in db VA of signaletiekgegevens bestaande VA-klanten bijgewerkt.
+Een batch op Gcos8 maakt periodiek een lijst van verworpen ontvangen (vooraf)betalingen ingeschreven in de db VAC. Deze lijst wordt door inningsteam VA naar SITRAN team gestuurd die namen en adressen opzoeken in SITRAN en hiervan een txt bestand aanmaken. SITRAN team stuurt meestal de dag zelf ‘s avonds dit txt-bestand terug naar AA I&amp;I. AA I&amp;I converteert dit txt bestand naar het juiste formaat voor gebruik op de Gcos8. Via het programma VABIFBIS worden adressen in de db VA bijgewerkt, niet in db VAC. 
+Voor de nieuwe vennootschappen creëert de batch automatisch records in db VA met vooringevuld KBO nr.
+Voor nieuwe natuurlijke personen wordt RR-nr. manueel geëncodeerd in db VA op basis van de vrije mededeling in zijn eerste voorafbetaling in Coda-bestand. Voor natuurlijke personen werd referentie gecreëerd in VA: begonnen met 1 en daarna per 1 verhoogd. Er is een klein deel in de db dat de link maakt tussen deze gecreëerde referentie en het Rijksregisternr. van de natuurlijke persoon (afzonderlijk bestand correspondentietabel).
+
+Nieuwe ondernemingen worden automatisch via batch in db VA toegevoegd 
+ hetzij o.b.v. NP, PM n.a.v. de kwartaalbijwerking
+ hetzij o.b.v. Sitran n.a.v. verworpen betalingen.
+Nieuwe natuurlijke personen daarentegen worden manueel toegevoegd in db VA:
+ alleen o.b.v. Sitran n.a.v. verworpen betalingen."}, ]}, 
+{slot_reference: "relation_name", value: [{value_type: "string", value_content: "gegevens natuurlijke personen op manuele flow van Sitran naar VA managed by VADBART_PROD"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

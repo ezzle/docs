@@ -1,0 +1,11 @@
+---
+frametype: "class"
+name: "Report_PDF_Configuration"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Report_Configuration"]
+template_slot: ["report_pdf_margin_right", "report_pdf_scale", "report_pdf_margin_left", "report_pdf_paper_width", "report_pdf_margin_top", "report_pdf_paper_height", "report_pdf_config_is_default", "report_pdf_wait_delay", "report_pdf_margin_bottom", "report_pdf_is_landscape"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Defines the configuration for rendering a Report in PDF format"}, ]}]
+template_facet_value: [{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Essential_Viewer"}, ]}]
+---

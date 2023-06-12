@@ -1,0 +1,12 @@
+---
+frametype: "simple_instance"
+name: "KB_500095_Class2306"
+type: "Synonym"
+supertype: ["Utilities", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "synonym_language", value: [{value_type: "simple_instance", value_content: "essential_baseline_v3.0.4_Class10004"}, ]}, 
+{slot_reference: "system_content_visibility", value: [{value_type: "simple_instance", value_content: "KB_229567_Class68"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "synchronisation des versements reçus des versements anticipés impôts des personnes sur le flux de First VA vers db Taxi"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Flux de VA vers db taxi In Taxi Les données de prépaiement sont également stockées : synchronisation des versements anticipés de l'application VA (AGPR) vers Taxi (AG Fisc).Pour des raisons techniques uniquement, ces données relatives aux versements anticipés sont stockées dans Taxi et sont mises à jour mensuellement grâce à la synchronisation manuelle des versements anticipés des applications VA de mainframe (AGPR) avec Taxi (AG Fisc). Si l'AG Fisc doit effectuer une correction concernant les versements anticipés, AG Fisc demande d'abord au Service de versements anticipés de l'AGPR d'appliquer une modification au fichier central VA et ce n'est qu'ensuite que Taxi est appelé : pour la matrice de calcul, cela est totalement transparent : pour la matrice de calcul, il semble que ce soit le même tableau VA que celui de Taxi. Flux de VA vers Taxi taxation: fichier construit par AGPR sur la base du VA db UIT3 avec les versements anticipés reçus pour l'impôt sur le revenu des personnes physiques (IPP) est chargé dans Taxi mensuellement à la date du bilan après mise à jour manuelle au sein du service ABA. En cas de remplissage préalable du montant dû de l'impôt sur le revenu des personnes physiques dans Taks on web, les paiements de l'impôt sur le revenu des personnes physiques déjà reçus seront chargés auprès de Taxi, et non de VA (car à la date du bilan mensuel déjà chargé dans Taxi sur la base de VA)."}, ]}, 
+{slot_reference: "system_content_lifecycle_status", value: [{value_type: "simple_instance", value_content: "KB_229567_Class67"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---

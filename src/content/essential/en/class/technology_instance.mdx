@@ -1,0 +1,12 @@
+---
+frametype: "class"
+name: "Technology_Instance"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Technology_Physical"]
+template_slot: ["instance_of_logical_tech_provider", "technology_instance_deployed_on_node", "technology_instance_deployment_status", "technology_instance_of", "technology_instance_given_name", "technology_instance_attributes", "contained_technology_instance_dependencies"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Abstract"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "An instance of a piece of hardware or software technology in the infrastructure of the organisation. (e.g. a specific server or a specific instance of an installed piece of software)."}, ]}]
+template_facet_value: [{slot_reference: "name", facet_reference: ":DEFAULTS", value: [{value_type: "string", value_content: "&lt;provider&gt;::&lt;instance&gt;"}, ]}, 
+{slot_reference: "supersedes_version", facet_reference: ":VALUE-TYPE", value: [{value_type: "string", value_content: "Instance"}, {value_type: "class", value_content: "Technology_Instance"}, ]}]
+---

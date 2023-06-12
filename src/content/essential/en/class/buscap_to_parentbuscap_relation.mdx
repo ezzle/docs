@@ -1,0 +1,10 @@
+---
+frametype: "class"
+name: "BUSCAP_TO_PARENTBUSCAP_RELATION"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["Business_Relationship"]
+template_slot: ["buscap_to_parent_child_buscap", "buscap_to_parent_parent_buscap", "buscap_to_parent_role"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Defines a relationship between a child businesscapability and the parent business capability that it supports, including any additional contextual information"}, ]}]
+---

@@ -1,0 +1,10 @@
+---
+frametype: "class"
+name: "SYS_CONTENT_QUALITY_POLICY_TO_ROLE_RELATION"
+type: ":ESSENTIAL-CLASS"
+supertype: [":STANDARD-CLASS", ":CLASS", ":META-CLASS", ":SYSTEM-CLASS", ":THING"]
+superclass: ["SYS_CONTENT_QUALITY_RELATION"]
+template_slot: ["system_cq_polcy_to_role_from_policy", "system_cq_policy_to_role_relationship_type", "system_cq_polcy_to_role_to_role"]
+own_slot_value: [{slot_reference: ":ROLE", value: [{value_type: "string", value_content: "Concrete"}, ]}, 
+{slot_reference: ":DOCUMENTATION", value: [{value_type: "string", value_content: "Defines the relationship between a content review or escalation policy and the role of the individuals responsible for reviewing content or handling an escalation"}, ]}]
+---

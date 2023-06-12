@@ -1,0 +1,31 @@
+---
+frametype: "simple_instance"
+name: "KB_511918_Class1660"
+type: "Project"
+supertype: ["Change_Activity", "Change_Management", "EA_Support", "EA_Class", ":THING", "EA_Graph_Management", "EA_System"]
+own_slot_value: [{slot_reference: "project_lifecycle_status", value: [{value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class30000"}, ]}, 
+{slot_reference: "ca_target_end_date", value: [{value_type: "simple_instance", value_content: "KB_003326_Class2"}, ]}, 
+{slot_reference: "ca_criticality", value: [{value_type: "simple_instance", value_content: "essential_prj_CC_v1.4.2_Instance_60025"}, ]}, 
+{slot_reference: "ca_approval_status", value: [{value_type: "simple_instance", value_content: "essential_baseline_v2.0_Class30005"}, ]}, 
+{slot_reference: "ca_proposed_start_date", value: [{value_type: "simple_instance", value_content: "KB_003326_Class0"}, ]}, 
+{slot_reference: "ca_strategic_plans_supported", value: [{value_type: "simple_instance", value_content: "KB_748537_Class2"}, ]}, 
+{slot_reference: "ca_forecast_end_date", value: [{value_type: "simple_instance", value_content: "KB_003326_Class2"}, ]}, 
+{slot_reference: "name", value: [{value_type: "string", value_content: "Source authentique Géomètres-Expert [Business Case 1987 (2017)]"}, ]}, 
+{slot_reference: "description", value: [{value_type: "string", value_content: "Dans la situation actuelle, nous recevons ponctuellement (à la demande, environ 2x/an) la liste des géomètres-experts dûment enregistrés et autorisés à exercer.
+Cette liste nous est fournie au format Excel par les Conseils Fédéraux des Géomètres-experts (source authentique) du  SPF Economie, P.M.E, Classes Moyennes et Energie. Ce fichier contient les Nom, Prénom, Adresse, e-mail, Tel, et identification des Géomètres-Experts. Nous devons donc effectuer une recherche dans SITRAN pour retrouver le numéro national des nouveaux Géomètres-experts afin de pouvoir les encoder dans notre base de données (Application « DB Plans de Géomètres »).
+
+Tout d’abord, nous souhaitons automatiser cette procédure afin de pouvoir mettre à jour nos données sur base de la source authentique que sont les Conseils Fédéraux des Géomètres-experts et ce sans intervention manuelle. 
+
+Ensuite, nous devons pouvoir gérer les Géomètres-experts actifs habilités à exercer pour le compte des organismes qui les emploient sans être identifiés auprès des Conseils Fédéraux (en application de la loi du 11 mai 2003).  Ces géomètres-experts reçoivent une identification délivrée par MEOW via l’application « Géomètres-Fonctionnaires » et doivent ensuite être encodés manuellement dans  l’application « DB Plans de Géomètres » 
+
+Enfin, nous devons assurer la gestion des Géomètres-experts qui ont exercés dans le passé et auxquels nous devons pouvoir affecter d'anciens plans. (actuellement géré par l'application « DB Plan de Géomètres »)
+Le but de cette nouvelle application est donc triple :
+Fournir un client pour se connecter au WebService qui va être créé par le SPF Economie, afin d’importer périodiquement la liste authentique des Géomètres-experts immatriculés par les conseils fédéraux et autorisés à exercer.
+Fournir une interface permettant de gérer les Géomètres-experts qui travaillent pour le compte et exclusivement sur les biens de leur employeur et qui sont immatriculés par MEOW.
+Fournir une interface permettant de gérer les Géomètres-experts ayant exercés par le passé et non connu.
+Cette nouvelle application sera la source unique pour :
+La mise à jour des Géomètres-experts dans STIPAD, IPR, … (en remplacement de « DB Plans de Géomètres »)
+L’identification des Géomètres-experts pour « myminfinpro géomètre » et « cadgis partenaire »  en remplacement en remplacement du système actuel basé sur une extraction des données de « DB Plans de Géomètres »"}, ]}, 
+{slot_reference: "stakeholders", value: [{value_type: "simple_instance", value_content: "KB_511918_Class1658"}, ]}, 
+{slot_reference: "system_is_published", value: [{value_type: "boolean", value_content: "true"}, ]}]
+---
